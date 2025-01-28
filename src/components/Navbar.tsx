@@ -32,12 +32,16 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="relative w-8 h-8">
+            {/* <div className="relative w-8 h-8">
               <Waves className="w-8 h-8 text-purple-500 absolute transform rotate-45" />
               <Waves className="w-8 h-8 text-indigo-500 absolute transform -rotate-45" />
-            </div>
-            <span className="ml-2 text-xl font-bold text-gray-900">
-              tap<span className="text-purple-500">hubs</span>
+            </div> */}
+            <span
+              className={`ml-2 text-[3vh] font-bold  ${
+                scrolled ? "text-black" : "text-white"
+              }`}
+            >
+              Taphubs<span className="text-green-400">.</span>
             </span>
           </motion.div>
 
