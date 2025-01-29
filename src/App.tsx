@@ -256,7 +256,14 @@ function App() {
                 </div>
               </div>
             </motion.div>
-            <motion.form className="space-y-6" {...fadeIn}>
+            <motion.form
+              className="space-y-6"
+              {...fadeIn}
+              onSubmit={(e) => {
+                e.preventDefault();
+                console.log("form submitted");
+              }}
+            >
               <div>
                 <label
                   htmlFor="name"
