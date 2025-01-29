@@ -1,0 +1,26 @@
+const Data = [
+    {
+    name : "fsdfsfsdf,
+    age : 20,
+    sex : "male"
+    },
+    {
+    name : "fsdfsfsdf,
+    age : 20,
+    sex : "male"
+    },
+    {
+    name : "fsdfsfsdf,
+    age : 20,
+    sex : "male"
+    },
+    {
+    name : "fsdfsfsdf,
+    age : 20,
+    sex : "male"
+    },
+]
+
+
+
+<Persondeatil name={} age={}>

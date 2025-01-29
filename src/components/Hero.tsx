@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 import SplitText from "./BlurText";
 import { ArrowRight } from "lucide-react";
-import { SpringValue } from "@react-spring/web";
+
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-20 pb-32 sm:h-[100vh] content-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden"
+      className="relative pt-20 pb-32 h-[100vh] content-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0 }}

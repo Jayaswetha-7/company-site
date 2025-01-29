@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Service from "./components/Service";
+import WhyNeedUs from "./components/WhyNeedUs";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +30,7 @@ function App() {
 
       <Hero />
       {/* Services Section */}
-
+      <WhyNeedUs />
       <Service />
       {/* About Section */}
 
@@ -38,6 +39,7 @@ function App() {
 
       <Careers />
       {/* Contact Section */}
+
       <Contact />
 
       {/* Footer */}
