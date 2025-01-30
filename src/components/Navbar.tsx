@@ -41,36 +41,36 @@ const Navbar = () => {
       name: "About Us",
       title: "Who Are We?",
       content:
-        "Taphubs is a forward-thinking IT solutions provider dedicated to helping businesses navigate the digital landscape. With a focus on innovation, we offer cutting-edge services in app development, web solutions, cloud services, and cybersecurity. Our expert team ensures your digital infrastructure is secure, efficient, and scalable, allowing you to focus on growth. At Taphubs, we are committed to delivering tailored solutions that drive success, streamline operations, and empower businesses to thrive in an increasingly connected world.",
+        "Taphubs is a passionate team of tech enthusiasts committed to making a difference in the digital world.Our focus is on creating lasting impact, fostering growth, and building strong partnerships with our clients to drive success together.",
     },
   ];
 
-const servicedata = [
-  {
-    title: "Web Development",
-    header: "Building Future-Ready Websites",
-    content:
-      "We create fast, responsive, and scalable websites tailored to your business needs, ensuring seamless user experiences, cutting-edge designs, and future-proof solutions that adapt to growth, evolving technology, and changing market demands.",
-  },
-  {
-    title: "Network & Security",
-    header: "Secure & Reliable Networks",
-    content:
-      "Ensuring seamless connectivity with advanced network solutions, robust security measures, and proactive threat detection for uninterrupted operations, while optimizing performance, improving network efficiency, and safeguarding sensitive data across platforms, devices, and locations.",
-  },
-  {
-    title: "Cybersecurity",
-    header: "Protecting Your Digital Assets",
-    content:
-      "Safeguarding businesses with cutting-edge cybersecurity solutions, defending against evolving threats, data breaches, and unauthorized access attempts, while ensuring compliance with industry regulations, maintaining data privacy at all levels, and mitigating risks effectively.",
-  },
-  {
-    title: "AI Security",
-    header: "Intelligent Security Solutions",
-    content:
-      "Leveraging AI to detect, prevent, and respond to cyber threats in real time, enhancing security and risk management with smart automation, predictive analytics, continuous monitoring, and advanced algorithms for maximum protection against attacks.",
-  },
-];
+  const servicedata = [
+    {
+      title: "Web Development",
+      header: "Building Future-Ready Websites",
+      content:
+        "We create fast, responsive, and scalable websites tailored to your business needs, ensuring seamless user experiences, cutting-edge designs, and future-proof solutions that adapt to growth, evolving technology, and changing market demands.",
+    },
+    {
+      title: "Network & Security",
+      header: "Secure & Reliable Networks",
+      content:
+        "Ensuring seamless connectivity with advanced network solutions, robust security measures, and proactive threat detection for uninterrupted operations, while optimizing performance, improving network efficiency, and safeguarding sensitive data across platforms, devices, and locations.",
+    },
+    {
+      title: "Cybersecurity",
+      header: "Protecting Your Digital Assets",
+      content:
+        "Safeguarding businesses with cutting-edge cybersecurity solutions, defending against evolving threats, data breaches, and unauthorized access attempts, while ensuring compliance with industry regulations, maintaining data privacy at all levels, and mitigating risks effectively.",
+    },
+    {
+      title: "AI Security",
+      header: "Intelligent Security Solutions",
+      content:
+        "Leveraging AI to detect, prevent, and respond to cyber threats in real time, enhancing security and risk management with smart automation, predictive analytics, continuous monitoring, and advanced algorithms for maximum protection against attacks.",
+    },
+  ];
 
   return (
     <motion.nav
@@ -119,7 +119,11 @@ const servicedata = [
                         key={tab.name}
                         onClick={() => setActiveTab(tab.name)}
                         className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
-              ${activeTab === tab.name ? "bg-black" : " hover:bg-gray-500/40"}`}
+              ${
+                activeTab === tab.name
+                  ? "bg-gray-600"
+                  : " hover:bg-gray-500/40"
+              }`}
                       >
                         {tab.name} <MdOutlineArrowRightAlt />
                       </button>
@@ -185,8 +189,10 @@ const servicedata = [
                             <h2 className="text-2xl font-semibold">
                               {tab.header}
                             </h2>
-                            <p className="mt-2 text-white/60 text-lg">{tab.content}</p>
-                            <Link to={"/service"}>
+                            <p className="mt-2 text-white/60 text-lg">
+                              {tab.content}
+                            </p>
+                            <Link to={"/services"}>
                               <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-white hover:scale-105  hover:underline">
                                 Discover More
                                 <FaUpRightFromSquare className="  inline-block" />
