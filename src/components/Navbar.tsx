@@ -1,7 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, Waves } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { FaUpRightFromSquare } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +27,50 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const [activeTab, setActiveTab] = useState("Overview");
+
+  // Tab Data
+  const tabs = [
+    {
+      name: "Overview",
+      title: "Empowering Innovation, Transforming Tomorrow",
+      content:
+        "At Taphubs, our dedicated team brings ideas to life with passion and purpose. Driven by innovation and collaboration, we leverage technology to craft impactful solutions that shape a smarter, more connected future.OR",
+    },
+    {
+      name: "About Us",
+      title: "Who Are We?",
+      content:
+        "Taphubs is a forward-thinking IT solutions provider dedicated to helping businesses navigate the digital landscape. With a focus on innovation, we offer cutting-edge services in app development, web solutions, cloud services, and cybersecurity. Our expert team ensures your digital infrastructure is secure, efficient, and scalable, allowing you to focus on growth. At Taphubs, we are committed to delivering tailored solutions that drive success, streamline operations, and empower businesses to thrive in an increasingly connected world.",
+    },
+  ];
+
+const servicedata = [
+  {
+    title: "Web Development",
+    header: "Building Future-Ready Websites",
+    content:
+      "We create fast, responsive, and scalable websites tailored to your business needs, ensuring seamless user experiences, cutting-edge designs, and future-proof solutions that adapt to growth, evolving technology, and changing market demands.",
+  },
+  {
+    title: "Network & Security",
+    header: "Secure & Reliable Networks",
+    content:
+      "Ensuring seamless connectivity with advanced network solutions, robust security measures, and proactive threat detection for uninterrupted operations, while optimizing performance, improving network efficiency, and safeguarding sensitive data across platforms, devices, and locations.",
+  },
+  {
+    title: "Cybersecurity",
+    header: "Protecting Your Digital Assets",
+    content:
+      "Safeguarding businesses with cutting-edge cybersecurity solutions, defending against evolving threats, data breaches, and unauthorized access attempts, while ensuring compliance with industry regulations, maintaining data privacy at all levels, and mitigating risks effectively.",
+  },
+  {
+    title: "AI Security",
+    header: "Intelligent Security Solutions",
+    content:
+      "Leveraging AI to detect, prevent, and respond to cyber threats in real time, enhancing security and risk management with smart automation, predictive analytics, continuous monitoring, and advanced algorithms for maximum protection against attacks.",
+  },
+];
 
   return (
     <motion.nav
@@ -45,41 +101,106 @@ const Navbar = () => {
               Taphubs<span className="text-green-400">.</span>
             </span>
           </motion.div>
-
+          {/* Home */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "About", "Services", "Careers", "Contact"].map((item) => (
-              <motion.div
-                key={item}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link
-                  to={
-                    ["About", "Services"].includes(item)
-                      ? `/${item.toLowerCase()}`
-                      : `/#${item.toLowerCase()}`
-                  }
-                  className={`text-gray-600 hover:text-purple-600 transition-colors ${
-                    scrolled ? "text-black" : "text-white hover:text-red-600"
-                  } `}
-                >
-                  {item}
-                </Link>
-              </motion.div>
-            ))}
-            {/* {["Home", "Services", "About", "Careers", "Contact"].map((item) => (
-              <motion.a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className={`text-gray-600 hover:text-purple-600 transition-colors ${
-                  scrolled ? "text-black" : "text-white hover:text-red-600"
-                } `}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {item}
-              </motion.a>
-            ))} */}
+            <Link to={"/"}>
+              <h1>Home</h1>
+            </Link>
+            {/* About */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <button>About</button>
+              </SheetTrigger>
+              <SheetContent className="">
+                <div className="wfull  flex h-[20vh] items-center px-4">
+                  <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
+                    {tabs.map((tab) => (
+                      <button
+                        key={tab.name}
+                        onClick={() => setActiveTab(tab.name)}
+                        className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
+              ${activeTab === tab.name ? "bg-black" : " hover:bg-gray-500/40"}`}
+                      >
+                        {tab.name} <MdOutlineArrowRightAlt />
+                      </button>
+                    ))}
+                  </div>
+                  <div className="w-full ">
+                    {tabs.map(
+                      (tab) =>
+                        activeTab === tab.name && (
+                          <div
+                            key={tab.name}
+                            className="flex flex-col h-full gap-4 text-white justify-around items-start px-5"
+                          >
+                            <h2 className="text-2xl font-semibold">
+                              {tab.title}
+                            </h2>
+                            <p className="mt-2 text-white/60 text-lg">
+                              {tab.content}
+                            </p>
+                            <Link to={"/about"}>
+                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-white hover:scale-105  hover:underline">
+                                Discover More
+                                <FaUpRightFromSquare className="  inline-block" />
+                              </button>
+                            </Link>
+                          </div>
+                        )
+                    )}
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+
+            {/* Services */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <button>Services</button>
+              </SheetTrigger>
+              <SheetContent className="">
+                <div className="wfull flex px-4">
+                  <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
+                    {servicedata.map((tab) => (
+                      <button
+                        key={tab.title}
+                        onClick={() => setActiveTab(tab.title)}
+                        className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
+              ${
+                activeTab === tab.title ? "bg-black" : " hover:bg-gray-500/40"
+              }`}
+                      >
+                        {tab.title} <MdOutlineArrowRightAlt />
+                      </button>
+                    ))}
+                  </div>
+                  <div className="w-[80%] ">
+                    {servicedata.map(
+                      (tab) =>
+                        activeTab === tab.title && (
+                          <div
+                            key={tab.title}
+                            className="flex flex-col text-white h-full justify-around items-start px-5"
+                          >
+                            <h2 className="text-2xl font-semibold">
+                              {tab.header}
+                            </h2>
+                            <p className="mt-2 text-white/60 text-lg">{tab.content}</p>
+                            <Link to={"/service"}>
+                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-white hover:scale-105  hover:underline">
+                                Discover More
+                                <FaUpRightFromSquare className="  inline-block" />
+                              </button>
+                            </Link>
+                          </div>
+                        )
+                    )}
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+            <div>Contact</div>
+            <div>Careers</div>
           </div>
 
           <motion.button

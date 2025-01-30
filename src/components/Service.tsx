@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import ServiceCard2 from "./ServiceCard2";
 const fadeIn = {
@@ -102,4 +101,5 @@ const Service = () => {
   );
 };
 
-export default Service
+export default Service;
+};
