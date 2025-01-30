@@ -58,7 +58,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Web Development
@@ -66,7 +66,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Networking
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     AI Solutions
@@ -82,7 +82,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#services"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Cybersecurity

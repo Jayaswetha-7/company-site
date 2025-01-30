@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -7,7 +6,7 @@ const fadeIn = {
   transition: { duration: 0.5 },
 };
 
-import { Waves, Shield, Network, Brain,  } from "lucide-react";
+import { Waves, Shield, Network, Brain } from "lucide-react";
 
 import ServiceCard from "./ServiceCard";
 const Service = () => {
@@ -45,6 +44,6 @@ const Service = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Service
+export default Service;
