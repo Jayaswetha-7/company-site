@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Waves } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,7 +47,27 @@ const Navbar = () => {
           </motion.div>
 
           <div className="hidden md:flex space-x-8">
-            {["Home", "Services", "About", "Careers", "Contact"].map((item) => (
+            {["Home", "About", "Services", "Careers", "Contact"].map((item) => (
+              <motion.div
+                key={item}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link
+                  to={
+                    ["About", "Services"].includes(item)
+                      ? `/${item.toLowerCase()}`
+                      : `/#${item.toLowerCase()}`
+                  }
+                  className={`text-gray-600 hover:text-purple-600 transition-colors ${
+                    scrolled ? "text-black" : "text-white hover:text-red-600"
+                  } `}
+                >
+                  {item}
+                </Link>
+              </motion.div>
+            ))}
+            {/* {["Home", "Services", "About", "Careers", "Contact"].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -58,7 +79,7 @@ const Navbar = () => {
               >
                 {item}
               </motion.a>
-            ))}
+            ))} */}
           </div>
 
           <motion.button
@@ -82,18 +103,25 @@ const Navbar = () => {
               <div className="flex flex-col space-y-4 pb-4">
                 {["Home", "About", "Services", "Careers", "Contact"].map(
                   (item) => (
-                    <motion.a
+                    <motion.div
                       key={item}
-                      href={`#${item.toLowerCase()}`}
-                      className={` hover:text-purple-600 transition-colors ${
-                        scrolled ? "" : ""
-                      }`}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => setIsOpen(false)}
                     >
-                      {item}
-                    </motion.a>
+                      <Link
+                        to={
+                          ["Home", "About", "Services"].includes(item)
+                            ? `/${item.toLowerCase()}`
+                            : `/#${item.toLowerCase()}`
+                        }
+                        className={`hover:text-purple-600 transition-colors ${
+                          scrolled ? "" : ""
+                        }`}
+                      >
+                        {item}
+                      </Link>
+                    </motion.div>
                   )
                 )}
               </div>
@@ -106,3 +134,14 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+//  <motion.a
+//    key={item}
+//    href={`#${item.toLowerCase()}`}
+//    className={` hover:text-purple-600 transition-colors ${scrolled ? "" : ""}`}
+//    whileHover={{ scale: 1.05 }}
+//    whileTap={{ scale: 0.95 }}
+//    onClick={() => setIsOpen(false)}
+//  >
+//    {item}
+//  </motion.a>;

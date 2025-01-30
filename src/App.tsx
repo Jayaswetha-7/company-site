@@ -8,6 +8,9 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Service from "./components/Service";
 import WhyNeedUs from "./components/WhyNeedUs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ServicePage from "./components/Pages/ServicePage";
+import AboutPage from "./components/Pages/AboutPage";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,28 +26,45 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-      <Navbar />
+    <Router>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
+        <Navbar />
 
-      {/* Hero Section */}
+        <Routes>
+          {/* Home Route */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <WhyNeedUs />
+                <Service />
+                <About />
+                <Careers />
+                <Contact />
+              </>
+            }
+          />
 
-      <Hero />
-      {/* Services Section */}
-      <WhyNeedUs />
-      <Service />
-      {/* About Section */}
+          {/* Service Route */}
+          <Route path="/services" element={<ServicePage />} />
 
-      <About />
-      {/* Careers Section */}
+          {/* About Route */}
+          <Route path="/about" element={<AboutPage />} />
 
-      <Careers />
-      {/* Contact Section */}
+          {/* Careers Route */}
+          {/* <Route path="/careers" element={<Careers />} /> */}
 
-      <Contact />
+          {/* Contact Route */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
 
-      {/* Footer */}
-      <Footer />
-    </div>
+          {/* 404 Route (Optional) */}
+          <Route path="*" element={<div>404 - Page Not Found</div>} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
