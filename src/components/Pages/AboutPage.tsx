@@ -25,7 +25,7 @@ function AboutPage() {
       </div>
       {/* second section */}
       <div className="min-h-[40vh] bg-gray-900 items-center justify-center flex ">
-        <p className="text-white/50 w-[65%] text-pretty text-center sm:text-[140%] text-[70%] sm:p-0 p-3 ">
+        <p className="text-white/50 w-[95%] sm:w-[65%] text-pretty text-center sm:text-[140%] text-[70%] sm:p-0 p-3 ">
           Taphubs is a forward-thinking IT solutions provider dedicated to
           helping businesses navigate the digital landscape. With a focus on
           innovation, we offer cutting-edge services in app development, web
@@ -36,6 +36,12 @@ function AboutPage() {
           operations, and empower businesses to thrive in an increasingly
           connected world.
         </p>
+        {/* <p className="text-white/50 w-[95%] text-pretty text-center sm:text-[140%] text-[70%] sm:p-0 p-3 sm:hidden ">
+          Taphubs is a forward-thinking IT solutions provider dedicated to
+          helping businesses navigate the digital landscape. With a focus on
+          innovation, we offer cutting-edge services in app development, web
+          solutions, cloud services, and cybersecurity.
+        </p> */}
       </div>
       {/* third section */}
       <div className="relative sm:h-screen h-[50vh] w-full">
