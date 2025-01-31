@@ -51,16 +51,7 @@ const Service = () => {
         >
           Our Expertise
         </motion.h2>
-        {/* <motion.div className="flex flex-wrap items-center justify-center gap-8">
-          {ServiceData.map((item, index) => (
-            <ServiceCard2
-              key={index}
-              image={item.image}
-              title={item.title}
-              desc={item.description}
-            />
-          ))}
-        </motion.div> */}
+
         <motion.div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:w-full gap-4 p-4">
           {ServiceData.map((item, index) => (
             <ServiceCard2
@@ -71,31 +62,6 @@ const Service = () => {
             />
           ))}
         </motion.div>
-
-        {/* <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          <div className="">
-            <ServiceCard
-              title="Web Development"
-              description="Creating responsive, scalable, and visually stunning digital experiences that engage and convert."
-              Icon={Waves}
-            />
-          </div>
-          <ServiceCard
-            title="Network Solutions"
-            description="Building robust, secure, and efficient network infrastructures for modern businesses."
-            Icon={Network}
-          />
-          <ServiceCard
-            title="AI Integration"
-            description="Leveraging artificial intelligence to automate processes and drive intelligent decision-making."
-            Icon={Brain}
-          />
-          <ServiceCard
-            title="Cybersecurity"
-            description="Protecting your digital assets with advanced security measures and proactive monitoring."
-            Icon={Shield}
-          />
-        </div> */}
       </div>
     </section>
   );
