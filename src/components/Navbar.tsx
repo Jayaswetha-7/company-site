@@ -2,16 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 
@@ -120,9 +111,7 @@ const Navbar = () => {
                         onClick={() => setActiveTab(tab.name)}
                         className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
               ${
-                activeTab === tab.name
-                  ? "bg-gray-600"
-                  : " hover:bg-gray-500/40"
+                activeTab === tab.name ? "bg-gray-600" : " hover:bg-gray-500/40"
               }`}
                       >
                         {tab.name} <MdOutlineArrowRightAlt />
@@ -205,7 +194,11 @@ const Navbar = () => {
                 </div>
               </SheetContent>
             </Sheet>
-            <div>Contact</div>
+            <Link to={"/contact"}>
+              {" "}
+              <div>Contact</div>
+            </Link>
+
             <div>Careers</div>
           </div>
 

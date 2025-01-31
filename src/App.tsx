@@ -11,6 +11,7 @@ import WhyNeedUs from "./components/WhyNeedUs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
+import ContactPage from "./components/Pages/ContactPage";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
                 <About />
                 <Careers />
                 <Contact />
+                <Footer />
               </>
             }
           />
@@ -51,6 +53,7 @@ function App() {
 
           {/* About Route */}
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
 
           {/* Careers Route */}
           {/* <Route path="/careers" element={<Careers />} /> */}
@@ -61,8 +64,6 @@ function App() {
           {/* 404 Route (Optional) */}
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
-
-        <Footer />
       </div>
     </Router>
   );

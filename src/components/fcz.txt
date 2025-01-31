@@ -23,4 +23,6 @@ const Data = [
 
 
 
-<Persondeatil name={} age={}>
+<Persondeatil name={} age={
+    
+}>
