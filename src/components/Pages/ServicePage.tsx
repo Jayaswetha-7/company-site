@@ -5,6 +5,7 @@ import webDevelopmentImage from "../../assets/web.jpg";
 import networkSolutionImage from "../../assets/network.jpg";
 import aiIntegrationImage from "../../assets/ai.jpg";
 import cybersecurityImage from "../../assets/cyber.jpg";
+import Navbar from "../Navbar";
 
 const contentData = {
   services: {
@@ -86,97 +87,100 @@ const ServicePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full  mx-auto flex justify-center items-center gap-10  bg-gray-950/90">
-      <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[7%]">
-        {/* Left Side Menu */}
-        <div className="w-full lg:w-1/4 p-4 text-white flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-0">
-          <h3 className="text-xl font-bold mb-4 text-center lg:text-left">
-            Services
-          </h3>
-          <div className="space-y-4 w-full flex flex-col items-center lg:items-start">
-            {/* Web Development */}
-            <div
-              onClick={() => handleSectionClick("services")}
-              className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
-                selectedContent === "services"
-                  ? "bg-gray-500 text-white"
-                  : "hover:bg-gray-500 hover:text-white"
-              }`}
-            >
-              Web Development
-            </div>
+    <>
+      <Navbar />
+      <div className="min-h-screen w-full  mx-auto flex justify-center items-center gap-10  bg-gray-950/90">
+        <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[7%]">
+          {/* Left Side Menu */}
+          <div className="w-full lg:w-1/4 p-4 text-white flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-0">
+            <h3 className="text-xl font-bold mb-4 text-center lg:text-left">
+              Services
+            </h3>
+            <div className="space-y-4 w-full flex flex-col items-center lg:items-start">
+              {/* Web Development */}
+              <div
+                onClick={() => handleSectionClick("services")}
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
+                  selectedContent === "services"
+                    ? "bg-gray-500 text-white"
+                    : "hover:bg-gray-500 hover:text-white"
+                }`}
+              >
+                Web Development
+              </div>
 
-            {/* Network Solution */}
-            <div
-              onClick={() => handleSectionClick("solutions")}
-              className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
-                selectedContent === "solutions"
-                  ? "bg-gray-500 text-white"
-                  : "hover:bg-gray-500 hover:text-white"
-              }`}
-            >
-              Network Solution
-            </div>
+              {/* Network Solution */}
+              <div
+                onClick={() => handleSectionClick("solutions")}
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
+                  selectedContent === "solutions"
+                    ? "bg-gray-500 text-white"
+                    : "hover:bg-gray-500 hover:text-white"
+                }`}
+              >
+                Network Solution
+              </div>
 
-            {/* AI Integration */}
-            <div
-              onClick={() => handleSectionClick("cloudServices")}
-              className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
-                selectedContent === "cloudServices"
-                  ? "bg-gray-500 text-white"
-                  : "hover:bg-gray-500 hover:text-white"
-              }`}
-            >
-              AI Integration
-            </div>
+              {/* AI Integration */}
+              <div
+                onClick={() => handleSectionClick("cloudServices")}
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
+                  selectedContent === "cloudServices"
+                    ? "bg-gray-500 text-white"
+                    : "hover:bg-gray-500 hover:text-white"
+                }`}
+              >
+                AI Integration
+              </div>
 
-            {/* Cybersecurity */}
-            <div
-              onClick={() => handleSectionClick("integration")}
-              className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
-                selectedContent === "integration"
-                  ? "bg-gray-500 text-white"
-                  : "hover:bg-gray-500 hover:text-white"
-              }`}
-            >
-              Cybersecurity
+              {/* Cybersecurity */}
+              <div
+                onClick={() => handleSectionClick("integration")}
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded transition-all duration-300 ease-in-out ${
+                  selectedContent === "integration"
+                    ? "bg-gray-500 text-white"
+                    : "hover:bg-gray-500 hover:text-white"
+                }`}
+              >
+                Cybersecurity
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right Side Content */}
-        <div className="w-full lg:w-3/5 p-10  overflow-auto h-[50%] mb-10">
-          <h2 className="text-3xl font-bold mb-4 text-white">
-            {contentData[selectedContent].title}
-          </h2>
-          <p className="text-lg mb-6 text-white">
-            {contentData[selectedContent].description}
-          </p>
+          {/* Right Side Content */}
+          <div className="w-full lg:w-3/5 p-10  overflow-auto h-[50%] mb-10">
+            <h2 className="text-3xl font-bold mb-4 text-white">
+              {contentData[selectedContent].title}
+            </h2>
+            <p className="text-lg mb-6 text-white">
+              {contentData[selectedContent].description}
+            </p>
 
-          {/* Display the image based on selected content */}
-          <div className="w-full h-[50vh]">
-            <img
-              src={contentData[selectedContent].image}
-              alt="Service related image"
-              className="w-full h-full object-cover"
-            />
+            {/* Display the image based on selected content */}
+            <div className="w-full h-[50vh]">
+              <img
+                src={contentData[selectedContent].image}
+                alt="Service related image"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <ul className="list-disc pl-6 mt-7 text-white">
+              {contentData[selectedContent].details.map((item, index) => (
+                <li key={index} className="mb-2">
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* Additional Paragraph */}
+            <p className="mt-6 text-lg mb-5 text-white">
+              {contentData[selectedContent].additionalParagraph}
+            </p>
           </div>
-
-          <ul className="list-disc pl-6 mt-7 text-white">
-            {contentData[selectedContent].details.map((item, index) => (
-              <li key={index} className="mb-2">
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          {/* Additional Paragraph */}
-          <p className="mt-6 text-lg mb-5 text-white">
-            {contentData[selectedContent].additionalParagraph}
-          </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

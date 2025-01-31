@@ -29,14 +29,13 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
-        <Navbar />
-
         <Routes>
           {/* Home Route */}
           <Route
             path="/"
             element={
               <>
+                <Navbar />
                 <Hero />
                 <WhyNeedUs />
                 <Service />
