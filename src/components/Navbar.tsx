@@ -252,6 +252,7 @@ const Navbar = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => setIsOpen(false)}
+                      className="  text-center  border-b  w-[10vw] mx-auto   "
                     >
                       <Link
                         to={
@@ -259,9 +260,8 @@ const Navbar = () => {
                             ? `/${item.toLowerCase()}`
                             : `/#${item.toLowerCase()}`
                         }
-                        className={`hover:text-purple-600 transition-colors ${
-                          scrolled ? "" : ""
-                        }`}
+                        className="  text-center font-semibold font-serif 
+                      "
                       >
                         {item}
                       </Link>
