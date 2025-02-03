@@ -15,6 +15,7 @@ import ContactPage from "./components/Pages/ContactPage";
 import CarrerPage from "./components/Pages/CarrerPage";
 import Lineofbusiness from "./components/Pages/Lineofbusiness";
 import NewService from "./components/NewService";
+import LandingCard from "./components/LandingCard";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,8 +40,9 @@ function App() {
             element={
               <>
                 <Navbar />
-                <Hero />
-                <WhyNeedUs />
+                <LandingCard />
+                {/* <Hero />
+                <WhyNeedUs /> */}
                 <Service />
                 <About />
                 <NewService />
