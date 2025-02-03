@@ -13,6 +13,7 @@ import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
 import CarrerPage from "./components/Pages/CarrerPage";
+import Lineofbusiness from "./components/Pages/Lineofbusiness";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,6 +54,8 @@ function App() {
 
           {/* About Route */}
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/about/lineofbusiness" element={<Lineofbusiness />} />
+
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/career" element={<CarrerPage />} />
 
