@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ScrollArea } from "../ui/scroll-area";
+import Navbar from "../Navbar";
 
 // TypeScript: Define prop types for the SectionWithOptions component
 interface SectionWithOptionsProps {
@@ -36,7 +37,8 @@ const ContactPage: React.FC = () => {
 
   return (
     <div>
-      <div className="flex py-20 justify-between bg-gray-400/50 h-screen">
+      <Navbar />
+      <div className="flex py-20 justify-between bg-[#fdf4dc] h-screen">
         {/* Left Section - Contact Form */}
         <ScrollArea className="w-[85%] h-[84vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-7">
           <div className="w-full md:w-[95%] text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl ml-10">
@@ -268,7 +270,9 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
     ) : title === "Need Development?" ? (
       <div className="mb-4">
         <p className="text-gray-500 font-semibold mb-2">Our Address:</p>
-        <p className="text-gray-400">1234 Development St, Tech City</p>
+        <p className="text-gray-400">
+          Taphubs Global ,Karyavattam jn,Trivandrum 685504
+        </p>
       </div>
     ) : null}
   </div>

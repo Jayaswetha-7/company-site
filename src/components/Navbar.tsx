@@ -70,10 +70,10 @@ const Navbar = () => {
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
           ? "bg-white/90 text-black backdrop-blur-sm shadow-lg"
-          : "bg-transparent text-white"
+          : "bg-transparent text-black"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <motion.div
             className="flex items-center"
@@ -198,8 +198,9 @@ const Navbar = () => {
               {" "}
               <div>Contact</div>
             </Link>
-
-            <div>Careers</div>
+            <Link to={"/career"}>
+              <div>Careers</div>
+            </Link>
           </div>
 
           <motion.button

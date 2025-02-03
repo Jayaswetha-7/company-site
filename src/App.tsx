@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
+import CarrerPage from "./components/Pages/CarrerPage";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           {/* About Route */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/career" element={<CarrerPage />} />
 
           {/* Careers Route */}
           {/* <Route path="/careers" element={<Careers />} /> */}
