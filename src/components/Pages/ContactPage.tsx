@@ -38,7 +38,7 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex py-20 justify-between bg-[#fdf4dc] h-screen">
+      <div className="flex py-20 justify-between bg-white h-screen">
         {/* Left Section - Contact Form */}
         <ScrollArea className="w-[85%] h-[84vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-7">
           <div className="w-full md:w-[95%] text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl ml-10">

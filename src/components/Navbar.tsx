@@ -62,16 +62,12 @@ const Navbar = () => {
         "Leveraging AI to detect, prevent, and respond to cyber threats in real time, enhancing security and risk management with smart automation, predictive analytics, continuous monitoring, and advanced algorithms for maximum protection against attacks.",
     },
   ];
-
+  const [openSheet, setOpenSheet] = useState<"about" | "services" | null>(null);
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 text-black backdrop-blur-sm shadow-lg"
-          : "bg-transparent text-black"
-      }`}
+      className={"fixed w-full z-50 transition-all duration-300 bg-white/90 text-black backdrop-blur-sm shadow-lg"}
     >
       <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
@@ -80,17 +76,11 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {/* <div className="relative w-8 h-8">
-              <Waves className="w-8 h-8 text-purple-500 absolute transform rotate-45" />
-              <Waves className="w-8 h-8 text-indigo-500 absolute transform -rotate-45" />
-            </div> */}
-            <span
-              className={`ml-2 text-[3vh] font-bold  ${
-                scrolled ? "text-black" : "text-white"
-              }`}
-            >
-              Taphubs<span className="text-green-400">.</span>
-            </span>
+            <img
+              src="src/assets/LogoBanner.png"
+              alt=""
+              className="w-[100px] h-[50px]"
+            />
           </motion.div>
           {/* Home */}
           <div className="hidden md:flex space-x-8">
@@ -98,10 +88,11 @@ const Navbar = () => {
               <h1>Home</h1>
             </Link>
             {/* About */}
-            <Sheet>
-              <SheetTrigger asChild>
-                <button>About</button>
-              </SheetTrigger>
+            <Sheet
+              open={openSheet === "about"}
+              onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
+            >
+              <div onMouseEnter={() => setOpenSheet("about")}>About</div>
               <SheetContent className="">
                 <div className="wfull  flex h-[20vh] items-center px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
@@ -109,9 +100,11 @@ const Navbar = () => {
                       <button
                         key={tab.name}
                         onClick={() => setActiveTab(tab.name)}
-                        className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
+                        className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
               ${
-                activeTab === tab.name ? "bg-gray-600" : " hover:bg-gray-500/40"
+                activeTab === tab.name
+                  ? "bg-gray-500/40"
+                  : " hover:bg-blue-300/30"
               }`}
                       >
                         {tab.name} <MdOutlineArrowRightAlt />
@@ -124,16 +117,16 @@ const Navbar = () => {
                         activeTab === tab.name && (
                           <div
                             key={tab.name}
-                            className="flex flex-col h-full gap-4 text-white justify-around items-start px-5"
+                            className="flex flex-col h-full gap-4 text-black justify-around items-start px-5"
                           >
                             <h2 className="text-2xl font-semibold">
                               {tab.title}
                             </h2>
-                            <p className="mt-2 text-white/60 text-lg">
+                            <p className="mt-2 text-black/60 text-lg">
                               {tab.content}
                             </p>
                             <Link to={"/about"}>
-                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-white hover:scale-105  hover:underline">
+                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-black hover:scale-105  hover:underline">
                                 Discover More
                                 <FaUpRightFromSquare className="  inline-block" />
                               </button>
@@ -147,10 +140,18 @@ const Navbar = () => {
             </Sheet>
 
             {/* Services */}
-            <Sheet>
-              <SheetTrigger asChild>
-                <button>Services</button>
-              </SheetTrigger>
+            <Sheet
+              open={openSheet === "services"}
+              onOpenChange={(isOpen) =>
+                setOpenSheet(isOpen ? "services" : null)
+              }
+            >
+              <div
+                onMouseEnter={() => setOpenSheet("services")}
+                // onMouseLeave={() => setOpenSheet(null)}
+              >
+                Services
+              </div>
               <SheetContent className="">
                 <div className="wfull flex px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
@@ -158,9 +159,11 @@ const Navbar = () => {
                       <button
                         key={tab.title}
                         onClick={() => setActiveTab(tab.title)}
-                        className={`p-3 text-left flex justify-between font-medium  text-white border-b border-white transition-all 
+                        className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
               ${
-                activeTab === tab.title ? "bg-black" : " hover:bg-gray-500/40"
+                activeTab === tab.title
+                  ? "bg-black/10"
+                  : " hover:bg-gray-500/40"
               }`}
                       >
                         {tab.title} <MdOutlineArrowRightAlt />
@@ -173,16 +176,16 @@ const Navbar = () => {
                         activeTab === tab.title && (
                           <div
                             key={tab.title}
-                            className="flex flex-col text-white h-full justify-around items-start px-5"
+                            className="flex flex-col text-black h-full justify-around items-start px-5"
                           >
                             <h2 className="text-2xl font-semibold">
                               {tab.header}
                             </h2>
-                            <p className="mt-2 text-white/60 text-lg">
+                            <p className="mt-2 text-black/60 text-lg">
                               {tab.content}
                             </p>
                             <Link to={"/services"}>
-                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-white hover:scale-105  hover:underline">
+                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-black hover:scale-105  hover:underline">
                                 Discover More
                                 <FaUpRightFromSquare className="  inline-block" />
                               </button>

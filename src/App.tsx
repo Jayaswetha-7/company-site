@@ -43,7 +43,7 @@ function App() {
                 <LandingCard />
                 {/* <Hero />
                 <WhyNeedUs /> */}
-                <Service />
+                {/* <Service /> */}
                 <About />
                 <NewService />
                 <Careers />
