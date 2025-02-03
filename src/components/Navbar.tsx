@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
-
+import imageLogo from "../assets/LogoBanner.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,11 +90,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img
-              src="src/assets/LogoBanner.png"
-              alt=""
-              className="w-[100px] h-[50px]"
-            />
+            <img src={imageLogo} alt="" className="w-[100px] h-[50px]" />
           </motion.div>
           {/* Home */}
           <div className="hidden md:flex space-x-8">
