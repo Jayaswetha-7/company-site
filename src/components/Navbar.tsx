@@ -63,11 +63,26 @@ const Navbar = () => {
     },
   ];
   const [openSheet, setOpenSheet] = useState<"about" | "services" | null>(null);
+  let closeTimeout: NodeJS.Timeout;
+
+  const handleMouseEnter = (menu: "about" | "services") => {
+    clearTimeout(closeTimeout); // Prevents accidental closing
+    setOpenSheet(menu);
+  };
+
+  const handleMouseLeave = () => {
+    closeTimeout = setTimeout(() => {
+      setOpenSheet(null);
+    }, 10000); // Adjust delay (300ms works well)
+  };
+
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={"fixed w-full z-50 transition-all duration-300 bg-white/90 text-black backdrop-blur-sm shadow-lg"}
+      className={
+        "fixed w-full z-50 transition-all duration-300 bg-white/90 text-black backdrop-blur-sm shadow-lg"
+      }
     >
       <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
@@ -92,7 +107,12 @@ const Navbar = () => {
               open={openSheet === "about"}
               onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
             >
-              <div onMouseEnter={() => setOpenSheet("about")}>About</div>
+              <div
+                onMouseEnter={() => handleMouseEnter("about")}
+                onMouseLeave={handleMouseLeave}
+              >
+                About
+              </div>
               <SheetContent className="">
                 <div className="wfull  flex h-[20vh] items-center px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
@@ -147,8 +167,8 @@ const Navbar = () => {
               }
             >
               <div
-                onMouseEnter={() => setOpenSheet("services")}
-                // onMouseLeave={() => setOpenSheet(null)}
+                onMouseEnter={() => handleMouseEnter("services")}
+                onMouseLeave={handleMouseLeave}
               >
                 Services
               </div>

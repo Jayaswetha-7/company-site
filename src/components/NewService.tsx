@@ -36,10 +36,12 @@ const NewService = () => {
 
   return (
     <div>
-      NewService
+      <h1 className="text-center sm:text-[5vh] sm:bg-gray-100 text-[4vh] py-4 font-mono underline hover:text-gray-800 transition-all duration-600 font-bold">
+        Our Services
+      </h1>
       <div
-        className="bg-black"
-        style={{ height: "600px", position: "relative" }}
+        className="bg-black mx-auto rounded-3xl"
+        style={{ height: "600px", width: "95vw", position: "relative" }}
       >
         <FlowingMenu items={demoItems} />
       </div>
