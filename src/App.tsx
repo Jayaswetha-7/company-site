@@ -14,6 +14,7 @@ import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
 import CarrerPage from "./components/Pages/CarrerPage";
 import Lineofbusiness from "./components/Pages/Lineofbusiness";
+import NewService from "./components/NewService";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
                 <WhyNeedUs />
                 <Service />
                 <About />
+                <NewService />
                 <Careers />
                 <Contact />
                 <Footer />

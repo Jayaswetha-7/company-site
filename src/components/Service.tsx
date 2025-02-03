@@ -49,7 +49,7 @@ const Service = () => {
           className="text-4xl font-bold text-center mb-16 text-gray-900 tracking-tight"
           {...fadeIn}
         >
-          Our Expertise
+          Our Services
         </motion.h2>
 
         <motion.div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:w-full gap-4 p-4">
