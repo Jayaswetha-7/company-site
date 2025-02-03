@@ -41,7 +41,7 @@ const WhyNeedUs = () => {
   return (
     <section
       id="service"
-      className="py-20 bg-gray-900 min-h-[100vh] content-center "
+      className=" bg-gray-900  sm:h-[100%] h-[95%] sm:p-0 rounded-2xl content-center "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -50,7 +50,7 @@ const WhyNeedUs = () => {
           {...fadeIn}
         >
           {/* why choose us */}
-          <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[8vh] my-6">
+          <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[5vh] sm:text-[8vh] my-6">
             Why <br /> Choose us ?
           </motion.h1>
           {/* div */}

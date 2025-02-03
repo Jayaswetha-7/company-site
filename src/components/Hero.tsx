@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-20 pb-32 h-[100vh] content-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden"
+      className="relative pt-20 pb-32 sm:p-0 sm:h-[100%] h-[95%] content-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden  rounded-2xl"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const Hero = () => {
           >
             <SplitText
               text="Taphubs"
-              className="text-[10vh] font-semibold text-center"
+              className="sm:text-[10vh] text-[5vh] font-semibold text-center"
               delay={150}
               animationFrom={{
                 opacity: 0,
@@ -55,7 +55,7 @@ const Hero = () => {
             />
           </motion.h1>
           <motion.p
-            className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="sm:text-xl text-[100%] text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
