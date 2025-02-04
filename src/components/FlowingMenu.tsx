@@ -1,5 +1,6 @@
 import React from "react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 
 interface MenuItemProps {
   link: string;
@@ -96,14 +97,14 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
       className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#fff]"
       ref={itemRef}
     >
-      <a
+      <Link
         className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-white text-[4vh] hover:text-[#060606] focus:text-white focus-visible:text-[#060606]"
-        href={link}
+        to={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {text}
-      </a>
+      </Link>
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-white translate-y-[101%]"
         ref={marqueeRef}
