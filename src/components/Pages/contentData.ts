@@ -320,7 +320,7 @@ export const contentData: Record<string, ContentData> = {
     ],
     image: networkSolutionImage,
     additionalParagraph:
-      "We deliver world-class solutions for blue-chip companies across every sector in the Kingdom, including telecoms, banking, defense, manufacturing, and top government levels.",
+      "",
     extraContent:
       "The reason our clients choose to work with Taphubs is our proven track record in maximizing value and our reputation for driving digital excellence. Our experienced team will embed itself in your business to help you outshine competitors and boost your bottom line.",
 
@@ -523,10 +523,7 @@ export const contentData: Record<string, ContentData> = {
             paragraph: "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, SAP HANA, business analytics and virtualization workloads.",
           },
 
-          {
-            heading: "Digital Manufacturing Solutions",
-            paragraph: "The INT team is a market leader in providing digital manufacturing solutions for our clients across the Kingdom. Working together with industry and government, we are driving the digital transformation of India as boldly set out in Vision 2030. We use pioneering industry 4.0 technology to service our clients across every sector including education, business and technology.",
-          },
+          
 
           {
             heading: "Business Process Outsourcing Managed Services & Strategic Outsourcing",

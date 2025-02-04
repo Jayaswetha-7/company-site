@@ -125,7 +125,7 @@ const ServicePage: React.FC = () => {
                   className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
                     selectedContent === key
                       ? "bg-gray-950 text-white"
-                      : "hover:bg-gray-800 hover:text-white"
+                      : "hover:bg-gray-200 hover:text-black"
                   }`}
                 >
                   {contentData[key as keyof typeof contentData].title}

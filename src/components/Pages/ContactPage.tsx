@@ -38,9 +38,9 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col lg:flex-row py-20 justify-between bg-white min-h-screen">
+      <div className="flex flex-col lg:flex-row py-32 justify-between bg-white min-h-screen">
         {/* Left Section - Contact Form */}
-        <ScrollArea className="sm:w-[93%] md:w-[93%]  lg:w-2/3 h-[84vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-7 lg:ml-10 lg:mr-25 mb-10 lg:mb-0">
+        <ScrollArea className="w-[92%] sm:w-[96%]  lg:w-[66%] h-[77vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-4 lg:mr-25 mb-10 lg:mb-0">
           <div className="w-full text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl">
             <SectionWithOptions
               title="How Can We Help?"
@@ -61,7 +61,7 @@ const ContactPage: React.FC = () => {
         </ScrollArea>
 
         {/* Right Section (Two Divs Side by Side) */}
-        <div className="sm:w-[93%] md:w-[93%] lg:w-1/3 flex flex-col space-y-6 px-4 ">
+        <div className=" lg:w-[33%] flex flex-col space-y-6 px-4 ">
           <ContactInfoCard
             title="Ready to start something new?"
             description="Have a unique project in mind? Feel free to reach out!"
@@ -202,7 +202,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
           </div>
         </div>
       ) : (
-        <div className="lg:w-1/2 flex flex-col justify-start space-y-4">
+        <div className="lg:w-[50%] flex flex-col justify-start space-y-4">
           {options?.map((option) => (
             <button
               key={option}
