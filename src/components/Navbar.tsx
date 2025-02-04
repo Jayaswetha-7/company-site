@@ -9,8 +9,8 @@ import imageLogo from "../assets/LogoBanner.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-const [activeAboutTab, setActiveAboutTab] = useState("Overview");
-const [activeServiceTab, setActiveServiceTab] = useState("Web Development");
+  const [activeAboutTab, setActiveAboutTab] = useState("Overview");
+  const [activeServiceTab, setActiveServiceTab] = useState("Web Development");
 
   // Tab Data
   const tabs = [
@@ -94,13 +94,13 @@ const [activeServiceTab, setActiveServiceTab] = useState("Web Development");
       setOpenSheet(null);
     }, 10000); // Adjust delay (300ms works well)
   };
-useEffect(() => {
-  if (openSheet === "about") {
-    setActiveAboutTab("Our Line of buisness");
-  } else if (openSheet === "services") {
-    setActiveServiceTab("Web Development");
-  }
-}, [openSheet]);
+  useEffect(() => {
+    if (openSheet === "about") {
+      setActiveAboutTab("Our Line of buisness");
+    } else if (openSheet === "services") {
+      setActiveServiceTab("Web Development");
+    }
+  }, [openSheet]);
 
   return (
     <motion.nav
@@ -138,7 +138,7 @@ useEffect(() => {
                 About
               </div>
               <SheetContent className="">
-                <div className="wfull  flex h-[20vh] items-center px-4">
+                <div className="wfull  flex h-[24vh] items-center px-4">
                   {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {tabs.map((tab) => (
@@ -165,7 +165,7 @@ useEffect(() => {
                           <>
                             {tab.name === "Our Line of buisness" ? (
                               <div className="w-full h-full p-4">
-                                <h2 className="text-2xl font-semibold mb-6">
+                                <h2 className="text-2xl font-semibold mb-3">
                                   Our Core Offerings
                                 </h2>
                                 <div className="flex flex-wrap gap-6">
@@ -173,9 +173,9 @@ useEffect(() => {
                                     <Link
                                       key={item.title}
                                       to={item.link}
-                                      className="flex-1 min-w-[300px] p-4 border rounded-lg hover:bg-gray-50 transition-colors"
+                                      className="flex-1 min-w-[250px] justify-center items-center max-w-[280px] p-4 border rounded-lg hover:bg-gray-50 transition-colors"
                                     >
-                                      <div className="flex flex-col gap-3">
+                                      <div className="flex flex-col gap-3 justify-center">
                                         <h3 className="text-lg font-semibold">
                                           {item.title}
                                         </h3>
@@ -183,10 +183,10 @@ useEffect(() => {
                                           {item.description}
                                         </p>
                                         <div className="flex items-center gap-1 text-blue-600 mt-2">
-                                          <span className="text-sm">
+                                          <span className="text-sm flex-1">
                                             Explore Solutions
                                           </span>
-                                          <FaUpRightFromSquare className="w-4 h-4" />
+                                          <FaUpRightFromSquare className="w-4 h-4 flex-1" />
                                         </div>
                                       </div>
                                     </Link>
