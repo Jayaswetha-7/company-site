@@ -4,26 +4,25 @@ import Navbar from "../Navbar";
 import BreadcrumbWithCustomSeparator from "./BreadcrumbWithCustomSeparator";
 import { useLocation } from "react-router-dom";
 const Lineofbusiness: React.FC = () => {
-   const location = useLocation();
-   const sectionHash = location.hash.replace(
-     "#",
-     ""
-   ) as keyof typeof contentData;
-   const validSections = Object.keys(contentData);
+  const location = useLocation();
+  const sectionHash = location.hash.replace(
+    "#",
+    ""
+  ) as keyof typeof contentData;
+  const validSections = Object.keys(contentData);
   // const [selectedContent, setSelectedContent] =
   //   useState<keyof typeof contentData>("services");
- const [selectedContent, setSelectedContent] = useState<
-   keyof typeof contentData
-   >(validSections.includes(sectionHash) ? sectionHash : "services");
-  
- useEffect(() => {
-   const hash = location.hash.replace("#", "");
-   if (validSections.includes(hash)) {
-     setSelectedContent(hash as keyof typeof contentData);
-   }
- }, [location]);
-  
-  
+  const [selectedContent, setSelectedContent] = useState<
+    keyof typeof contentData
+  >(validSections.includes(sectionHash) ? sectionHash : "services");
+
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (validSections.includes(hash)) {
+      setSelectedContent(hash as keyof typeof contentData);
+    }
+  }, [location]);
+
   const handleSectionClick = (section: keyof typeof contentData) => {
     setSelectedContent(section);
     window.location.hash = `#${section}`;
@@ -53,7 +52,7 @@ const Lineofbusiness: React.FC = () => {
                     : "hover:bg-gray-200 hover:text-black"
                 }`}
               >
-                IBM System & Software Solution
+                System & Software Solution
               </div>
 
               {/* Network Solution */}
