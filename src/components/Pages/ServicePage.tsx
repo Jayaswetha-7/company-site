@@ -104,7 +104,8 @@ const ServicePage: React.FC = () => {
     <>
       <Navbar />
 
-      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white  ">
+     
+      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white overflow-hidden">
         <BreadcrumbWithCustomSeparator
           currentPage={contentData[selectedContent].title} // Pass the current page title
         />
