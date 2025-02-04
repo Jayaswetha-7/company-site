@@ -2,22 +2,15 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 import imageLogo from "../assets/LogoBanner.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  const [activeTab, setActiveTab] = useState("Overview");
+const [activeAboutTab, setActiveAboutTab] = useState("Overview");
+const [activeServiceTab, setActiveServiceTab] = useState("Web Development");
 
   // Tab Data
   const tabs = [
@@ -33,8 +26,34 @@ const Navbar = () => {
       content:
         "Taphubs is a passionate team of tech enthusiasts committed to making a difference in the digital world.Our focus is on creating lasting impact, fostering growth, and building strong partnerships with our clients to drive success together.",
     },
+    {
+      name: "Our Line of buisness",
+      items: [
+        {
+          title: "IBM System & Software Solution",
+          description:
+            "Enterprise-grade IBM solutions for modern infrastructure",
+          link: "/ibm-solutions",
+        },
+        {
+          title: "Business Technology Solutions",
+          description: "Transformative tech solutions for business growth",
+          link: "/business-tech",
+        },
+        {
+          title: "Cyber Security Solutions",
+          description: "Comprehensive protection for digital assets",
+          link: "/cybersecurity",
+        },
+        {
+          title: "Infrastructure Networking Technology",
+          description: "Next-gen networking infrastructure solutions",
+          link: "/networking",
+        },
+      ],
+    },
   ];
-
+  // service data
   const servicedata = [
     {
       title: "Web Development",
@@ -61,6 +80,7 @@ const Navbar = () => {
         "Leveraging AI to detect, prevent, and respond to cyber threats in real time, enhancing security and risk management with smart automation, predictive analytics, continuous monitoring, and advanced algorithms for maximum protection against attacks.",
     },
   ];
+
   const [openSheet, setOpenSheet] = useState<"about" | "services" | null>(null);
   let closeTimeout: NodeJS.Timeout;
 
@@ -74,6 +94,13 @@ const Navbar = () => {
       setOpenSheet(null);
     }, 10000); // Adjust delay (300ms works well)
   };
+useEffect(() => {
+  if (openSheet === "about") {
+    setActiveAboutTab("Our Line of buisness");
+  } else if (openSheet === "services") {
+    setActiveServiceTab("Web Development");
+  }
+}, [openSheet]);
 
   return (
     <motion.nav
@@ -92,11 +119,13 @@ const Navbar = () => {
           >
             <img src={imageLogo} alt="" className="w-[100px] h-[50px]" />
           </motion.div>
-          {/* Home */}
+
           <div className="hidden md:flex space-x-8">
+            {/* Home */}
             <Link to={"/"}>
               <h1>Home</h1>
             </Link>
+
             {/* About */}
             <Sheet
               open={openSheet === "about"}
@@ -110,14 +139,15 @@ const Navbar = () => {
               </div>
               <SheetContent className="">
                 <div className="wfull  flex h-[20vh] items-center px-4">
+                  {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {tabs.map((tab) => (
                       <button
                         key={tab.name}
-                        onClick={() => setActiveTab(tab.name)}
+                        onClick={() => setActiveAboutTab(tab.name)}
                         className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
               ${
-                activeTab === tab.name
+                activeAboutTab === tab.name
                   ? "bg-gray-500/40"
                   : " hover:bg-blue-300/30"
               }`}
@@ -126,27 +156,63 @@ const Navbar = () => {
                       </button>
                     ))}
                   </div>
+
+                  {/* Right Side */}
                   <div className="w-full ">
                     {tabs.map(
                       (tab) =>
-                        activeTab === tab.name && (
-                          <div
-                            key={tab.name}
-                            className="flex flex-col h-full gap-4 text-black justify-around items-start px-5"
-                          >
-                            <h2 className="text-2xl font-semibold">
-                              {tab.title}
-                            </h2>
-                            <p className="mt-2 text-black/60 text-lg">
-                              {tab.content}
-                            </p>
-                            <Link to={"/about"}>
-                              <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-black hover:scale-105  hover:underline">
-                                Discover More
-                                <FaUpRightFromSquare className="  inline-block" />
-                              </button>
-                            </Link>
-                          </div>
+                        activeAboutTab === tab.name && (
+                          <>
+                            {tab.name === "Our Line of buisness" ? (
+                              <div className="w-full h-full p-4">
+                                <h2 className="text-2xl font-semibold mb-6">
+                                  Our Core Offerings
+                                </h2>
+                                <div className="flex flex-wrap gap-6">
+                                  {tab.items?.map((item) => (
+                                    <Link
+                                      key={item.title}
+                                      to={item.link}
+                                      className="flex-1 min-w-[300px] p-4 border rounded-lg hover:bg-gray-50 transition-colors"
+                                    >
+                                      <div className="flex flex-col gap-3">
+                                        <h3 className="text-lg font-semibold">
+                                          {item.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm">
+                                          {item.description}
+                                        </p>
+                                        <div className="flex items-center gap-1 text-blue-600 mt-2">
+                                          <span className="text-sm">
+                                            Explore Solutions
+                                          </span>
+                                          <FaUpRightFromSquare className="w-4 h-4" />
+                                        </div>
+                                      </div>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            ) : (
+                              <div
+                                key={tab.name}
+                                className="flex flex-col h-full gap-4 text-black justify-around items-start px-5"
+                              >
+                                <h2 className="text-2xl font-semibold">
+                                  {tab.title}
+                                </h2>
+                                <p className="mt-2 text-black/60 text-lg">
+                                  {tab.content}
+                                </p>
+                                <Link to={"/about"}>
+                                  <button className=" border  flex gap-2 items-center  w-fit rounded-full px-4 p-2 text-black hover:scale-105  hover:underline">
+                                    Discover More
+                                    <FaUpRightFromSquare className="  inline-block" />
+                                  </button>
+                                </Link>
+                              </div>
+                            )}
+                          </>
                         )
                     )}
                   </div>
@@ -173,10 +239,10 @@ const Navbar = () => {
                     {servicedata.map((tab) => (
                       <button
                         key={tab.title}
-                        onClick={() => setActiveTab(tab.title)}
+                        onClick={() => setActiveServiceTab(tab.title)}
                         className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
               ${
-                activeTab === tab.title
+                activeServiceTab === tab.title
                   ? "bg-black/10"
                   : " hover:bg-gray-500/40"
               }`}
@@ -188,7 +254,7 @@ const Navbar = () => {
                   <div className="w-[80%] ">
                     {servicedata.map(
                       (tab) =>
-                        activeTab === tab.title && (
+                        activeServiceTab === tab.title && (
                           <div
                             key={tab.title}
                             className="flex flex-col text-black h-full justify-around items-start px-5"
@@ -212,15 +278,19 @@ const Navbar = () => {
                 </div>
               </SheetContent>
             </Sheet>
+
+            {/* Contact Section */}
             <Link to={"/contact"}>
-              {" "}
               <div>Contact</div>
             </Link>
+
+            {/* Carrer Section */}
             <Link to={"/career"}>
               <div>Careers</div>
             </Link>
           </div>
 
+          {/* Mobile Nav Closing and Opening Button */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
@@ -231,6 +301,7 @@ const Navbar = () => {
           </motion.button>
         </div>
 
+        {/* Mobile Nav bar Section */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -273,14 +344,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//  <motion.a
-//    key={item}
-//    href={`#${item.toLowerCase()}`}
-//    className={` hover:text-purple-600 transition-colors ${scrolled ? "" : ""}`}
-//    whileHover={{ scale: 1.05 }}
-//    whileTap={{ scale: 0.95 }}
-//    onClick={() => setIsOpen(false)}
-//  >
-//    {item}
-//  </motion.a>;
