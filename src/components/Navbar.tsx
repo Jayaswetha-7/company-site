@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link, Links } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";

@@ -27,7 +27,7 @@ function LandingCard() {
         className="min-h-screen max-h-screen min-w-screen   content-center flex items-center justify-center overflow-hidden
        rounded-lg"
       >
-        <CarouselContent className="sm:h-[90vh] h-[85vh] mx-auto sm:mt-14 mt-[5vh]  rounded-lg">
+        <CarouselContent className="sm:h-[90vh] h-[85vh] mx-auto sm:mt-14 mt-[5vh]  rounded-lg ">
           <CarouselItem>
             <Hero />
           </CarouselItem>
