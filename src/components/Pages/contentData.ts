@@ -1,8 +1,8 @@
 // contentData.ts
-import webDevelopmentImage from "../../assets/web.jpg";
-import networkSolutionImage from "../../assets/network.jpg";
-import aiIntegrationImage from "../../assets/ai.jpg";
-import cybersecurityImage from "../../assets/cyber.jpg";
+import webDevelopmentImage from "../../assets/LOBibm.jpg";
+import networkSolutionImage from "../../assets/LOBbts.jpg";
+import aiIntegrationImage from "../../assets/LOBCyber.jpg";
+import cybersecurityImage from "../../assets/LOBNetwork.jpg";
 
 
 interface Heading {

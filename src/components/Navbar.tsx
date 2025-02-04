@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
@@ -117,7 +117,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <img src={imageLogo} alt="" className="w-[100px] h-[50px]" />
+            <Link to={"/"}>
+              <img src={imageLogo} alt="" className="w-[100px] h-[50px]" />
+            </Link>
           </motion.div>
 
           <div className="hidden md:flex space-x-8">
@@ -321,11 +323,7 @@ const Navbar = () => {
                       className="  text-center  border-b  w-[10vw] mx-auto   "
                     >
                       <Link
-                        to={
-                         
-                             `/${item.toLowerCase()}`
-                            
-                        }
+                        to={`/${item.toLowerCase()}`}
                         className="  text-center font-semibold font-serif 
                       "
                       >
