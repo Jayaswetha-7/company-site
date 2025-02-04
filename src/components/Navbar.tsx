@@ -311,7 +311,7 @@ const Navbar = () => {
               className="md:hidden overflow-hidden"
             >
               <div className="flex flex-col space-y-4 pb-4">
-                {["Home", "About", "Services", "Careers", "Contact"].map(
+                {["Home", "About", "Services", "Career", "Contact"].map(
                   (item) => (
                     <motion.div
                       key={item}
@@ -322,9 +322,9 @@ const Navbar = () => {
                     >
                       <Link
                         to={
-                          ["Home", "About", "Services"].includes(item)
-                            ? `/${item.toLowerCase()}`
-                            : `/#${item.toLowerCase()}`
+                         
+                             `/${item.toLowerCase()}`
+                            
                         }
                         className="  text-center font-semibold font-serif 
                       "
