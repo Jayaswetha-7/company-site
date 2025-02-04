@@ -27,28 +27,28 @@ const Navbar = () => {
         "Taphubs is a passionate team of tech enthusiasts committed to making a difference in the digital world.Our focus is on creating lasting impact, fostering growth, and building strong partnerships with our clients to drive success together.",
     },
     {
-      name: "Our Line of buisness",
+      name: "Our Line of Business",
       items: [
         {
           title: "IBM System & Software Solution",
           description:
             "Enterprise-grade IBM solutions for modern infrastructure",
-          link: "/ibm-solutions",
+          link: "/about/lineofbusiness#services", // Updated link
         },
         {
           title: "Business Technology Solutions",
           description: "Transformative tech solutions for business growth",
-          link: "/business-tech",
+          link: "/about/lineofbusiness#solutions", // Updated link
         },
         {
           title: "Cyber Security Solutions",
           description: "Comprehensive protection for digital assets",
-          link: "/cybersecurity",
+          link: "/about/lineofbusiness#security", // Updated link
         },
         {
           title: "Infrastructure Networking Technology",
           description: "Next-gen networking infrastructure solutions",
-          link: "/networking",
+          link: "/about/lineofbusiness#network", // Updated link
         },
       ],
     },
@@ -96,7 +96,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     if (openSheet === "about") {
-      setActiveAboutTab("Our Line of buisness");
+      setActiveAboutTab("Our Line of Business");
     } else if (openSheet === "services") {
       setActiveServiceTab("Web Development");
     }
@@ -163,7 +163,7 @@ const Navbar = () => {
                       (tab) =>
                         activeAboutTab === tab.name && (
                           <>
-                            {tab.name === "Our Line of buisness" ? (
+                            {tab.name === "Our Line of Business" ? (
                               <div className="w-full h-full p-4">
                                 <h2 className="text-2xl font-semibold mb-3">
                                   Our Core Offerings

@@ -1,14 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { contentData } from "../Pages/contentData";
 import Navbar from "../Navbar";
 import BreadcrumbWithCustomSeparator from "./BreadcrumbWithCustomSeparator";
-
+import { useLocation } from "react-router-dom";
 const Lineofbusiness: React.FC = () => {
-  const [selectedContent, setSelectedContent] =
-    useState<keyof typeof contentData>("services");
-
+   const location = useLocation();
+   const sectionHash = location.hash.replace(
+     "#",
+     ""
+   ) as keyof typeof contentData;
+   const validSections = Object.keys(contentData);
+  // const [selectedContent, setSelectedContent] =
+  //   useState<keyof typeof contentData>("services");
+ const [selectedContent, setSelectedContent] = useState<
+   keyof typeof contentData
+   >(validSections.includes(sectionHash) ? sectionHash : "services");
+  
+ useEffect(() => {
+   const hash = location.hash.replace("#", "");
+   if (validSections.includes(hash)) {
+     setSelectedContent(hash as keyof typeof contentData);
+   }
+ }, [location]);
+  
+  
   const handleSectionClick = (section: keyof typeof contentData) => {
     setSelectedContent(section);
+    window.location.hash = `#${section}`;
   };
 
   return (
