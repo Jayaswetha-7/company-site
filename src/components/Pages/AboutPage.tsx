@@ -14,7 +14,7 @@ function AboutPage() {
           {/* <img className="w-full opacity-80 blur-sm" src={image} alt="" /> */}
         </div>
         <div className="absolute inset-0 flex flex-col  sm:text-white text-black/50 text-lg font-bold w-[75%] mx-auto">
-          <h1 className="sm:mt-[10%] mt-[20%] sm:p-2 p-1 sm:text-xl text-[60%]">
+          <h1 className="sm:mt-[10%] mt-[30%] sm:p-2 p-1 sm:text-xl text-[80%]">
             Who we are{" "}
           </h1>
           <div className="sm:bg-white/30 bg-black h-[0.1%] w-full mx-auto  "></div>

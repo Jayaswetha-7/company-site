@@ -8,7 +8,7 @@ function SubHero() {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:ms-[20vw] sm:mb-[10vw]">
-        <h1 className="sm:text-[80px] text-[30px] text-gray-900/50 font-bold italic font-mono  ">
+        <h1 className="sm:text-[80px] text-[30px] text-[#3b3a39] font-bold  font-mono  ">
           All your bussiness Solutions
         </h1>
         <Link

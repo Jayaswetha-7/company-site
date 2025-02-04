@@ -93,7 +93,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to={"/services#CyberSecurity"}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-400 hover:text-white transition-colors "
                   >
                     Cyber Security
                   </Link>
@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} taphubs. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Taphubs. All rights reserved.</p>
         </div>
       </div>
     </footer>
