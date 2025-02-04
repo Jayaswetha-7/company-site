@@ -14,12 +14,14 @@ const Lineofbusiness: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-gray-400">
-        <BreadcrumbWithCustomSeparator />
+      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white">
+        <BreadcrumbWithCustomSeparator
+          currentPage={contentData[selectedContent].title}
+        />
 
-        <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[1%]">
+        <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[3%]">
           {/* Left Side Menu */}
-          <div className="w-full lg:w-1/4 p-4 text-white flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-0">
+          <div className="w-full lg:w-1/4 p-4 text-black flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-0">
             <h3 className="text-xl font-bold mb-4 text-center lg:text-left">
               Line of Business
             </h3>
@@ -27,10 +29,10 @@ const Lineofbusiness: React.FC = () => {
               {/* Web Development */}
               <div
                 onClick={() => handleSectionClick("services")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
                   selectedContent === "services"
-                    ? "bg-gray-500 text-white"
-                    : "hover:bg-gray-500 hover:text-white"
+                    ? "bg-gray-950 text-white"
+                    : "hover:bg-gray-200 hover:text-black"
                 }`}
               >
                 IBM System & Software Solution
@@ -39,10 +41,10 @@ const Lineofbusiness: React.FC = () => {
               {/* Network Solution */}
               <div
                 onClick={() => handleSectionClick("solutions")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
                   selectedContent === "solutions"
-                    ? "bg-gray-500 text-white"
-                    : "hover:bg-gray-500 hover:text-white"
+                    ? "bg-gray-950 text-white"
+                    : "hover:bg-gray-200 hover:text-black"
                 }`}
               >
                 Business Technology Solutions
@@ -51,10 +53,10 @@ const Lineofbusiness: React.FC = () => {
               {/* AI Integration */}
               <div
                 onClick={() => handleSectionClick("security")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
                   selectedContent === "security"
-                    ? "bg-gray-500 text-white"
-                    : "hover:bg-gray-500 hover:text-white"
+                    ? "bg-gray-950 text-white"
+                    : "hover:bg-gray-200 hover:text-black"
                 }`}
               >
                 Cyber Security Solutions
@@ -63,10 +65,10 @@ const Lineofbusiness: React.FC = () => {
               {/* Cybersecurity */}
               <div
                 onClick={() => handleSectionClick("network")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-white transition-all duration-300 ease-in-out ${
+                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
                   selectedContent === "network"
-                    ? "bg-gray-500 text-white"
-                    : "hover:bg-gray-500 hover:text-white"
+                    ? "bg-gray-950 text-white"
+                    : "hover:bg-gray-200 hover:text-black"
                 }`}
               >
                 Infrastructure Networking Technology
@@ -76,7 +78,7 @@ const Lineofbusiness: React.FC = () => {
 
           {/* Right Side Content */}
           <div className="w-full lg:w-3/5 p-10 overflow-auto h-[50%] mb-10">
-            <h2 className="text-3xl font-bold mb-4 text-white">
+            <h2 className="text-3xl font-bold mb-4 text-black">
               {contentData[selectedContent].title}
             </h2>
 
@@ -90,15 +92,15 @@ const Lineofbusiness: React.FC = () => {
             </div>
 
             {/* Additional Paragraphs */}
-            <p className="mt-6 text-lg mb-5 text-white">
+            <p className="mt-6 text-lg mb-5 text-black">
               {contentData[selectedContent].additionalParagraph}
             </p>
 
-            <p className="mt-6 text-lg mb-5 text-white">
+            <p className="mt-6 text-lg mb-5 text-black">
               {contentData[selectedContent].extraContent}
             </p>
 
-            <ul className="list-disc pl-6 mt-7 text-white">
+            <ul className="list-disc pl-6 mt-7 text-black">
               {contentData[selectedContent].details.map((item, index) => (
                 <li key={index} className="mb-2">
                   {item}
@@ -110,10 +112,10 @@ const Lineofbusiness: React.FC = () => {
             {contentData[selectedContent].additionalHeadings.map(
               (section, index) => (
                 <div key={index}>
-                  <h4 className="mt-6 text-lg mb-3 text-white font-bold">
+                  <h4 className="mt-6 text-lg mb-3 text-black font-bold">
                     {section.heading}
                   </h4>
-                  <p className="mt-1 text-lg mb-3 text-white">
+                  <p className="mt-1 text-lg mb-3 text-black">
                     {section.paragraph}
                   </p>
                 </div>

@@ -27,16 +27,17 @@ interface Heading {
 
 export const contentData: Record<string, ContentData> = {
   services: {
-    title: "System & Software Solutions",
+    title: "IBM System & Software Solution",
     details: [
-      "Custom Web Development (Responsive, Dynamic, and Scalable)",
-      "E-commerce Solutions (Online Store Setup & Management)",
-      "Content Management Systems (WordPress, Joomla, etc.)",
-      "Web Application Development (Custom Web Apps)",
-      "Website Maintenance & Support Services",
+      "IBM Cloud and Cognitive Software Solutions",
+      "IBM Data and Artificial Intelligence (AI)",
+      "IBM Watson Internet of Things (WIoT)",
+      "IBM Watson Customer Engagement",
+      "Cloud Services",
       "UI/UX Design and Prototyping",
-      "Mobile-Friendly Design and Development",
-      "Website Hosting and Server Management Services",
+      "E-Business and Portal Services",
+      "Data Protection and Disaster Recovery",
+      "Cloud, Automation and DevOps",
     ],
     image: webDevelopmentImage,
     additionalParagraph:
@@ -302,23 +303,7 @@ export const contentData: Record<string, ContentData> = {
       "With IBM Blockchain, Taphubs helps businesses unlock the full potential of blockchain technology, delivering secure, scalable, and trusted solutions for a wide range of business needs.",
   },
 
-  {
-    heading: "Cloud Services with Taphubs",
-    paragraph:
-      "Taphubs provides expert guidance and managed services to help businesses transition to the cloud, offering customized solutions that add value to your business.",
-  },
 
-  {
-    heading: "E-Business and Portal Services",
-    paragraph:
-      "We offer end-to-end services for application architecture, performance tuning, and portal development. Our team has delivered award-winning portals for clients such as the Shoura Council and Saudi e-Gov.",
-  },
-
-  {
-    heading: "Taphubs Chatbot Solutions",
-    paragraph:
-      "Enhance your customer experience with Taphubs' AI-powered chatbot solutions, built on IBM’s Watson Assistant. These bots streamline communication, improve efficiency, and reduce operational costs.",
-  },
 ],
 
   },
