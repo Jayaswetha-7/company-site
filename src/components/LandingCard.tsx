@@ -9,6 +9,7 @@ import Hero from "./Hero";
 import WhyNeedUs from "./WhyNeedUs";
 import Autoplay from "embla-carousel-autoplay";
 import SubHero from "./SubHero";
+import CookieConsent from "./CookieConsent";
 
 function LandingCard() {
   // Initialize autoplay plugin with options
@@ -18,26 +19,29 @@ function LandingCard() {
   });
 
   return (
-    <Carousel
-      plugins={[autoplayPlugin]}
-      opts={{ loop: true }} // Enable infinite loop
-      className="min-h-screen max-h-screen min-w-screen   content-center flex items-center justify-center overflow-hidden
+    <>
+      <CookieConsent></CookieConsent>
+      <Carousel
+        plugins={[autoplayPlugin]}
+        opts={{ loop: true }} // Enable infinite loop
+        className="min-h-screen max-h-screen min-w-screen   content-center flex items-center justify-center overflow-hidden
        rounded-lg"
-    >
-      <CarouselContent className="sm:h-[90vh] h-[85vh] mx-auto sm:mt-14 mt-[5vh]  rounded-lg">
-        <CarouselItem>
-          <Hero />
-        </CarouselItem>
-        <CarouselItem>
-          <WhyNeedUs />
-        </CarouselItem>
-        <CarouselItem>
-          <SubHero />
-        </CarouselItem>
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+      >
+        <CarouselContent className="sm:h-[90vh] h-[85vh] mx-auto sm:mt-14 mt-[5vh]  rounded-lg">
+          <CarouselItem>
+            <Hero />
+          </CarouselItem>
+          <CarouselItem>
+            <WhyNeedUs />
+          </CarouselItem>
+          <CarouselItem>
+            <SubHero />
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+    </>
   );
 }
 

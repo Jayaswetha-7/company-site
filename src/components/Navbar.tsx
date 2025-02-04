@@ -133,12 +133,13 @@ const Navbar = () => {
               open={openSheet === "about"}
               onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
             >
-              <div
+              <Link to={"/about"}> <div
                 onMouseEnter={() => handleMouseEnter("about")}
                 onMouseLeave={handleMouseLeave}
               >
                 About
-              </div>
+              </div></Link>
+             
               <SheetContent className="">
                 <div className="wfull  flex h-[24vh] items-center px-4">
                   {/* Left Side */}
@@ -229,12 +230,15 @@ const Navbar = () => {
                 setOpenSheet(isOpen ? "services" : null)
               }
             >
-              <div
+              <Link to={"/services"}>
+                <div
                 onMouseEnter={() => handleMouseEnter("services")}
                 onMouseLeave={handleMouseLeave}
               >
                 Services
               </div>
+              </Link>
+             
               <SheetContent className="">
                 <div className="wfull flex px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
