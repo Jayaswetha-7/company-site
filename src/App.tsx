@@ -4,10 +4,7 @@ import Loader from "./components/Loader";
 import About from "./components/About";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
-import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import Service from "./components/Service";
-import WhyNeedUs from "./components/WhyNeedUs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
@@ -16,7 +13,7 @@ import CarrerPage from "./components/Pages/CarrerPage";
 import Lineofbusiness from "./components/Pages/Lineofbusiness";
 import NewService from "./components/NewService";
 import LandingCard from "./components/LandingCard";
-
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -32,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <Analytics />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}
