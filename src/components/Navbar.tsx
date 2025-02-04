@@ -133,13 +133,16 @@ const Navbar = () => {
               open={openSheet === "about"}
               onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
             >
-              <Link to={"/about"}> <div
-                onMouseEnter={() => handleMouseEnter("about")}
-                onMouseLeave={handleMouseLeave}
-              >
-                About
-              </div></Link>
-             
+              <Link to={"/about"}>
+                {" "}
+                <div
+                  onMouseEnter={() => handleMouseEnter("about")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  About
+                </div>
+              </Link>
+
               <SheetContent className="">
                 <div className="wfull  flex h-[24vh] items-center px-4">
                   {/* Left Side */}
@@ -232,13 +235,13 @@ const Navbar = () => {
             >
               <Link to={"/services"}>
                 <div
-                onMouseEnter={() => handleMouseEnter("services")}
-                onMouseLeave={handleMouseLeave}
-              >
-                Services
-              </div>
+                  onMouseEnter={() => handleMouseEnter("services")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  Services
+                </div>
               </Link>
-             
+
               <SheetContent className="">
                 <div className="wfull flex px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
@@ -327,7 +330,7 @@ const Navbar = () => {
                       className="  text-center  border-b  w-[10vw] mx-auto   "
                     >
                       <Link
-                        to={`/${item.toLowerCase()}`}
+                        to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                         className="  text-center font-semibold font-serif 
                       "
                       >
