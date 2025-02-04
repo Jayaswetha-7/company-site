@@ -41,7 +41,7 @@ const WhyNeedUs = () => {
   return (
     <section
       id="service"
-      className=" bg-gray-900  sm:h-[100%] h-[95%] sm:p-0 rounded-2xl content-center "
+      className=" bg-gray-900 select-none sm:h-[100%] h-[95%] sm:p-0 rounded-2xl content-center "
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

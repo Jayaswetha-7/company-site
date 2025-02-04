@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-20 pb-32 sm:p-0 sm:h-[100%] h-[95%] content-center bg-[url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGhqaDhuZzdpaHlsNjFlZGtkemU3aThndDI4cXZ1dGZodHBtdmU4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7b8jdNUoFBdcoILjjv/giphy.gif')] bg-cover bg-center  overflow-hidden  rounded-2xl"
+      className="relative pt-20 pb-32 select-none sm:p-0 sm:h-[100%] h-[95%] content-center bg-[url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGhqaDhuZzdpaHlsNjFlZGtkemU3aThndDI4cXZ1dGZodHBtdmU4cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7b8jdNUoFBdcoILjjv/giphy.gif')] bg-cover bg-center  overflow-hidden  rounded-2xl"
     >
       <motion.div
         initial={{ opacity: 0 }}

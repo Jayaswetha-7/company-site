@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SubHero() {
   return (
     <section
-      className=" bg-cover bg-center  sm:h-[100%] h-[95%] sm:p-0 rounded-2xl content-center "
+      className=" bg-cover bg-center select-none sm:h-[100%] h-[95%] sm:p-0 rounded-2xl content-center "
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:ms-[20vw] sm:mb-[10vw]">
