@@ -3,14 +3,14 @@ import FlowingMenu from "./FlowingMenu";
 const NewService = () => {
   const demoItems = [
     {
-      link: "/services",
+      link: "/services#development",
       text: "Web Development",
       image:
         "https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?t=st=1738576784~exp=1738580384~hmac=16aef175f8bcae5b1577ee92a623914bec730d8b7e8ca48bd525359226dc0520&w=1380",
     },
 
     {
-      link: "/services",
+      link: "/services#networking",
 
       text: "Network Solutions",
       image:
@@ -18,7 +18,7 @@ const NewService = () => {
     },
 
     {
-      link: "/services",
+      link: "/services#ArtificialIntelligence",
 
       text: "AI Integration",
       image:
@@ -26,7 +26,7 @@ const NewService = () => {
     },
 
     {
-      link: "/services",
+      link: "/services#CyberSecurity",
 
       text: "Cybersecurity",
       image:

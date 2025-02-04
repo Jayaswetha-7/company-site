@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar";
 import BreadcrumbWithCustomSeparator from "./BreadcrumbWithCustomSeparator";
 import webDevelopmentImage from "../../assets/web.jpg";
@@ -7,7 +8,7 @@ import aiIntegrationImage from "../../assets/ai.jpg";
 import cybersecurityImage from "../../assets/cyber.jpg";
 
 const contentData = {
-  services: {
+  development: {
     title: "Web Development",
     description: "",
     details: [
@@ -24,7 +25,7 @@ const contentData = {
     additionalParagraph:
       "At Taphubs, we create custom web solutions tailored to your business needs, optimizing performance and reducing downtime. Whether building from scratch or improving an existing site, we ensure a solution that fits your requirements.",
   },
-  solutions: {
+  networking: {
     title: "Networking & Security",
     description: "",
     details: [
@@ -41,7 +42,7 @@ const contentData = {
     additionalParagraph:
       "Our promise of network solutions means more than just a typical building of our customers network infrastructure; we are giving them the peace of mind through our guarantee to provide of business continuity, security and data durability. Remaining constantly connected has become an inevitable fact of our lives and businesses are no different. As businesses around world continue to move and to grow we acknowledge and provide customers with that very ability seamlessly through our integrated solutions.",
   },
-  cloudServices: {
+  ArtificialIntelligence: {
     title: "AI Integration",
     description:
       "We integrate advanced AI solutions to streamline your processes and enhance decision-making. Our custom AI applications help your business stay innovative and efficient, driving growth and improving user experiences.",
@@ -55,7 +56,7 @@ const contentData = {
     additionalParagraph:
       "Our AI integration services help businesses leverage cutting-edge technologies to improve processes and decision-making. By seamlessly integrating AI with cloud platforms (IaaS, PaaS, SaaS), we provide scalable infrastructure that supports growth and ensures business continuity. From automation to data insights, our solutions are designed to drive efficiency and foster innovation.",
   },
-  integration: {
+  CyberSecurity: {
     title: "Cyber Security",
     description:
       "Our cybersecurity solutions protect your business from digital threats with advanced data protection and risk management. We offer proactive monitoring and tailored security measures to ensure your systems remain secure. Stay safe, compliant, and resilient in the digital world.",
@@ -74,12 +75,30 @@ const contentData = {
 };
 
 const ServicePage: React.FC = () => {
-  const [selectedContent, setSelectedContent] =
-    useState<keyof typeof contentData>("services");
+  const location = useLocation();
+  const sectionHash = location.hash.replace(
+    "#",
+    ""
+  ) as keyof typeof contentData;
+  const validSections = Object.keys(contentData);
 
-  const handleSectionClick = (section: keyof typeof contentData) => {
-    setSelectedContent(section);
-  };
+  // Set default section based on URL hash
+  const [selectedContent, setSelectedContent] = useState<
+    keyof typeof contentData
+  >(validSections.includes(sectionHash) ? sectionHash : "development");
+
+  // Sync with hash changes
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+    if (validSections.includes(hash)) {
+      setSelectedContent(hash as keyof typeof contentData);
+    }
+  }, [location]);
+
+ const handleSectionClick = (section: keyof typeof contentData) => {
+   setSelectedContent(section);
+   window.location.hash = `#${section}`; // Update URL hash
+ };
 
   return (
     <>
