@@ -39,9 +39,6 @@ function App() {
               <>
                 <Navbar />
                 <LandingCard />
-                {/* <Hero />
-                <WhyNeedUs /> */}
-                {/* <Service /> */}
                 <About />
                 <NewService />
                 <Careers />
