@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/LogoBanner.png";
 
 const Footer = () => {
@@ -21,36 +22,36 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="#home"
+                  <Link
+                    to={"/"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#about"
+                  <Link
+                    to={"/about"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#services"
+                  <Link
+                    to={"/services"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#careers"
+                  <Link
+                    to={"/career"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Careers
-                  </a>
+                    Career
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -58,36 +59,36 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Services</h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="#services"
+                  <Link
+                    to={"/services#development"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Web Development
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#services"
+                  <Link
+                    to={"/services#networking"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Networking
-                  </a>
+                    Network & Security
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#services"
+                  <Link
+                    to={"/services#ArtificialIntelligence"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    AI Solutions
-                  </a>
+                    AI Integration
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#services"
+                  <Link
+                    to={"/services#CyberSecurity"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    Cybersecurity
-                  </a>
+                    Cyber Security
+                  </Link>
                 </li>
               </ul>
             </div>
