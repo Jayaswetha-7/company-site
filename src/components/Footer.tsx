@@ -1,4 +1,4 @@
-import { Waves } from "lucide-react";
+import logo from "../assets/LogoBanner.png";
 
 const Footer = () => {
   return (
@@ -7,8 +7,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <div className="flex items-center">
-              <Waves className="h-8 w-8 text-blue-400" />
-              <span className="ml-2 text-xl font-bold">taphubs</span>
+              <span className="ml-2 text-xl font-bold">
+                <img className="w-[20vh]" src={logo} alt="" />
+              </span>
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
               Empowering businesses with innovative technology solutions for a
