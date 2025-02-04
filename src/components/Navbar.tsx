@@ -107,7 +107,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={
-        "fixed w-full z-50 transition-all duration-300 bg-white/90 text-black backdrop-blur-sm shadow-lg"
+        "fixed w-full z-50 transition-all duration-300 bg-white text-black  shadow-lg"
       }
     >
       <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
