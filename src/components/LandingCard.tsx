@@ -8,11 +8,12 @@ import {
 import Hero from "./Hero";
 import WhyNeedUs from "./WhyNeedUs";
 import Autoplay from "embla-carousel-autoplay";
+import SubHero from "./SubHero";
 
 function LandingCard() {
   // Initialize autoplay plugin with options
   const autoplayPlugin = Autoplay({
-    delay: 4000, // 3 seconds between slides
+    delay: 3000, // 3 seconds between slides
     stopOnInteraction: false, // Continue autoplay after user interaction
   });
 
@@ -29,6 +30,9 @@ function LandingCard() {
         </CarouselItem>
         <CarouselItem>
           <WhyNeedUs />
+        </CarouselItem>
+        <CarouselItem>
+          <SubHero />
         </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
