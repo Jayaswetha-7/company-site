@@ -16,12 +16,12 @@ const Wcucomp = ({ image, header, desc }: wcucompProps) => {
         src={image}
         width={"150px"}
         height={"150px"}
-        className=" mx-auto sm:w-[150px] w-[80px]"
+        className=" mx-auto sm:w-[150px] w-[80px] h-[40px] md:h-[100px] lg:h-[150px]"
       />
       <motion.h1 className=" text-[2vh]  text-white text-center group-hover:text-green-400  transition-all duration-300">
         {header}
       </motion.h1>
-      <motion.p className=" group-hover:text-green-200  transition-all duration-300 text-center text-gray-400 sm:text-sm text-[50%] w-full">
+      <motion.p className=" group-hover:text-green-200  transition-all duration-300 text-center text-gray-400  md:text-sm text-[50%] w-full">
         {desc}
       </motion.p>
     </motion.div>
