@@ -30,13 +30,12 @@ const Navbar = () => {
       name: "Our Line of Business",
       items: [
         {
-          title: "IBM System & Software Solution",
-          description:
-            "Enterprise-grade IBM solutions for modern infrastructure",
+          title: "Digital Transformation",
+          description: "Enterprise-grade  solutions for modern infrastructure",
           link: "/about/lineofbusiness#services", // Updated link
         },
         {
-          title: "Business Technology Solutions",
+          title: "Intelligent Business Solutions",
           description: "Transformative tech solutions for business growth",
           link: "/about/lineofbusiness#solutions", // Updated link
         },
@@ -46,7 +45,7 @@ const Navbar = () => {
           link: "/about/lineofbusiness#security", // Updated link
         },
         {
-          title: "Infrastructure Networking Technology",
+          title: "Network & Infrastructure",
           description: "Next-gen networking infrastructure solutions",
           link: "/about/lineofbusiness#network", // Updated link
         },

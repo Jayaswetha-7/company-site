@@ -4,30 +4,26 @@ import networkSolutionImage from "../../assets/LOBbts.jpg";
 import aiIntegrationImage from "../../assets/LOBCyber.jpg";
 import cybersecurityImage from "../../assets/LOBNetwork.jpg";
 
-
 interface Heading {
-    heading: string;
-    paragraph: string;
-  
-  }
+  heading: string;
+  paragraph: string;
+}
 
- interface ContentData {
-    title: string;
-    description?: string;
-    details: string[];
-    image: string;
-    additionalParagraph: string;
-    extraContent: string;
-    newHeading?: string;
-    newParagraph?: string;
-    additionalHeadings: Heading[];
-    
-  }
-
+interface ContentData {
+  title: string;
+  description?: string;
+  details: string[];
+  image: string;
+  additionalParagraph: string;
+  extraContent: string;
+  newHeading?: string;
+  newParagraph?: string;
+  additionalHeadings: Heading[];
+}
 
 export const contentData: Record<string, ContentData> = {
   services: {
-    title: "System & Software Solution",
+    title: "Digital Transformation",
     details: [
       "Cloud and Cognitive Software Solutions",
       "Data and Artificial Intelligence (AI)",
@@ -53,7 +49,7 @@ export const contentData: Record<string, ContentData> = {
     additionalHeadings: [
       {
         heading: "Multi-cloud Solutions",
-        paragraph: 
+        paragraph:
           "Our Power Systems are specifically designed to handle large-scale data influxes and the most complex workloads, ensuring that your business data stays secure across various locations.",
       },
 
@@ -178,7 +174,8 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Streamline Your Data Management with Software Defined Storage (SDS)",
+        heading:
+          "Streamline Your Data Management with Software Defined Storage (SDS)",
         paragraph:
           "With Taphubs SDS, you can improve data management, protection, and storage efficiency, leveraging Cloud Object Storage to offer flexible access and scalability.",
       },
@@ -305,212 +302,222 @@ export const contentData: Record<string, ContentData> = {
     ],
   },
 
+  solutions: {
+    title: "Intelligent Business Solutions",
+    details: [
+      "Enterprise Resources Planning",
+      "Customer Resources Management",
+      "Content Management Portals",
+      "Infrastructure and Systems Management Services",
+      "Robotics Process Automation",
+      "System Integration",
+    ],
+    image: networkSolutionImage,
+    additionalParagraph: "",
+    extraContent:
+      "The reason our clients choose to work with Taphubs is our proven track record in maximizing value and our reputation for driving digital excellence. Our experienced team will embed itself in your business to help you outshine competitors and boost your bottom line.",
 
-  
-    solutions: {
-      title: "Business Technology Solutions",
-      details: [
-        "Enterprise Resources Planning",
-        "Customer Resources Management",
-        "Content Management Portals",
-        "Infrastructure and Systems Management Services",
-        "Robotics Process Automation",
-        "System Integration"
-      ],
-      image: networkSolutionImage,
-      additionalParagraph: "",
-      extraContent: "The reason our clients choose to work with Taphubs is our proven track record in maximizing value and our reputation for driving digital excellence. Our experienced team will embed itself in your business to help you outshine competitors and boost your bottom line.",
-  
-      newHeading: "We deliver success. Let us help you realize the potential of your business today.",
-      newParagraph: "At Taphubs, we pride ourselves on delivering world-class customer service, led by an international team of elite experts with deep knowledge of business processes across every sector. With decades of international experience, we've combined global insights with local expertise in the Saudi business landscape to create one of the most advanced tech teams in the world.",
-  
-      additionalHeadings: [
-        {
-          heading: "Blockchain Technology",
-          paragraph: "IOT & Smart Solutions, Big Data, BI & Analytics, Cognitive Analytics, AI, and Machine Learning"
-        },
-        {
-          heading: "Cloud Enablement & Mobility Team",
-          paragraph: "We know that realizing the potential of cloud technology is at the top of your agenda. We help clients grow more agile with leading cloud services. Our skilled consultants will help you transition to a new agile way of storing data with the best insights and technology. We are passionate about delivering a seamless end-user experience and achieving the best results for our clients."
-        },
-        {
-          heading: "Strategic Business Management",
-          paragraph: "Our Strategic Business Management team brings together our expertise in business consultancy and powerful IT solutions from world-leading partners. Our partnerships with top technology companies open the gateway to world-class expertise, insights, and infrastructure to maximize the value of your business."
-        },
-        {
-          heading: "Business Consulting",
-          paragraph: "Strategic planning services (Vision, Mission, and Values development). Build Governance Offices (VRO, SMO, PfMO). Key Performance Indicators consultations and designing dashboards. Information Lifecycle Management."
-        },
-        {
-          heading: "Business Process Consulting",
-          paragraph: "Business process engineering, ITSM process engineering, Business Continuity routines."
-        },
-        {
-          heading: "Compliance and Risk Management",
-          paragraph: "Risk Management Assessments, Services Roadmap development, ISO Consultations, and certifications."
-        },
-        {
-          heading: "Quality Assurance",
-          paragraph: "Managing the full test lifecycle (Functional/Non-Functional Testing), assessing Customer Experience for IT Services, building Roadmaps for Agile ITSM/DevOps environments transformation, End-to-End Quality Assurance Solutions Consulting and building."
-        },
-        {
-          heading: "Strategic Outsourcing",
-          paragraph: "IT professionals outsourcing, Business professionals outsourcing."
-        },
-        {
-          heading: "Managed Services",
-          paragraph: "IT Service Management, Plan, and Deliver."
-        },
-        {
-          heading: "Talent Development & Education",
-          paragraph: "Professional Training, Tailored Training, and Tailored Development Programs to achieve specific business objectives."
-        }
-      ]
-    },
-  
-  
+    newHeading:
+      "We deliver success. Let us help you realize the potential of your business today.",
+    newParagraph:
+      "At Taphubs, we pride ourselves on delivering world-class customer service, led by an international team of elite experts with deep knowledge of business processes across every sector. With decades of international experience, we've combined global insights with local expertise in the Saudi business landscape to create one of the most advanced tech teams in the world.",
 
-    
-      security: {
-        title: "Cyber Security Solutions",
-    
-        details: [
-          "Firewalls",
-          "IPS",
-          "Mail Gateway",
-          "Web Filtering",
-          "Web Application Firewall",
-          "Wireless Security",
-          "Network Access Control"
-        ],
-        image: aiIntegrationImage,
-        additionalParagraph:
-          "At Taphubs, we understand that cybersecurity is a critical priority for your business in today’s digital world.",
-        extraContent:
-          "Taphubs has built a dedicated cybersecurity unit with top-tier technology experts across the Kingdom. We offer a comprehensive range of cybersecurity solutions designed to protect your business’s most valuable assets from emerging security threats and vulnerabilities. Our digital defense strategies combine unparalleled technical expertise with state-of-the-art security architecture to safeguard your business.",
-    
-        newHeading: "",
-        newParagraph:
-          "Our vision is clear and effective: we aim to provide the highest level of security for your data while ensuring that your business operates seamlessly and efficiently. Our goal is to help you stay secure, safe, and successful in an ever-evolving digital landscape.",
-    
-        additionalHeadings: [
-          {
-            heading: "Security Intelligence",
-            paragraph:
-              "We provide robust security intelligence collection, analysis, and sharing through customer portals, data feeds, multi-level briefs, and dedicated security intelligence services."
-          },
-    
-          {
-            heading: "Managed Security Services",
-            paragraph:
-              "Our comprehensive 24/7 security monitoring and log management offer businesses a 360-degree view of exposures, incidents, and threats, ensuring proactive defense and response."
-          },
-    
-          {
-            heading: "Advanced Threat Protection",
-            paragraph:
-              "Advanced threat protection allows for an intelligent response to complex security threats across your organization, minimizing potential risks."
-          },
-    
-          {
-            heading: "Incident Response",
-            paragraph:
-              "We provide advanced incident response and forensic support, giving your business immediate access to critical expertise and resources to handle security incidents."
-          },
-    
-          {
-            heading: "Building A Secure Infrastructure",
-            paragraph:
-              "Our primary goal is to fortify your business’s digital infrastructure against modern cybersecurity threats. With our world-class security solutions, we help protect your valuable assets and sensitive information."
-          },
-    
-          {
-            heading: "ATPC: Managing Your Security 365 Days a Year",
-            paragraph:
-              "ATPC operates around the clock. Our cutting-edge Security Operations Center continually monitors and manages your security technologies, ensuring ongoing assessment and defense against security threats. We strive to maximize efficiency, reduce costs, and strengthen your cybersecurity posture."
-          },
-    
-          {
-            heading: "Our Managed Security Services Cover",
-            paragraph:
-              "Taphubs offers expert consultancy to address your dynamic security requirements. Our consultants embed directly within your business to provide an in-depth analysis of your organization’s security. They collaborate closely with you to keep your business secure, compliant, and recommend the most effective solutions tailored to your unique needs."
-          }
-        ]
+    additionalHeadings: [
+      {
+        heading: "Blockchain Technology",
+        paragraph:
+          "IOT & Smart Solutions, Big Data, BI & Analytics, Cognitive Analytics, AI, and Machine Learning",
       },
-    
-    
+      {
+        heading: "Cloud Enablement & Mobility Team",
+        paragraph:
+          "We know that realizing the potential of cloud technology is at the top of your agenda. We help clients grow more agile with leading cloud services. Our skilled consultants will help you transition to a new agile way of storing data with the best insights and technology. We are passionate about delivering a seamless end-user experience and achieving the best results for our clients.",
+      },
+      {
+        heading: "Strategic Business Management",
+        paragraph:
+          "Our Strategic Business Management team brings together our expertise in business consultancy and powerful IT solutions from world-leading partners. Our partnerships with top technology companies open the gateway to world-class expertise, insights, and infrastructure to maximize the value of your business.",
+      },
+      {
+        heading: "Business Consulting",
+        paragraph:
+          "Strategic planning services (Vision, Mission, and Values development). Build Governance Offices (VRO, SMO, PfMO). Key Performance Indicators consultations and designing dashboards. Information Lifecycle Management.",
+      },
+      {
+        heading: "Business Process Consulting",
+        paragraph:
+          "Business process engineering, ITSM process engineering, Business Continuity routines.",
+      },
+      {
+        heading: "Compliance and Risk Management",
+        paragraph:
+          "Risk Management Assessments, Services Roadmap development, ISO Consultations, and certifications.",
+      },
+      {
+        heading: "Quality Assurance",
+        paragraph:
+          "Managing the full test lifecycle (Functional/Non-Functional Testing), assessing Customer Experience for IT Services, building Roadmaps for Agile ITSM/DevOps environments transformation, End-to-End Quality Assurance Solutions Consulting and building.",
+      },
+      {
+        heading: "Strategic Outsourcing",
+        paragraph:
+          "IT professionals outsourcing, Business professionals outsourcing.",
+      },
+      {
+        heading: "Managed Services",
+        paragraph: "IT Service Management, Plan, and Deliver.",
+      },
+      {
+        heading: "Talent Development & Education",
+        paragraph:
+          "Professional Training, Tailored Training, and Tailored Development Programs to achieve specific business objectives.",
+      },
+    ],
+  },
 
+  security: {
+    title: "Cyber Security Solutions",
 
-      
-        network: {
-          title: "Infrastructure Networking Technology",
-          details: [
-            "The software-defined wide-area network (SD-WAN)",
-            "Collaboration Solutions",
-            "Switching and Routing",
-            "Networking Strategy & Optimization Services",
-            "Network Integration & Deployment Services",
-            "Network Managed Services",
-            "High Speed Network",
-            "Internet of Things",
-            "Transmission & Optical Network solutions",
-            "Converged Communications Services",
-            "Video Conference, Digital Signage, & IPTV",
-            "Mobility & Wireless Solutions",
-            "Network Health Check and Audit Study"
-          ],
-          image: cybersecurityImage,
-          additionalParagraph:
-            "How can you operate a successful business without a solid foundation? Our Infrastructure & Networking Technology (INT) team develops end-to-end solutions to build a robust framework for our clients’ businesses. This encompasses everything from architecture design right through to project implementation and managed services.",
-          extraContent:
-            "We begin by taking a step back to examine the wider business environment you are trading in. We listen to your challenges and build a detailed picture of your unique needs. We take a deep dive into your operational efficiency and evaluate how successful your current infrastructure is in delivering return on investment. We test the resilience of your systems and appliances against potential threats and look for weaknesses in data availability. We then couple these insights with intelligent networking and connectivity solutions to restructure the digital foundation of your business.",
-      
-          newHeading: "",
-          newParagraph:
-            "We give you full control of your infrastructure and provide in-depth training to help you understand how to maximize the value of your assets and the most effective ways of operating them.",
-      
-          additionalHeadings: [
-            {
-              heading: "Our Infrastructure Solutions",
-              paragraph: "Data Centers Preparation, power, cooling and racks, Data Center Infrastructure Management (DCIM), Intelligent Data Center Enablement, Turnkey MEP works, Testing and certifying data centers (Data Center All Tier (Uptime), IT infrastructure availability and resilience (part of Business Continuity),Health check and data center gap analysis),  Maintenance and Managed services for data centers and command centers."
-            },
-      
-            {
-              heading: "Our Audiovisual Services:",
-              paragraph: "E-learning solutions, Video walls, Auditoriums, Preparation of digital meeting rooms Display systems, Public address systems, Command and control centers preparation (including NOC and SOC)"
-            },
-      
-            {
-              heading: "Integrated Security Systems including:",
-              paragraph: "Perimeter Fence (HCIS Class 1, 2, 3, 4 & 5) and Crash Rated Anti- Vehicle Barrier, Physical Security Equipment (Road Blockers, Arm Barriers, Turnstiles, Bollards...)., Screening & Searching Equipment (Explosive Detectors, Baggage Scanner, Metal Detectors, Walk-through Detectors, UVIS, ANPR...), Intrusion Detection & Assessment System (IDAS) including Volumetric Sensors (Microwave) & Fence Mounted Fiber Sensors., Long Range Detection & Assessment Systems (LRDAS) including Long"
-            },
-      
-            {
-              heading: "Range Thermal Cameras & Radars.",
-              paragraph: "Fence Lighting System and Electrical Distribution System (UPS & Generators),Dedicated Security Network Infrastructure, Security Management System (SMS) to integrate/manage the complete systems as unified platform / PSIM,  Construction of Security Control Centers, Gate Houses, Search Facility & Support Buildings."
-            },
-      
-            {
-              heading: "Our Communication Services",
-              paragraph: "Structured Cabling Systems, Outside Plants (OSP), Telecommunication shelters, Indoor GSM solutions"
-            },
-      
-            {
-              heading: "Our Power Management Systems",
-              paragraph: "Energy Audit & Optimization by Using Self-Learning System, Backup power systems (generators, DC supply systems, UPS ... etc.), Green power solutions (Solar Systems), Grid power & Smart metering (HW & SW, part of smart campus), Uninterruptible Power Supply Systems, DC Supply systems, Home Energy Managements system."
-            },
-      
-            {
-              heading: "Our Computing Solutions",
-              paragraph: "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, SAP HANA, business analytics and virtualization workloads."
-            },
-      
-            {
-              heading: "Business Process Outsourcing Managed Services & Strategic Outsourcing",
-              paragraph: "We deliver intelligent network infrastructure that empowers our clients, regardless of size, to manage their IT investments effectively and support their business objectives. We deliver next generation e-business solutions anywhere in the networking life cycle—from network consulting and integration to total network outsourcing. Through our powerful partnerships, we can give our clients access to emerging technological advances in optical, wireless, IP convergence, security and intelligent networking."
-            }
-          ]
-        },
-      
-      
+    details: [
+      "Firewalls",
+      "IPS",
+      "Mail Gateway",
+      "Web Filtering",
+      "Web Application Firewall",
+      "Wireless Security",
+      "Network Access Control",
+    ],
+    image: aiIntegrationImage,
+    additionalParagraph:
+      "At Taphubs, we understand that cybersecurity is a critical priority for your business in today’s digital world.",
+    extraContent:
+      "Taphubs has built a dedicated cybersecurity unit with top-tier technology experts across the Kingdom. We offer a comprehensive range of cybersecurity solutions designed to protect your business’s most valuable assets from emerging security threats and vulnerabilities. Our digital defense strategies combine unparalleled technical expertise with state-of-the-art security architecture to safeguard your business.",
+
+    newHeading: "",
+    newParagraph:
+      "Our vision is clear and effective: we aim to provide the highest level of security for your data while ensuring that your business operates seamlessly and efficiently. Our goal is to help you stay secure, safe, and successful in an ever-evolving digital landscape.",
+
+    additionalHeadings: [
+      {
+        heading: "Security Intelligence",
+        paragraph:
+          "We provide robust security intelligence collection, analysis, and sharing through customer portals, data feeds, multi-level briefs, and dedicated security intelligence services.",
+      },
+
+      {
+        heading: "Managed Security Services",
+        paragraph:
+          "Our comprehensive 24/7 security monitoring and log management offer businesses a 360-degree view of exposures, incidents, and threats, ensuring proactive defense and response.",
+      },
+
+      {
+        heading: "Advanced Threat Protection",
+        paragraph:
+          "Advanced threat protection allows for an intelligent response to complex security threats across your organization, minimizing potential risks.",
+      },
+
+      {
+        heading: "Incident Response",
+        paragraph:
+          "We provide advanced incident response and forensic support, giving your business immediate access to critical expertise and resources to handle security incidents.",
+      },
+
+      {
+        heading: "Building A Secure Infrastructure",
+        paragraph:
+          "Our primary goal is to fortify your business’s digital infrastructure against modern cybersecurity threats. With our world-class security solutions, we help protect your valuable assets and sensitive information.",
+      },
+
+      {
+        heading: "ATPC: Managing Your Security 365 Days a Year",
+        paragraph:
+          "ATPC operates around the clock. Our cutting-edge Security Operations Center continually monitors and manages your security technologies, ensuring ongoing assessment and defense against security threats. We strive to maximize efficiency, reduce costs, and strengthen your cybersecurity posture.",
+      },
+
+      {
+        heading: "Our Managed Security Services Cover",
+        paragraph:
+          "Taphubs offers expert consultancy to address your dynamic security requirements. Our consultants embed directly within your business to provide an in-depth analysis of your organization’s security. They collaborate closely with you to keep your business secure, compliant, and recommend the most effective solutions tailored to your unique needs.",
+      },
+    ],
+  },
+
+  network: {
+    title: "Network & Infrastructure",
+    details: [
+      "The software-defined wide-area network (SD-WAN)",
+      "Collaboration Solutions",
+      "Switching and Routing",
+      "Networking Strategy & Optimization Services",
+      "Network Integration & Deployment Services",
+      "Network Managed Services",
+      "High Speed Network",
+      "Internet of Things",
+      "Transmission & Optical Network solutions",
+      "Converged Communications Services",
+      "Video Conference, Digital Signage, & IPTV",
+      "Mobility & Wireless Solutions",
+      "Network Health Check and Audit Study",
+    ],
+    image: cybersecurityImage,
+    additionalParagraph:
+      "How can you operate a successful business without a solid foundation? Our Infrastructure & Networking Technology (INT) team develops end-to-end solutions to build a robust framework for our clients’ businesses. This encompasses everything from architecture design right through to project implementation and managed services.",
+    extraContent:
+      "We begin by taking a step back to examine the wider business environment you are trading in. We listen to your challenges and build a detailed picture of your unique needs. We take a deep dive into your operational efficiency and evaluate how successful your current infrastructure is in delivering return on investment. We test the resilience of your systems and appliances against potential threats and look for weaknesses in data availability. We then couple these insights with intelligent networking and connectivity solutions to restructure the digital foundation of your business.",
+
+    newHeading: "",
+    newParagraph:
+      "We give you full control of your infrastructure and provide in-depth training to help you understand how to maximize the value of your assets and the most effective ways of operating them.",
+
+    additionalHeadings: [
+      {
+        heading: "Our Infrastructure Solutions",
+        paragraph:
+          "Data Centers Preparation, power, cooling and racks, Data Center Infrastructure Management (DCIM), Intelligent Data Center Enablement, Turnkey MEP works, Testing and certifying data centers (Data Center All Tier (Uptime), IT infrastructure availability and resilience (part of Business Continuity),Health check and data center gap analysis),  Maintenance and Managed services for data centers and command centers.",
+      },
+
+      {
+        heading: "Our Audiovisual Services:",
+        paragraph:
+          "E-learning solutions, Video walls, Auditoriums, Preparation of digital meeting rooms Display systems, Public address systems, Command and control centers preparation (including NOC and SOC)",
+      },
+
+      {
+        heading: "Integrated Security Systems including:",
+        paragraph:
+          "Perimeter Fence (HCIS Class 1, 2, 3, 4 & 5) and Crash Rated Anti- Vehicle Barrier, Physical Security Equipment (Road Blockers, Arm Barriers, Turnstiles, Bollards...)., Screening & Searching Equipment (Explosive Detectors, Baggage Scanner, Metal Detectors, Walk-through Detectors, UVIS, ANPR...), Intrusion Detection & Assessment System (IDAS) including Volumetric Sensors (Microwave) & Fence Mounted Fiber Sensors., Long Range Detection & Assessment Systems (LRDAS) including Long",
+      },
+
+      {
+        heading: "Range Thermal Cameras & Radars.",
+        paragraph:
+          "Fence Lighting System and Electrical Distribution System (UPS & Generators),Dedicated Security Network Infrastructure, Security Management System (SMS) to integrate/manage the complete systems as unified platform / PSIM,  Construction of Security Control Centers, Gate Houses, Search Facility & Support Buildings.",
+      },
+
+      {
+        heading: "Our Communication Services",
+        paragraph:
+          "Structured Cabling Systems, Outside Plants (OSP), Telecommunication shelters, Indoor GSM solutions",
+      },
+
+      {
+        heading: "Our Power Management Systems",
+        paragraph:
+          "Energy Audit & Optimization by Using Self-Learning System, Backup power systems (generators, DC supply systems, UPS ... etc.), Green power solutions (Solar Systems), Grid power & Smart metering (HW & SW, part of smart campus), Uninterruptible Power Supply Systems, DC Supply systems, Home Energy Managements system.",
+      },
+
+      {
+        heading: "Our Computing Solutions",
+        paragraph:
+          "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, SAP HANA, business analytics and virtualization workloads.",
+      },
+
+      {
+        heading:
+          "Business Process Outsourcing Managed Services & Strategic Outsourcing",
+        paragraph:
+          "We deliver intelligent network infrastructure that empowers our clients, regardless of size, to manage their IT investments effectively and support their business objectives. We deliver next generation e-business solutions anywhere in the networking life cycle—from network consulting and integration to total network outsourcing. Through our powerful partnerships, we can give our clients access to emerging technological advances in optical, wireless, IP convergence, security and intelligent networking.",
+      },
+    ],
+  },
 };

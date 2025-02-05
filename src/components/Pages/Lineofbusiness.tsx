@@ -42,56 +42,26 @@ const Lineofbusiness: React.FC = () => {
             <h3 className="text-xl font-bold mb-4 text-center lg:text-left">
               Line of Business
             </h3>
+            {/* left side menu */}
             <div className="space-y-4 w-full flex flex-col items-center lg:items-start">
-              {/* Web Development */}
-              <div
-                onClick={() => handleSectionClick("services")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
-                  selectedContent === "services"
-                    ? "bg-gray-950 text-white"
-                    : "hover:bg-gray-200 hover:text-black"
-                }`}
-              >
-                System & Software Solution
-              </div>
+              {Object.entries(contentData).map(([key, section]) => (
+                <div
+                  onClick={() => handleSectionClick(`${key}`)}
+                  className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
+                    selectedContent === `${key}`
+                      ? "bg-gray-950 text-white"
+                      : "hover:bg-gray-200 hover:text-black"
+                  }`}
+                >
+                  {section.title}
+                </div>
+              ))}
 
-              {/* Network Solution */}
-              <div
-                onClick={() => handleSectionClick("solutions")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
-                  selectedContent === "solutions"
-                    ? "bg-gray-950 text-white"
-                    : "hover:bg-gray-200 hover:text-black"
-                }`}
-              >
-                Business Technology Solutions
-              </div>
-
-              {/* AI Integration */}
-              <div
-                onClick={() => handleSectionClick("security")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
-                  selectedContent === "security"
-                    ? "bg-gray-950 text-white"
-                    : "hover:bg-gray-200 hover:text-black"
-                }`}
-              >
-                Cyber Security Solutions
-              </div>
-
-              {/* Cybersecurity */}
-              <div
-                onClick={() => handleSectionClick("network")}
-                className={`cursor-pointer p-3 w-[70%] lg:w-full rounded text-black transition-all duration-300 ease-in-out ${
-                  selectedContent === "network"
-                    ? "bg-gray-950 text-white"
-                    : "hover:bg-gray-200 hover:text-black"
-                }`}
-              >
-                Infrastructure Networking Technology
-              </div>
+          
             </div>
           </div>
+
+          
 
           {/* Right Side Content */}
           <div className="w-full lg:w-3/5 p-10 overflow-auto h-[50%] mb-10">

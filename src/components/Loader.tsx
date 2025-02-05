@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const Loader = () => {
   return (
-    <div className=" w-screen h-screen flex items-center  justify-center ">
+    <div className="w-screen h-screen flex items-center  justify-center ">
       <StyledWrapper>
-        <div className="loader ">
+        <div className="loader">
           <div className="box box0">
             <div />
           </div>
