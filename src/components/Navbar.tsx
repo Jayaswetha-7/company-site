@@ -143,7 +143,7 @@ const Navbar = () => {
               </Link>
 
               <SheetContent className="">
-                <div className="wfull  flex h-[24vh] items-center px-4">
+                <div className="wfull  flex  h-[29vh] items-center px-4">
                   {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {tabs.map((tab) => (
@@ -178,7 +178,7 @@ const Navbar = () => {
                                     <Link
                                       key={item.title}
                                       to={item.link}
-                                      className="flex-1 min-w-[250px] justify-center items-center max-w-[280px] p-4 border rounded-lg hover:bg-gray-50 transition-colors"
+                                      className="flex-1 justify-center items-center max-w-[280px] px-4 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
                                     >
                                       <div className="flex flex-col gap-3 justify-center">
                                         <h3 className="text-lg font-semibold">
@@ -187,7 +187,7 @@ const Navbar = () => {
                                         <p className="text-gray-600 text-sm">
                                           {item.description}
                                         </p>
-                                        <div className="flex items-center gap-1 text-blue-600 mt-2">
+                                        <div className="flex items-center gap-1 text-blue-600 ">
                                           <span className="text-sm flex-1">
                                             Explore Solutions
                                           </span>

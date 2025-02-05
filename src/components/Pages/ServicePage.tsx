@@ -6,6 +6,7 @@ import webDevelopmentImage from "../../assets/web.jpg";
 import networkSolutionImage from "../../assets/network.jpg";
 import aiIntegrationImage from "../../assets/ai.jpg";
 import cybersecurityImage from "../../assets/cyber.jpg";
+import { loadEnvFile } from "process";
 
 const contentData = {
   development: {
@@ -76,6 +77,7 @@ const contentData = {
 
 const ServicePage: React.FC = () => {
   const location = useLocation();
+
   const sectionHash = location.hash.replace(
     "#",
     ""
@@ -92,19 +94,19 @@ const ServicePage: React.FC = () => {
     const hash = location.hash.replace("#", "");
     if (validSections.includes(hash)) {
       setSelectedContent(hash as keyof typeof contentData);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [location]);
 
- const handleSectionClick = (section: keyof typeof contentData) => {
-   setSelectedContent(section);
-   window.location.hash = `#${section}`; // Update URL hash
- };
+  const handleSectionClick = (section: keyof typeof contentData) => {
+    setSelectedContent(section);
+    window.location.hash = `#${section}`; // Update URL hash
+  };
 
   return (
     <>
       <Navbar />
 
-     
       <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white overflow-hidden">
         <BreadcrumbWithCustomSeparator
           currentPage={contentData[selectedContent].title} // Pass the current page title

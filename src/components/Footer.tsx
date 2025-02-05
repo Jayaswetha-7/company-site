@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import logo from "../assets/LogoBanner.png";
 
 const Footer = () => {
+ 
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +32,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to={"/about"}
+                    to={"/about#overview"}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     About

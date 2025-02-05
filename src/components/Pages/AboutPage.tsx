@@ -1,16 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { FaArrowRight } from "react-icons/fa";
+import { useEffect } from "react";
 // import image from "../../assets/aboutdes.png";
 
 function AboutPage() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1)); // Remove #
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <Navbar />
       {/* first section */}
       <div className="">
-        <div className="relative sm:h-screen h-[64vh] overflow-hidden bg-[url('https://res.cloudinary.com/djjwvuixb/image/upload/v1738295940/smimage_cjczen.jpg')] sm:bg-[url('https://res.cloudinary.com/djjwvuixb/image/upload/v1738230884/about_lqi7up.jpg')] bg-contain bg-no-repeat sm:bg-cover bg-fixed ">
+        <div
+          id="overview"
+          className="relative sm:h-screen h-[64vh] overflow-hidden bg-[url('https://res.cloudinary.com/djjwvuixb/image/upload/v1738295940/smimage_cjczen.jpg')] sm:bg-[url('https://res.cloudinary.com/djjwvuixb/image/upload/v1738230884/about_lqi7up.jpg')] bg-contain bg-no-repeat sm:bg-cover bg-fixed "
+        >
           {/* <img className="w-full opacity-80 blur-sm" src={image} alt="" /> */}
         </div>
         <div className="absolute inset-0 flex flex-col  sm:text-white text-black/50 text-lg font-bold w-[75%] mx-auto">

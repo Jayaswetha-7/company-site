@@ -5,7 +5,7 @@ import About from "./components/About";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
@@ -15,6 +15,13 @@ import NewService from "./components/NewService";
 import LandingCard from "./components/LandingCard";
 import { Analytics } from "@vercel/analytics/react";
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  }, [location]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -28,7 +35,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <>
       <Analytics />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
@@ -68,7 +75,7 @@ function App() {
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
       </div>
-    </Router>
+    </>
   );
 }
 
