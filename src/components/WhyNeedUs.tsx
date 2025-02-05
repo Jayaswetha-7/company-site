@@ -50,7 +50,7 @@ const WhyNeedUs = () => {
           {...fadeIn}
         >
           {/* why choose us */}
-          <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[5vh] sm:text-[8vh] my-6">
+          <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[5vh] sm:text-[7vh] my-6">
             Why <br /> Choose us ?
           </motion.h1>
           {/* div */}
