@@ -11,8 +11,8 @@ function SubHero() {
         backgroundBlendMode: "darken",
       }}
     >
-      <div className=" mx-auto flex h-[80%] flex-col  justify-center items-start  gap-0 text-center ml-[5vw]   ">
-        <h1 className="  text-white font-bold  font-mono  sm:w-[60%] sm:text-[3vw]  text-left ">
+      <div className=" mx-auto flex h-[80%] flex-col  justify-center items-start  gap-2 text-center ml-[5vw]   ">
+        <h1 className="  text-white font-bold  font-mono text-[5vw] sm:w-[60%] sm:text-[3vw]  text-left ">
           Your Business, <br /> Our Smartest Solutions
         </h1>
         <Link
