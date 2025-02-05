@@ -65,12 +65,12 @@ const Hero = () => {
           </motion.p>
           <motion.a
             href="#contact"
-            className="inline-flex items-center sm:w-[20%] w-[80%] h-[5vh] text-[70%] sm:text-[100%] px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center max-w-[300px] px-3 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Start Your Journey
-            <ArrowRight className="ml-2 sm:h-5 sm:w-5 h-3 w-3" />
+            <ArrowRight className="w-4 h-4 mx-3 text-center" />
           </motion.a>
         </motion.div>
       </div>
