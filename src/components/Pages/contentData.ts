@@ -54,27 +54,21 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Taphubs Power Systems Software",
+        heading: " Power Systems Software",
         paragraph:
-          "Taphubs Power Systems Software ensures the continuous availability of your data worldwide, supporting year-round business operations with robust disaster recovery capabilities.",
-      },
-
-      {
-        heading: "The Taphubs POWER9 Processor",
-        paragraph:
-          "We leverage the high-performance capabilities of the POWER9 processor within a hybrid cloud framework, empowering businesses to efficiently handle critical workloads across both public and private cloud environments.",
+          " Power Systems Software ensures the continuous availability of your data worldwide, supporting year-round business operations with robust disaster recovery capabilities.",
       },
 
       {
         heading: "Enhancing the Power of Your Data",
         paragraph:
-          "Taphubs Power Systems supports SAP HANA, an advanced in-memory platform that turns your data into actionable insights, allowing businesses to respond instantly and innovate faster.",
+          " Power Systems supports SAP HANA, an advanced in-memory platform that turns your data into actionable insights, allowing businesses to respond instantly and innovate faster.",
       },
 
       {
         heading: "Smart Data with AI Integration",
         paragraph:
-          "Taphubs' Power Systems for AI unlock the full potential of your business data by providing advanced analytics that drive smarter decision-making, deeper insights, and build customer trust.",
+          " Power Systems for AI unlock the full potential of your business data by providing advanced analytics that drive smarter decision-making, deeper insights, and build customer trust.",
       },
 
       {
@@ -90,21 +84,9 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Taphubs Z Solutions",
-        paragraph:
-          "Taphubs Z solutions drive innovation within the digital economy, offering a trusted platform to perform high-speed operations, meet demanding customer expectations, and provide advanced security with compliance across multiple regulations.",
-      },
-
-      {
         heading: "Advanced Analytics & Machine Learning",
         paragraph:
           "Harness the power of advanced analytics combined with machine learning to transform your data, allowing for comprehensive data cleansing, model building, and predictive insights.",
-      },
-
-      {
-        heading: "Revolutionizing Blockchain Technology",
-        paragraph:
-          "Taphubs Blockchain platform gives you the ability to securely store data locally while providing scalability and performance, ensuring full compliance with corporate policies and regulations.",
       },
 
       {
@@ -120,40 +102,24 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Operate with Complete Confidence",
-        paragraph:
-          "With Taphubs Z, businesses can maintain the perfect balance between agility and security, ensuring that compliance with the latest regulations doesn’t hinder your competitive edge.",
-      },
-
-      {
         heading: "Boost Your Security to the Next Level",
         paragraph:
           "Protect your data with end-to-end encryption and secure service container technology, reducing security risks and ensuring full data integrity.",
       },
 
       {
-        heading: "A Smarter Way to Safeguard Your Data",
-        paragraph:
-          "With Taphubs' Z platform, you can encrypt all of your sensitive data, reducing the risk of breaches by up to 95% and ensuring your business remains secure from internal and external threats.",
-      },
-
-      {
-        heading: "Taphubs LinuxONE Solutions",
+        heading: " LinuxONE Solutions",
         paragraph:
           "Combining the best open-source software with Taphubs' powerful LinuxONE system, we provide a secure, reliable infrastructure that supports a wide variety of workloads with high availability and scalability.",
       },
 
       {
-        heading: "Empowering Your Business with LinuxONE",
+        heading: "Smart Industry & IoT Solutions",
         paragraph:
           "With unmatched operational efficiency, Taphubs LinuxONE provides the ideal Linux platform for any scale of workload, delivering a safe and reliable infrastructure on a single physical server.",
       },
 
-      {
-        heading: "Next-Gen Storage Solutions with Taphubs",
-        paragraph:
-          "In today’s fast-paced business environment, leveraging your data is essential. Taphubs provides multicloud-enabled storage infrastructures that convert data overload into a competitive advantage, supporting next-gen workloads.",
-      },
+      
 
       {
         heading: "Accelerate Your Data Management with Taphubs Flash Storage",
@@ -161,12 +127,7 @@ export const contentData: Record<string, ContentData> = {
           "Taphubs Flash Storage systems enable companies to adjust prices, optimize inventory, prevent fraud, and make data-driven decisions faster with micro-latency performance.",
       },
 
-      {
-        heading: "Enterprise-Class Storage Solutions from Taphubs",
-        paragraph:
-          "Taphubs’ Enterprise Storage solutions offer superior performance, secure data transactions, and rapid availability, providing a trusted and scalable package for all your data needs.",
-      },
-
+    
       {
         heading: "Reliable Data Backup Solutions from Taphubs",
         paragraph:
@@ -177,17 +138,17 @@ export const contentData: Record<string, ContentData> = {
         heading:
           "Streamline Your Data Management with Software Defined Storage (SDS)",
         paragraph:
-          "With Taphubs SDS, you can improve data management, protection, and storage efficiency, leveraging Cloud Object Storage to offer flexible access and scalability.",
+          "With  SDS, you can improve data management, protection, and storage efficiency, leveraging Cloud Object Storage to offer flexible access and scalability.",
       },
 
       {
-        heading: "Taphubs System Solution Support",
+        heading: "System Solution Support",
         paragraph:
-          "Taphubs understands the importance of technical support, offering a range of services and expert support to ensure the long-term success of your systems.",
+          "understands the importance of technical support, offering a range of services and expert support to ensure the long-term success of your systems.",
       },
 
       {
-        heading: "Taphubs System Solution Services",
+        heading: "System Solution Services",
         paragraph:
           "We offer comprehensive services including Hypervisor/OS support for Power and Z platforms, along with SDS solutions and data center optimization.",
       },
@@ -198,22 +159,18 @@ export const contentData: Record<string, ContentData> = {
           "Our value-added services help clients reduce costs, manage assets efficiently, and support ongoing business needs through Systems Solutions and Services.",
       },
 
-      {
-        heading: "Software Solutions by Taphubs",
-        paragraph:
-          "Taphubs leverages the latest industry solutions to help businesses innovate, adapt, and control costs while maximizing their existing resources.",
-      },
+     
 
       {
         heading: "Cloud and Cognitive Software Solutions",
         paragraph:
-          "Taphubs delivers tailored cloud solutions that align with your unique workloads, optimizing your cloud journey and enabling scalable success.",
+          " delivers tailored cloud solutions that align with your unique workloads, optimizing your cloud journey and enabling scalable success.",
       },
 
       {
         heading: "Unlock Data Potential with Taphubs and AI",
         paragraph:
-          "Taphubs is dedicated to helping our clients unlock the true value of their data, accelerating their path to AI-powered insights and solutions.",
+          " is dedicated to helping our clients unlock the true value of their data, accelerating their path to AI-powered insights and solutions.",
       },
 
       {
@@ -229,7 +186,7 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Cloud Pak for Automation by Taphubs",
+        heading: "Cloud Pak for Automation ",
         paragraph:
           "Taphubs provides Cloud Pak for Automation to help automate business processes, improving efficiency and reducing operational overhead.",
       },
@@ -249,7 +206,7 @@ export const contentData: Record<string, ContentData> = {
       {
         heading: "Empowering IoT with Watson IoT Platform",
         paragraph:
-          "Taphubs unlocks the full potential of IoT data through Watson IoT, enabling businesses to gain actionable insights and improve their connected devices with advanced analytics.",
+          " Unlocks the full potential of IoT data through Watson IoT, enabling businesses to gain actionable insights and improve their connected devices with advanced analytics.",
       },
 
       {
@@ -289,7 +246,7 @@ export const contentData: Record<string, ContentData> = {
       },
 
       {
-        heading: "Watson Talent Solutions by Taphubs",
+        heading: "Watson Talent Solutions ",
         paragraph:
           "Taphubs leverages Watson Talent Solutions to improve talent acquisition and development, using AI-powered tools for recruitment, coaching, and employee assessments.",
       },
@@ -320,7 +277,7 @@ export const contentData: Record<string, ContentData> = {
     newHeading:
       "We deliver success. Let us help you realize the potential of your business today.",
     newParagraph:
-      "At Taphubs, we pride ourselves on delivering world-class customer service, led by an international team of elite experts with deep knowledge of business processes across every sector. With decades of international experience, we've combined global insights with local expertise in the Saudi business landscape to create one of the most advanced tech teams in the world.",
+      " we pride ourselves on delivering world-class customer service, led by an international team of elite experts with deep knowledge of business processes across every sector. With decades of international experience, we've combined global insights with local expertise in the Saudi business landscape to create one of the most advanced tech teams in the world.",
 
     additionalHeadings: [
       {
@@ -389,9 +346,9 @@ export const contentData: Record<string, ContentData> = {
     ],
     image: aiIntegrationImage,
     additionalParagraph:
-      "At Taphubs, we understand that cybersecurity is a critical priority for your business in today’s digital world.",
+      " we understand that cybersecurity is a critical priority for your business in today’s digital world.",
     extraContent:
-      "Taphubs has built a dedicated cybersecurity unit with top-tier technology experts across the Kingdom. We offer a comprehensive range of cybersecurity solutions designed to protect your business’s most valuable assets from emerging security threats and vulnerabilities. Our digital defense strategies combine unparalleled technical expertise with state-of-the-art security architecture to safeguard your business.",
+      "The company has built a dedicated cybersecurity unit with top-tier technology experts across the Kingdom. We offer a comprehensive range of cybersecurity solutions designed to protect your business’s most valuable assets from emerging security threats and vulnerabilities. Our digital defense strategies combine unparalleled technical expertise with state-of-the-art security architecture to safeguard your business.",
 
     newHeading: "",
     newParagraph:
