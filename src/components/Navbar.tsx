@@ -143,7 +143,7 @@ const Navbar = () => {
               </Link>
 
               <SheetContent className="">
-                <div className="wfull  flex  h-[24vh] items-center px-4">
+                <div className="wfull  flex  h-[30vh] items-center px-4">
                   {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {tabs.map((tab) => (
