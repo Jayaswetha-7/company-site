@@ -143,7 +143,7 @@ const Navbar = () => {
               </Link>
 
               <SheetContent className="">
-                <div className="wfull  flex  h-[29vh] items-center px-4">
+                <div className="wfull  flex  h-[24vh] items-center px-4">
                   {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {tabs.map((tab) => (
@@ -181,17 +181,17 @@ const Navbar = () => {
                                       className="flex-1 justify-center items-center max-w-[280px] px-4 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
                                     >
                                       <div className="flex flex-col gap-3 justify-center">
-                                        <h3 className="text-lg font-semibold">
+                                        <h3 className="text-[80%] xl:text-lg font-semibold">
                                           {item.title}
                                         </h3>
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-gray-600 xl:text-sm font-bold text-[60%]">
                                           {item.description}
                                         </p>
                                         <div className="flex items-center gap-1 text-blue-600 ">
-                                          <span className="text-sm flex-1">
+                                          <span className=" text-[60%] xl:text-sm font-semibold flex-1">
                                             Explore Solutions
                                           </span>
-                                          <FaUpRightFromSquare className="w-4 h-4 flex-1" />
+                                          <FaUpRightFromSquare className="w-3 h-3 flex-1" />
                                         </div>
                                       </div>
                                     </Link>
