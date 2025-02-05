@@ -169,8 +169,8 @@ const Navbar = () => {
                         activeAboutTab === tab.name && (
                           <>
                             {tab.name === "Our Line of Business" ? (
-                              <div className="w-full h-full p-4">
-                                <h2 className="text-2xl font-semibold mb-3">
+                              <div className="w-full h-full px-3">
+                                <h2 className="text-[2vw] lg:text-xl font-semibold mb-3">
                                   Our Core Offerings
                                 </h2>
                                 <div className="flex flex-wrap gap-6">
@@ -178,10 +178,10 @@ const Navbar = () => {
                                     <Link
                                       key={item.title}
                                       to={item.link}
-                                      className="flex-1 justify-center items-center max-w-[280px] px-4 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
+                                      className="flex-1 justify-center items-center max-w-[280px] px-3 lg:py-2 border rounded-lg hover:bg-gray-50 transition-colors"
                                     >
                                       <div className="flex flex-col gap-3 justify-center">
-                                        <h3 className="text-[80%] xl:text-lg font-semibold">
+                                        <h3 className="text-[80%] 2xl:text-lg font-semibold">
                                           {item.title}
                                         </h3>
                                         <p className="text-gray-600 xl:text-sm font-bold text-[60%]">
