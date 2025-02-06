@@ -321,98 +321,138 @@ export const contentData: Record<string, ContentData> = {
               "Mail Gateway – Safeguard emails from phishing, spam, and malware.",
               "Web Filtering – Block harmful or inappropriate web content.",
               "Web Application Firewall (WAF) – Defend web applications from cyber threats.",
-              
+              "Wireless Security – Ensure secure and encrypted wireless communication.",
+              "Network Access Control (NAC) – Restrict access to authorized users only.",
           ],
         },
+
+      {
+        heading: "Security Intelligence",
+        paragraph:
+          "We provide real-time security intelligence through:",
+          details: [
+               "Customer portals for live threat updates.",
+               "Data feeds for proactive risk managemen",
+               "Multi-level security briefs and dedicated intelligence services.",
+          ],
+         },
 
       {
         heading: "Managed Security Services",
         paragraph:
-          "Our comprehensive 24/7 security monitoring and log management offer businesses a 360-degree view of exposures, incidents, and threats, ensuring proactive defense and response.",
+          "Our 24/7 security monitoring and log management provide a 360-degree view of your organization’s security landscape. We ensure proactive defense and rapid response to mitigate potential threats.",
           details: [
 
           ],
-         },
+        },
 
       {
         heading: "Advanced Threat Protection",
         paragraph:
-          "Advanced threat protection allows for an intelligent response to complex security threats across your organization, minimizing potential risks.",
-          details: [
-
-          ],
-        },
-
-      {
-        heading: "Incident Response",
-        paragraph:
-          "We provide advanced incident response and forensic support, giving your business immediate access to critical expertise and resources to handle security incidents.",
+          "We use intelligent detection and response systems to counter sophisticated cyber threats, minimizing risks and ensuring continuous protection.",
           details: [
 
           ],
          },
 
       {
-        heading: "Building A Secure Infrastructure",
+        heading: "Incident Response & Forensics",
         paragraph:
-          "Our primary goal is to fortify your business’s digital infrastructure against modern cybersecurity threats. With our world-class security solutions, we help protect your valuable assets and sensitive information.",
+          "Our experts provide rapid incident response and forensic support, helping your business quickly identify, contain, and recover from security incidents.",
           details: [
 
           ],
          },
 
       {
-        heading: "ATPC: Managing Your Security 365 Days a Year",
+        heading: "Building a Secure Infrastructure",
         paragraph:
-          "ATPC operates around the clock. Our cutting-edge Security Operations Center continually monitors and manages your security technologies, ensuring ongoing assessment and defense against security threats. We strive to maximize efficiency, reduce costs, and strengthen your cybersecurity posture.",
+          "Our mission is to fortify your business against cyber threats. With our world-class security solutions, we help you protect sensitive information and ensure operational resilience.",
           details: [
 
           ],
         },
 
       {
-        heading: "Our Managed Security Services Cover",
+        heading: "ATPC: Managing Your Security 24/7/365",
         paragraph:
-          "Taphubs offers expert consultancy to address your dynamic security requirements. Our consultants embed directly within your business to provide an in-depth analysis of your organization’s security. They collaborate closely with you to keep your business secure, compliant, and recommend the most effective solutions tailored to your unique needs.",
+          "ATPC (Advanced Threat Protection Center) operates round-the-clock to monitor and manage your security technologies. Our Security Operations Center (SOC) continually assesses risks, defends against cyber threats, and ensures maximum efficiency while reducing costs.",
           details: [
 
           ],
+        },
+
+        {
+          heading: "Tailored Security Consulting",
+          paragraph: "We provide expert consultancy to help businesses adapt to evolving security challenges. Our consultants work directly with your team to:",
+          details: [
+            "Conduct in-depth security assessments.",
+            "Ensure compliance with industry standards.",
+            "Recommend customized security solutions tailored to your needs."
+          ],
+        },
+
+        {
+          heading:"",
+          paragraph:"At TAPHUBS, we don’t just protect your business—we empower it with the best cybersecurity strategies for long-term success.",
+          details:[],
         },
     ],
   },
 
   network: {
-    title: "Network & Infrastructure",
+    title: "Digital Connectivity & Infrastructure",
     details: [
-      "The software-defined wide-area network (SD-WAN)",
-      "Collaboration Solutions",
-      "Switching and Routing",
-      "Networking Strategy & Optimization Services",
-      "Network Integration & Deployment Services",
-      "Network Managed Services",
-      "High Speed Network",
-      "Internet of Things",
-      "Transmission & Optical Network solutions",
-      "Converged Communications Services",
-      "Video Conference, Digital Signage, & IPTV",
-      "Mobility & Wireless Solutions",
-      "Network Health Check and Audit Study",
+      // "The software-defined wide-area network (SD-WAN)",
+      // "Collaboration Solutions",
+      // "Switching and Routing",
+      // "Networking Strategy & Optimization Services",
+      // "Network Integration & Deployment Services",
+      // "Network Managed Services",
+      // "High Speed Network",
+      // "Internet of Things",
+      // "Transmission & Optical Network solutions",
+      // "Converged Communications Services",
+      // "Video Conference, Digital Signage, & IPTV",
+      // "Mobility & Wireless Solutions",
+      // "Network Health Check and Audit Study",
     ],
     image: cybersecurityImage,
     additionalParagraph:
-      "How can you operate a successful business without a solid foundation? Our Infrastructure & Networking Technology (INT) team develops end-to-end solutions to build a robust framework for our clients’ businesses. This encompasses everything from architecture design right through to project implementation and managed services.",
+      "Building a Strong Foundation for Your Business",
     extraContent:
-      "We begin by taking a step back to examine the wider business environment you are trading in. We listen to your challenges and build a detailed picture of your unique needs. We take a deep dive into your operational efficiency and evaluate how successful your current infrastructure is in delivering return on investment. We test the resilience of your systems and appliances against potential threats and look for weaknesses in data availability. We then couple these insights with intelligent networking and connectivity solutions to restructure the digital foundation of your business.",
+      "How can you operate a successful business without a solid foundation? Our Infrastructure & Networking Technology team develops end-to-end solutions to build a robust framework for our clients’ businesses. This encompasses everything from architecture design right through to project implementation and managed services.",
 
     newHeading: "",
     newParagraph:
-      "We give you full control of your infrastructure and provide in-depth training to help you understand how to maximize the value of your assets and the most effective ways of operating them.",
+      "We begin by taking a step back to examine the wider business environment you are trading in. We listen to your challenges and build a detailed picture of your unique needs. We take a deep dive into your operational efficiency and evaluate how successful your current infrastructure is in delivering return on investment. We test the resilience of your systems and appliances against potential threats and look for weaknesses in data availability. We then couple these insights with intelligent networking and connectivity solutions to restructure the digital foundation of your business.",
 
     additionalHeadings: [
       {
+        heading: "",
+        paragraph:
+          "",
+          details: [
+                "The software-defined wide-area network ",
+                "Collaboration Solutions",
+                "Switching and Routing",
+                "Networking Strategy & Optimization Services",
+                "Network Integration & Deployment Services",
+                "Network Managed Services",
+                "High Speed Network",
+                "Internet of Things",
+                "Transmission & Optical Network solutions",
+                "Converged Communications Services",
+                "Video Conference, Digital Signage, & IPTV",
+                "Mobility & Wireless Solutions",
+                "Network Health Check and Audit Study",
+          ],
+        },
+
+      {
         heading: "Our Infrastructure Solutions",
         paragraph:
-          "Data Centers Preparation, power, cooling and racks, Data Center Infrastructure Management (DCIM), Intelligent Data Center Enablement, Turnkey MEP works, Testing and certifying data centers (Data Center All Tier (Uptime), IT infrastructure availability and resilience (part of Business Continuity),Health check and data center gap analysis),  Maintenance and Managed services for data centers and command centers.",
+          "Data Centers Preparation, power, cooling and racks, Data Center Infrastructure Management (DCIM), Intelligent Data Center Enablement, Turnkey MEP works, Testing and certifying data centers (Data Center All Tier (Uptime), IT infrastructure availability and resilience (part of Business Continuity),Health check and data center gap analysis), Maintenance and Managed services for data centers and command centers.",
           details: [
 
           ],
@@ -430,25 +470,25 @@ export const contentData: Record<string, ContentData> = {
       {
         heading: "Integrated Security Systems including:",
         paragraph:
-          "Perimeter Fence (HCIS Class 1, 2, 3, 4 & 5) and Crash Rated Anti- Vehicle Barrier, Physical Security Equipment (Road Blockers, Arm Barriers, Turnstiles, Bollards...)., Screening & Searching Equipment (Explosive Detectors, Baggage Scanner, Metal Detectors, Walk-through Detectors, UVIS, ANPR...), Intrusion Detection & Assessment System (IDAS) including Volumetric Sensors (Microwave) & Fence Mounted Fiber Sensors., Long Range Detection & Assessment Systems (LRDAS) including Long",
-          details: [
-
-          ],
-        },
-
-      {
-        heading: "Range Thermal Cameras & Radars.",
-        paragraph:
-          "Fence Lighting System and Electrical Distribution System (UPS & Generators),Dedicated Security Network Infrastructure, Security Management System (SMS) to integrate/manage the complete systems as unified platform / PSIM,  Construction of Security Control Centers, Gate Houses, Search Facility & Support Buildings.",
+          "Perimeter Fence (HCIS Class 1, 2, 3, 4 & 5) and Crash Rated Anti- Vehicle Barrier, Physical Security Equipment (Road Blockers, Arm Barriers, Turnstiles, Bollards...)., Screening & Searching Equipment (Explosive Detectors, Baggage Scanner, Metal Detectors, Walk-through Detectors, UVIS, ANPR...), Intrusion Detection & Assessment System (IDAS) including Volumetric Sensors (Microwave) & Fence Mounted Fiber Sensors., Long Range Detection & Assessment Systems (LRDAS) including Long.",
           details: [
 
           ],
          },
 
       {
+        heading: "Range Thermal Cameras & Radars.",
+        paragraph:
+          "Fence Lighting System and Electrical Distribution System (UPS & Generators), Dedicated Security Network Infrastructure, Security Management System (SMS) to integrate/manage the complete systems as unified platform / PSIM, Construction of Security Control Centers, Gate Houses, Search Facility & Support Buildings.",
+          details: [
+
+          ],
+        },
+
+      {
         heading: "Our Communication Services",
         paragraph:
-          "Structured Cabling Systems, Outside Plants (OSP), Telecommunication shelters, Indoor GSM solutions",
+          "Structured Cabling Systems, Outside Plants (OSP), Telecommunication shelters, Indoor GSM solutions.",
           details: [
 
           ],
@@ -461,26 +501,23 @@ export const contentData: Record<string, ContentData> = {
           details: [
 
           ],
-        },
-
-      {
-        heading: "Our Computing Solutions",
-        paragraph:
-          "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, SAP HANA, business analytics and virtualization workloads.",
-          details: [
-
-          ],
          },
 
       {
         heading:
-          "Business Process Outsourcing Managed Services & Strategic Outsourcing",
+          "Our Computing Solutions",
         paragraph:
-          "We deliver intelligent network infrastructure that empowers our clients, regardless of size, to manage their IT investments effectively and support their business objectives. We deliver next generation e-business solutions anywhere in the networking life cycle—from network consulting and integration to total network outsourcing. Through our powerful partnerships, we can give our clients access to emerging technological advances in optical, wireless, IP convergence, security and intelligent networking.",
+          "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, ERP, business analytics and virtualization workloads.",
           details: [
 
           ],
         },
+
+        {
+          heading:"Business Process Outsourcing Managed Services & Strategic Outsourcing",
+          paragraph: "We deliver intelligent network infrastructure that empowers our clients, regardless of size, to manage their IT investments effectively and support their business objectives. We deliver next generation e-business solutions anywhere in the networking life cycle_from network consulting and integration to total network outsourcing. Through our powerful partnerships, including certified network Systems, we can give our clients access to emerging technological advances in optical, wireless, IP convergence, security and intelligent networking.",
+          details: [],
+        }
     ],
   },
 };
