@@ -6,6 +6,7 @@ import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 import imageLogo from "../assets/LogoBanner.png";
+import Marquee from "react-fast-marquee";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -110,16 +111,29 @@ const Navbar = () => {
       }
     >
       <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-16 gap-2 items-center">
           <motion.div
             className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <Link to={"/"}>
-              <img src={imageLogo} alt="" className="w-[100px] h-[50px]" />
+              <img
+                src={imageLogo}
+                alt=""
+                className="w-[100px] min-w-[100px] h-[50px]"
+              />
             </Link>
           </motion.div>
+
+          {/* Marquee */}
+
+          <div className="text-blue-600 font-semibold px-2 py-1 text-center text-[1vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
+            {/* prettier-ignore */}
+            <Marquee>
+                <br /><br />    Shaping the Future with Technology           Empowering Leadership with Technology          Leading Through Technology
+            </Marquee>
+          </div>
 
           <div className="hidden md:flex space-x-8">
             {/* Home */}
