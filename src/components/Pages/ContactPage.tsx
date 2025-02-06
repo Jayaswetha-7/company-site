@@ -38,9 +38,9 @@ const ContactPage: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col lg:flex-row py-32 justify-between bg-white min-h-screen sm:max-h-screen">
+      <div className="flex flex-col lg:flex-row py-32 justify-between bg-white min-h-screen sm:max-h-screen ">
         {/* Left Section - Contact Form */}
-        <ScrollArea className="w-[92%] sm:w-[96%]  lg:w-[66%] h-[77vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-4 lg:mr-25 mb-10 lg:mb-0">
+        <ScrollArea className="w-[92%] sm:w-[96%]  lg:w-[66%] h-[77vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-4 lg:mr-25 mb-10 lg:mb-0 mt-0">
           <div className="w-full text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl">
             <SectionWithOptions
               title="How Can We Help?"
@@ -60,8 +60,7 @@ const ContactPage: React.FC = () => {
           </div>
         </ScrollArea>
 
-        {/* Right Section (Two Divs Side by Side) */}
-        <div className="lg:w-[33%] flex flex-col space-y-6 px-4 h-[60%]">
+        <div className="lg:w-[33%] flex flex-col xl:space-y-10 lg:space-y-4 sm:space-y-1 px-4 space-y-10">
           <ContactInfoCard
             title="Ready to start something new?"
             description="Have a unique project in mind? Feel free to reach out!"
@@ -227,11 +226,11 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   title,
   description,
 }) => (
-  <div className="xl:p-12 bg-gray-900 rounded-3xl max-w-5xl mx-0 lg:p-4 p-12">
+  <div className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
     {/* Conditionally render the content for "Need Development?" section */}
     {title === "Need Development?" && (
-      <div className="flex items-center xl:space-x-4 xl:mb-6 lg:mb-2 mb-6">
-        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl text-4xl">
+      <div className="flex items-center  xl:mb-6 lg:mb-2 mb-6">
+        <h1 className=" font-semibold text-white  text-4xl  xl:text-4xl lg:text-2xl ">
           {title}{" "}
         </h1>
       </div>
@@ -239,8 +238,8 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
 
     {/* Conditionally render the content for "Ready to start something new?" section */}
     {title === "Ready to start something new?" && (
-      <div className="flex items-center space-x-4 xl:mb-6 lg:mb-2 mb-6">
-        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl text-4xl">
+      <div className="flex items-center space-x-4  mb-6 xl:mb-6 lg:mb-2">
+        <h1 className=" font-semibold text-white  xl:text-4xl lg:text-2xl text-4xl">
           {title}
         </h1>
       </div>
@@ -254,7 +253,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
         </h1>
       )}
 
-    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left mb-10">
+    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left mb-10 lg:text-[71%] xl:text-lg text-lg">
       {description}
     </p>
 
@@ -263,10 +262,12 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
     {/* Email Section */}
     {title === "Ready to start something new?" ? (
       <div className="mb-4">
-        <p className="text-gray-500 font-semibold mb-2">Email:</p>
+        <p className="text-gray-500 xl:font-semibold lg:font-sans  font-semibold mb-2">
+          Email:
+        </p>
         <a
           href="mailto:contact@taphubs.org"
-          className="text-gray-500 hover:underline"
+          className="text-gray-500 hover:underline lg:text-[95%] xl:text-lg text-lg"
         >
           contact@taphubs.org
         </a>
@@ -274,7 +275,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
     ) : title === "Need Development?" ? (
       <div className="mb-4">
         <p className="text-gray-500 font-semibold mb-2">Our Address:</p>
-        <p className="text-gray-400">
+        <p className="text-gray-400 lg:text-[71%] xl:text-lg text-lg">
           Taphubs Global ,Karyavattam jn,Trivandrum 685504
         </p>
       </div>
