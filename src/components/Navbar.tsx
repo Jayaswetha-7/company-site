@@ -82,7 +82,9 @@ const Navbar = () => {
   ];
 
   const [openSheet, setOpenSheet] = useState<"about" | "services" | null>(null);
-  let closeTimeout: NodeJS.Timeout;
+  let closeTimeout: NodeJS.Timeout | null = null;
+  let stayOpenTimeout: NodeJS.Timeout | null = null;
+  let canClose = false; // Prevents closing before 3 seconds
 
   const handleMouseEnter = (menu: "about" | "services") => {
     if (closeTimeout) {
@@ -90,12 +92,17 @@ const Navbar = () => {
       closeTimeout = null;
     }
     setOpenSheet(menu);
+    if (!canClose) {
+      stayOpenTimeout = setTimeout(() => {
+        canClose = true; // Allows closing after 3 seconds
+      }, 3000); // 3 seconds delay
+    }
   };
 
   const handleMouseLeave = () => {
     closeTimeout = setTimeout(() => {
       setOpenSheet(null);
-    }, 300);
+    }, 1000);
   };
   useEffect(() => {
     if (openSheet === "about") {
@@ -153,7 +160,11 @@ const Navbar = () => {
                 <div onMouseEnter={() => handleMouseEnter("about")}>About</div>
               </Link>
 
-              <SheetContent className="">
+              <SheetContent
+                className=""
+                // onMouseEnter={() => handleMouseEnter("about")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="wfull  flex  h-[30vh] items-center px-4">
                   {/* Left Side */}
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
@@ -174,7 +185,7 @@ const Navbar = () => {
                   </div>
 
                   {/* Right Side */}
-                  <div className="w-full " onMouseLeave={handleMouseLeave}>
+                  <div className="w-full ">
                     {tabs.map(
                       (tab) =>
                         activeAboutTab === tab.name && (
