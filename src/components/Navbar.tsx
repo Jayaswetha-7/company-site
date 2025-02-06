@@ -334,25 +334,36 @@ const Navbar = () => {
               className="md:hidden overflow-hidden"
             >
               <div className="flex flex-col space-y-4 pb-4">
-                {["Home", "About", "Services", "Career", "Contact"].map(
-                  (item) => (
-                    <motion.div
-                      key={item}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => setIsOpen(false)}
-                      className="  text-center  border-b  w-[10vw] mx-auto   "
-                    >
-                      <Link
-                        to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                        className="  text-center font-semibold font-serif 
+                {[
+                  "Home",
+                  "About",
+                  "Services",
+                  "Products",
+                  "Career",
+                  "Contact",
+                ].map((item) => (
+                  <motion.div
+                    key={item}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => setIsOpen(false)}
+                    className="  text-center  border-b  w-[10vw] mx-auto   "
+                  >
+                    <Link
+                      to={
+                        item === "Home"
+                          ? "/"
+                          : item === "Products"
+                          ? "/about/lineofbusiness"
+                          : `/${item.toLowerCase()}`
+                      }
+                      className="  text-center font-semibold font-serif 
                       "
-                      >
-                        {item}
-                      </Link>
-                    </motion.div>
-                  )
-                )}
+                    >
+                      {item}
+                    </Link>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}
