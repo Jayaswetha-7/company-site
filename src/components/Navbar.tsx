@@ -124,7 +124,7 @@ const Navbar = () => {
               <img
                 src={imageLogo}
                 alt=""
-                className="w-[110px] min-w-[150px] h-[50px] "
+                className="w-[100px] min-w-[130px] h-[60px] bg-contain"
               />
             </Link>
           </motion.div>
@@ -150,7 +150,6 @@ const Navbar = () => {
               onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
             >
               <Link to={"/about"}>
-               
                 <div onMouseEnter={() => handleMouseEnter("about")}>About</div>
               </Link>
 
