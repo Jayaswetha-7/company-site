@@ -31,10 +31,10 @@ const Lineofbusiness: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white">
+      <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white overflow-hidden">
         <BreadcrumbWithCustomSeparator
           currentPage={contentData[selectedContent].title}
-        />
+         />
 
         <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[3%]">
           {/* Left Side Menu */}

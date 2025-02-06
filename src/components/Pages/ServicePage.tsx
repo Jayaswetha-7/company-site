@@ -6,7 +6,6 @@ import webDevelopmentImage from "../../assets/web.jpg";
 import networkSolutionImage from "../../assets/network.jpg";
 import aiIntegrationImage from "../../assets/ai.jpg";
 import cybersecurityImage from "../../assets/cyber.jpg";
-import { loadEnvFile } from "process";
 
 const contentData = {
   development: {

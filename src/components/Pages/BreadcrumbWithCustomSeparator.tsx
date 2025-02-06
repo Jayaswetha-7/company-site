@@ -68,7 +68,7 @@ const BreadcrumbWithCustomSeparator: React.FC<
 
   // Current page
   return (
-    <div className="w-full max-w-screen-xl mt-[7%] ml-8">
+    <div className="w-full max-w-screen-xl lg:mt-[7%] mt-[10vh] ml-8">
       <Breadcrumb>
         <BreadcrumbList className="flex items-center space-x-2 text-sm text-black">
           {breadcrumbPath}
