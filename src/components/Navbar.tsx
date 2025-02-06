@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -82,27 +82,19 @@ const Navbar = () => {
   ];
 
   const [openSheet, setOpenSheet] = useState<"about" | "services" | null>(null);
-  let closeTimeout: NodeJS.Timeout | null = null;
-  let stayOpenTimeout: NodeJS.Timeout | null = null;
-  let canClose = false; // Prevents closing before 3 seconds
-
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const handleMouseEnter = (menu: "about" | "services") => {
-    if (closeTimeout) {
-      clearTimeout(closeTimeout); // Prevents accidental closing when re-entering
-      closeTimeout = null;
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
     }
     setOpenSheet(menu);
-    if (!canClose) {
-      stayOpenTimeout = setTimeout(() => {
-        canClose = true; // Allows closing after 3 seconds
-      }, 3000); // 3 seconds delay
-    }
   };
 
   const handleMouseLeave = () => {
-    closeTimeout = setTimeout(() => {
+    closeTimerRef.current = setTimeout(() => {
       setOpenSheet(null);
-    }, 1000);
+    }, 2000); // 2000 milliseconds = 2 seconds
   };
   useEffect(() => {
     if (openSheet === "about") {
@@ -138,7 +130,11 @@ const Navbar = () => {
 
           {/* Marquee */}
 
+<<<<<<< HEAD
           <div className="text-blue-600 italic font-smoochsans font-bold  px-2 py-1 text-center text-[2.2vh] m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
+=======
+          <div className="text-blue-600  font-poppins font-bold  px-2 py-1 text-center text-[1.1  vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
+>>>>>>> 90b0184 (Changed NavSixe and readjusted)
             {/* prettier-ignore */}
             <Marquee speed={70}>
                 <br /><br />    Shaping the Future with Technology......Empowering Leadership with Technology......Leading Through Technology......
@@ -162,7 +158,7 @@ const Navbar = () => {
 
               <SheetContent
                 className=""
-                // onMouseEnter={() => handleMouseEnter("about")}
+                onMouseEnter={() => handleMouseEnter("about")}
                 onMouseLeave={handleMouseLeave}
               >
                 <div className="wfull  flex  h-[30vh] items-center px-4">
@@ -260,7 +256,11 @@ const Navbar = () => {
                 </div>
               </Link>
 
-              <SheetContent className="" onMouseLeave={handleMouseLeave}>
+              <SheetContent
+                className=""
+                onMouseLeave={handleMouseLeave}
+                onMouseEnter={() => handleMouseEnter("services")}
+              >
                 <div className="wfull flex px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {servicedata.map((tab) => (
