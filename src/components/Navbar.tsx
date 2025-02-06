@@ -130,7 +130,7 @@ const Navbar = () => {
 
           {/* Marquee */}
 
-          <div className="text-blue-600  font-poppins font-bold  px-2 py-1 text-center text-[1.1  vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
+          <div className="text-blue-600  font-SmoochSans italic font-bold  px-2 py-1 text-center text-[1.1  vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
             {/* prettier-ignore */}
             <Marquee speed={70}>
                 <br /><br />    Shaping the Future with Technology......Empowering Leadership with Technology......Leading Through Technology......
