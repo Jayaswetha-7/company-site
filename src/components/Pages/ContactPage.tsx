@@ -227,11 +227,11 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   title,
   description,
 }) => (
-  <div className="xl:p-12 bg-gray-900 rounded-3xl max-w-5xl mx-0 lg:p-4">
+  <div className="xl:p-12 bg-gray-900 rounded-3xl max-w-5xl mx-0 lg:p-4 p-12">
     {/* Conditionally render the content for "Need Development?" section */}
     {title === "Need Development?" && (
-      <div className="flex items-center xl:space-x-4 xl:mb-6 lg:mb-2">
-        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl">
+      <div className="flex items-center xl:space-x-4 xl:mb-6 lg:mb-2 mb-6">
+        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl text-4xl">
           {title}{" "}
         </h1>
       </div>
@@ -239,8 +239,8 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
 
     {/* Conditionally render the content for "Ready to start something new?" section */}
     {title === "Ready to start something new?" && (
-      <div className="flex items-center space-x-4 xl:mb-6 lg:mb-2">
-        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl">
+      <div className="flex items-center space-x-4 xl:mb-6 lg:mb-2 mb-6">
+        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl text-4xl">
           {title}
         </h1>
       </div>
@@ -254,9 +254,11 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
         </h1>
       )}
 
-    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left">{description}</p>
+    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left mb-10">
+      {description}
+    </p>
 
-    <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2"></div>
+    <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2 mb-6"></div>
 
     {/* Email Section */}
     {title === "Ready to start something new?" ? (
