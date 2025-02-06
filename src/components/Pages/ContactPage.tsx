@@ -210,7 +210,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
               className={`px-6 py-6 border text-gray-400 font-semibold rounded-full transition duration-300 ${
                 selectedOption === option
                   ? "bg-orange-500 text-white border-orange-500"
-                  : "border-gray-400 hover:border-white hover:text-white"
+                  : "border-gray-400 hover:border-orange-500 hover:border-2 hover:text-white"
               }`}
             >
               {option}
