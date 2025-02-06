@@ -15,6 +15,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        smoochsans: ["Smooch Sans", "serif"],
       },
       animation: {
         marquee: "marquee 15s linear infinite",
