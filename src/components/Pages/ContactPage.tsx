@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
           </div>
         </ScrollArea>
 
-        <div className="lg:w-[33%] flex flex-col xl:space-y-10 lg:space-y-4 sm:space-y-1 px-4 space-y-10">
+        <div className="lg:w-[33%] flex flex-col xl:space-y-10 lg:space-y-4 sm:space-y-6 px-4 space-y-10">
           <ContactInfoCard
             title="Ready to start something new?"
             description="Have a unique project in mind? Feel free to reach out!"
