@@ -13,6 +13,9 @@ export default {
           to: { transform: "translateX(-50%)" },
         },
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
       animation: {
         marquee: "marquee 15s linear infinite",
       },

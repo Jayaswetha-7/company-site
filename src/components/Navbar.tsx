@@ -138,14 +138,14 @@ const Navbar = () => {
 
           {/* Marquee */}
 
-          <div className="text-blue-600 font-sans font-semibold px-2 py-1 text-center text-[1vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
+          <div className="text-blue-600  font-poppins font-bold  px-2 py-1 text-center text-[1.1  vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
             {/* prettier-ignore */}
             <Marquee>
                 <br /><br />    Shaping the Future with Technology......Empowering Leadership with Technology......Leading Through Technology......
             </Marquee>
           </div>
 
-          <div className="hidden md:flex space-x-8 font-medium">
+          <div className="hidden md:flex space-x-8 font-semibold">
             {/* Home */}
             <Link to={"/"}>
               <h1>Home</h1>

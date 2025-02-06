@@ -12,7 +12,7 @@ function SubHero() {
       }}
     >
       <div className=" mx-auto flex h-[80%] flex-col  justify-center items-start  gap-2 text-center ml-[5vw]   ">
-        <h1 className="  text-white font-bold  font-serif text-[5vw] sm:w-[60%] sm:text-[3vw]  text-left ">
+        <h1 className="  text-white font-semibold  font-serif text-[5vw] sm:w-[60%] sm:text-[3vw]  text-left ">
           Your Business, <br /> Our Smartest Solutions
         </h1>
         <Link
