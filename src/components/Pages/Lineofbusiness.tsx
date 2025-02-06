@@ -56,12 +56,8 @@ const Lineofbusiness: React.FC = () => {
                   {section.title}
                 </div>
               ))}
-
-          
             </div>
           </div>
-
-          
 
           {/* Right Side Content */}
           <div className="w-full lg:w-3/5 p-10 overflow-auto h-[50%] mb-10">
@@ -99,12 +95,27 @@ const Lineofbusiness: React.FC = () => {
             {contentData[selectedContent].additionalHeadings.map(
               (section, index) => (
                 <div key={index}>
-                  <h4 className="mt-6 text-lg mb-3 text-black font-bold">
+                  <h4 className="mt-9 text-lg mb-3 text-black font-bold">
                     {section.heading}
                   </h4>
                   <p className="mt-1 text-lg mb-3 text-black">
                     {section.paragraph}
                   </p>
+
+                  {/* Check if details exist and render as bullet points */}
+                  {section.details && section.details.length > 0 && (
+                    <ul className="list-disc pl-9">
+                      {" "}
+                      {section.details.map((detail, detailIndex) => (
+                        <li
+                          key={detailIndex}
+                          className="text-lg mb-2 text-black"
+                        >
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               )
             )}

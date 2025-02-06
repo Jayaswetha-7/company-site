@@ -61,7 +61,7 @@ const ContactPage: React.FC = () => {
         </ScrollArea>
 
         {/* Right Section (Two Divs Side by Side) */}
-        <div className=" lg:w-[33%] flex flex-col space-y-6 px-4 ">
+        <div className="lg:w-[33%] flex flex-col space-y-6 px-4 h-[60%]">
           <ContactInfoCard
             title="Ready to start something new?"
             description="Have a unique project in mind? Feel free to reach out!"
@@ -113,7 +113,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
   return (
     <div
-      className={`flex flex-col lg:flex-row mb-6 border-b-2 border-gray-800 pt-10 ${extraClasses}`}
+      className={`flex flex-col lg:flex-row lg:mb-1 border-b-2 border-gray-800 pt-10 ${extraClasses}`}
     >
       <div className="mb-4 lg:mb-0 lg:w-1/2">
         <h1 className="text-4xl lg:text-5xl font-bold text-white text-left">
@@ -227,18 +227,22 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   title,
   description,
 }) => (
-  <div className="p-12 bg-gray-900 rounded-3xl max-w-5xl mx-0 ">
+  <div className="xl:p-12 bg-gray-900 rounded-3xl max-w-5xl mx-0 lg:p-4">
     {/* Conditionally render the content for "Need Development?" section */}
     {title === "Need Development?" && (
-      <div className="flex items-center space-x-4 mb-6">
-        <h1 className="text-4xl font-semibold text-white">{title}</h1>
+      <div className="flex items-center xl:space-x-4 xl:mb-6 lg:mb-2">
+        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl">
+          {title}{" "}
+        </h1>
       </div>
     )}
 
     {/* Conditionally render the content for "Ready to start something new?" section */}
     {title === "Ready to start something new?" && (
-      <div className="flex items-center space-x-4 mb-6">
-        <h1 className="text-4xl font-semibold text-white">{title}</h1>
+      <div className="flex items-center space-x-4 xl:mb-6 lg:mb-2">
+        <h1 className="xl:text-4xl font-semibold text-white lg:text-2xl">
+          {title}
+        </h1>
       </div>
     )}
 
@@ -250,9 +254,9 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
         </h1>
       )}
 
-    <p className="text-gray-500 mb-10 text-left">{description}</p>
+    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left">{description}</p>
 
-    <div className="border-b-2 border-gray-500 mb-6"></div>
+    <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2"></div>
 
     {/* Email Section */}
     {title === "Ready to start something new?" ? (

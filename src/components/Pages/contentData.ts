@@ -7,6 +7,7 @@ import cybersecurityImage from "../../assets/LOBNetwork.jpg";
 interface Heading {
   heading: string;
   paragraph: string;
+  details: string[]
 }
 
 interface ContentData {
@@ -25,377 +26,358 @@ export const contentData: Record<string, ContentData> = {
   services: {
     title: "Digital Transformation",
     details: [
-      "Cloud and Cognitive Software Solutions",
-      "Data and Artificial Intelligence (AI)",
-      "Watson Internet of Things (WIoT)",
-      "Watson Customer Engagement",
-      "Cloud Services",
-      "UI/UX Design and Prototyping",
-      "E-Business and Portal Services",
-      "Data Protection and Disaster Recovery",
-      "Cloud, Automation and DevOps",
+      // "AI-Powered Customer Engagement",
+      // "AI-Based Supply Chain Optimization",
+      // "Predictive Analytics for Business Intelligence",
+      // "Cognitive IoT for Smart Industries",
+      // "AI-Enhanced Order Management & Fulfillment",
+      // "UI/UX Design and Prototyping",
+      // "E-Business and Portal Services",
+      // "Data Protection and Disaster Recovery",
+      // "Cloud, Automation and DevOps",
     ],
     image: webDevelopmentImage,
     additionalParagraph:
-      "At Taphubs, we create custom web solutions tailored to your business needs, optimizing performance and reducing downtime. Whether building from scratch or improving an existing site, we ensure a solution that fits your requirements.",
-    extraContent: `Watson Customer Engagement and Watson Supply Chain are powerful AI-driven solutions designed to address key business challenges across industries.
+      "Taphubs specialize in creating tailored web solutions to optimize performance, reduce downtime, and improve user experience. Whether you're building a new platform or enhancing an existing one, our team ensures a solution that meets your business needs.",
+    extraContent: ``,
 
-      Watson Supply Chain offerings help enterprises solve B2B Collaboration, Supply Chain Optimization, and Order Management & Fulfillment problems across the enterprise.`,
-
-    newHeading: "Power Systems solutions",
+    newHeading: "",
     newParagraph:
-      "Power Solutions are designed to help your business meet critical needs in any scenario, ensuring you stay operational and profitable around the clock. It provides high availability to your systems whenever you need it and centrally managed control of security and compliance, allowing you to respond quickly to any threat. All within a hybrid cloud environment built to stay ahead of modern data demands.",
+      "",
 
     additionalHeadings: [
       {
-        heading: "Multi-cloud Solutions",
+        heading: "Artificial Intelligence & Data Analytics",
         paragraph:
-          "Our Power Systems are specifically designed to handle large-scale data influxes and the most complex workloads, ensuring that your business data stays secure across various locations.",
+          "Modern AI-powered solutions help businesses streamline operations, automate decision-making, and gain real-time insights into their supply chain, customer engagement, and enterprise processes. Key AI-driven areas include:",
+       details: [
+            "AI-Powered Customer Engagement",
+            "AI-Based Supply Chain Optimization",
+            "Cognitive IoT for Smart Industries",
+            "Predictive Analytics for Business Intelligence",
+            "AI-Enhanced Order Management & Fulfillment",
+          ],
       },
 
       {
-        heading: " Power Systems Software",
+        heading: "Cloud & Digital Infrastructure Solutions",
         paragraph:
-          " Power Systems Software ensures the continuous availability of your data worldwide, supporting year-round business operations with robust disaster recovery capabilities.",
+          "We offer secure and scalable cloud solutions that help businesses transition smoothly to the cloud, optimize costs, and enhance agility. Our services include:",
+          details: [
+            "Multi-Cloud & Hybrid Cloud Services",
+            "Cloud Automation & DevOps",
+            "Cloud-Based Disaster Recovery & Data Protection",
+            "UI/UX Design & Digital Experience Platforms"
+
+          ],
       },
 
       {
-        heading: "Enhancing the Power of Your Data",
+        heading: "Enterprise-Grade Computing Solutions",
         paragraph:
-          " Power Systems supports SAP HANA, an advanced in-memory platform that turns your data into actionable insights, allowing businesses to respond instantly and innovate faster.",
+          "Our computing solutions ensure high performance, scalability, and security for critical workloads across industries. We provide:",
+          details: [
+                  "Enterprise Cloud Computing for AI & Data Analytics",
+                  "Performance-Optimized Computing for Large Workloads",
+                  "High-Speed Servers & Scalable Enterprise Infrastructure",
+          ],
       },
 
       {
-        heading: "Smart Data with AI Integration",
+        heading: "Data Storage & Backup Solutions",
         paragraph:
-          " Power Systems for AI unlock the full potential of your business data by providing advanced analytics that drive smarter decision-making, deeper insights, and build customer trust.",
-      },
+          "We offer next-generation storage solutions designed for high availability, scalability, and security to help businesses manage their growing data needs.",
+          details: [
+               "Multi-Cloud Storage & Software-Defined Storage (SDS)",
+               "Flash Storage for High-Speed Data Processing",
+               "Enterprise Backup Solutions for Disaster Recovery",
+               "Scalable Data Management & Encryption Solutions",
+          ],
+        },
 
       {
-        heading: "Optimizing Performance with Taphubs Power Systems for Oracle",
+        heading: "Cybersecurity & Risk Management",
         paragraph:
-          "Our Power Systems are built to deliver exceptional performance for Oracle workloads, with a hardware utilization guarantee to ensure optimal efficiency.",
-      },
-
-      {
-        heading: "Tailored Embedded Solution Agreements",
-        paragraph:
-          "Our Embedded Solution Agreements offer an easy, flexible approach to integrating the Taphubs Power Systems portfolio with your business operations.",
-      },
-
-      {
-        heading: "Advanced Analytics & Machine Learning",
-        paragraph:
-          "Harness the power of advanced analytics combined with machine learning to transform your data, allowing for comprehensive data cleansing, model building, and predictive insights.",
-      },
-
-      {
-        heading: "Hybrid Cloud Solutions for Your Business",
-        paragraph:
-          "Unlock the potential of hybrid cloud with Taphubs, delivering strategic value through a fully encrypted Z platform, ensuring your sensitive data remains safe.",
-      },
-
-      {
-        heading: "Driving Continuous Innovation with DevOps",
-        paragraph:
-          "Taphubs' DevOps framework enables continuous innovation without compromising day-to-day business operations, ensuring effortless scalability.",
-      },
-
-      {
-        heading: "Boost Your Security to the Next Level",
-        paragraph:
-          "Protect your data with end-to-end encryption and secure service container technology, reducing security risks and ensuring full data integrity.",
-      },
-
-      {
-        heading: " LinuxONE Solutions",
-        paragraph:
-          "Combining the best open-source software with Taphubs' powerful LinuxONE system, we provide a secure, reliable infrastructure that supports a wide variety of workloads with high availability and scalability.",
-      },
+          "Protect your business with end-to-end security solutions, ensuring compliance, data protection, and resilience against cyber threats.",
+          details: [
+               "Firewalls & Intrusion Prevention Systems",
+               "Cloud Security & Data Encryption",
+               "Threat Intelligence & Incident Response",
+               "Security for IoT & Connected Devices",
+          ],
+        },
 
       {
         heading: "Smart Industry & IoT Solutions",
         paragraph:
-          "With unmatched operational efficiency, Taphubs LinuxONE provides the ideal Linux platform for any scale of workload, delivering a safe and reliable infrastructure on a single physical server.",
-      },
+        "Harness the power of IoT and smart technology to improve efficiency, reduce costs, and automate critical business processes.",
+        details: [
+            "Industrial IoT & Smart Manufacturing Solutions",
+            "AI-Driven Asset & Facility Management",
+            "Predictive Maintenance & Smart Monitoring",
 
-      
-
-      {
-        heading: "Accelerate Your Data Management with Taphubs Flash Storage",
-        paragraph:
-          "Taphubs Flash Storage systems enable companies to adjust prices, optimize inventory, prevent fraud, and make data-driven decisions faster with micro-latency performance.",
-      },
-
-    
-      {
-        heading: "Reliable Data Backup Solutions from Taphubs",
-        paragraph:
-          "Taphubs' tape storage solutions provide secure and cost-effective options for backing up your critical business data.",
+        ],
       },
 
       {
-        heading:
-          "Streamline Your Data Management with Software Defined Storage (SDS)",
+        heading: "Blockchain & Digital Trust Solutions",
         paragraph:
-          "With  SDS, you can improve data management, protection, and storage efficiency, leveraging Cloud Object Storage to offer flexible access and scalability.",
-      },
+          "Blockchain technology enables secure, transparent, and tamper-proof transactions across various industries. Our solutions include:",
+          details: [
+                 "Secure Supply Chain Tracking & Traceability",
+                 "Blockchain for Secure Transactions & Data Integrity",
+                 "Smart Contracts & Decentralized Business Applications",
+          ],
+        },
 
       {
-        heading: "System Solution Support",
+        heading: "Enterprise Software & IT Management",
         paragraph:
-          "understands the importance of technical support, offering a range of services and expert support to ensure the long-term success of your systems.",
-      },
+          "From enterprise resource planning (ERP) to intelligent automation, we help businesses optimize operations with cutting-edge software solutions.",
+          details: [
+                "Enterprise Resource Planning (ERP) & Business Process Automation",
+                "Intelligent IT Service Management (ITSM) & IT Optimization",
+                "Agile DevOps & Continuous Integration Solutions",
+          ],
+        },
 
       {
-        heading: "System Solution Services",
+        heading: "Talent & Business Consulting Services",
         paragraph:
-          "We offer comprehensive services including Hypervisor/OS support for Power and Z platforms, along with SDS solutions and data center optimization.",
-      },
-
-      {
-        heading: "Value Added Services at Taphubs",
-        paragraph:
-          "Our value-added services help clients reduce costs, manage assets efficiently, and support ongoing business needs through Systems Solutions and Services.",
-      },
-
-     
-
-      {
-        heading: "Cloud and Cognitive Software Solutions",
-        paragraph:
-          " delivers tailored cloud solutions that align with your unique workloads, optimizing your cloud journey and enabling scalable success.",
-      },
-
-      {
-        heading: "Unlock Data Potential with Taphubs and AI",
-        paragraph:
-          " is dedicated to helping our clients unlock the true value of their data, accelerating their path to AI-powered insights and solutions.",
-      },
-
-      {
-        heading: "Cloud Pak for Data with Taphubs",
-        paragraph:
-          "Taphubs uses Cloud Pak for Data to unlock valuable insights from data across a unified, cloud-native platform, empowering businesses to innovate faster and smarter.",
-      },
-
-      {
-        heading: "Cloud Pak for Applications",
-        paragraph:
-          "Accelerate app development with Taphubs' Cloud Pak for Applications, a solution built for Kubernetes to enhance agility and streamline development processes.",
-      },
-
-      {
-        heading: "Cloud Pak for Automation ",
-        paragraph:
-          "Taphubs provides Cloud Pak for Automation to help automate business processes, improving efficiency and reducing operational overhead.",
-      },
-
-      {
-        heading: "Cloud Pak for Integration",
-        paragraph:
-          "Taphubs enables seamless integration across various cloud environments with Cloud Pak for Integration, connecting data and services across multiple clouds.",
-      },
-
-      {
-        heading: "Manage Multi-cloud Environments with Cloud Pak",
-        paragraph:
-          "Our Cloud Pak for Multi-cloud Management simplifies the operational challenges of managing VM and Kubernetes-based applications, offering unified control across public and private clouds.",
-      },
-
-      {
-        heading: "Empowering IoT with Watson IoT Platform",
-        paragraph:
-          " Unlocks the full potential of IoT data through Watson IoT, enabling businesses to gain actionable insights and improve their connected devices with advanced analytics.",
-      },
-
-      {
-        heading: "Watson IoT: Transforming Industry",
-        paragraph:
-          "Watson IoT Platform enables businesses to gain value from IoT devices, turning data into valuable insights for smarter decision-making and enhanced customer experiences.",
-      },
-
-      {
-        heading: "Maximo Enterprise Asset Management",
-        paragraph:
-          "Maximo provides a unified platform for asset lifecycle management, optimizing maintenance and management across the enterprise.",
-      },
-
-      {
-        heading: "TRIRIGA IWMS: A Comprehensive Solution",
-        paragraph:
-          "TRIRIGA solution offers a comprehensive platform for lifecycle management of facilities and real estate, helping businesses optimize space utilization and reduce operational costs.",
-      },
-
-      {
-        heading: "Building Smarter with TRIRIGA Insights",
-        paragraph:
-          "TRIRIGA Building Insights uses machine learning to predict anomalies and improve efficiency in building operations, helping businesses achieve better resource management.",
-      },
-
-      {
-        heading: "Engineering Lifecycle Management",
-        paragraph:
-          "Engineering Lifecycle Management (ELM) offers an integrated suite of tools and practices that enable businesses to streamline product development and manage complex engineering processes.",
-      },
-
-      {
-        heading: "Watson Supply Chain Insights",
-        paragraph:
-          "Watson Supply Chain Insights provides deep visibility into supply chain operations, helping businesses optimize B2B collaboration and address challenges in order management and fulfillment.",
-      },
-
-      {
-        heading: "Watson Talent Solutions ",
-        paragraph:
-          "Taphubs leverages Watson Talent Solutions to improve talent acquisition and development, using AI-powered tools for recruitment, coaching, and employee assessments.",
-      },
-
-      {
-        heading: "Blockchain for Secure Business",
-        paragraph:
-          "With Blockchain, Taphubs helps businesses unlock the full potential of blockchain technology, delivering secure, scalable, and trusted solutions for a wide range of business needs.",
-      },
+          "Our strategic consulting services help businesses build a strong digital foundation, streamline operations, and align IT with business goals.",
+          details: [
+              "Strategic Business Planning & Governance",
+              "Risk & Compliance Management",
+              "IT Service & Infrastructure Optimization",
+              "Professional Training & Workforce Development"
+          ],
+        },
+  
     ],
   },
 
   solutions: {
     title: "Intelligent Business Solutions",
     details: [
-      "Enterprise Resources Planning",
-      "Customer Resources Management",
-      "Content Management Portals",
-      "Infrastructure and Systems Management Services",
-      "Robotics Process Automation",
-      "System Integration",
+      // "Enterprise Resources Planning",
+      // "Customer Resources Management",
+      // "Content Management Portals",
+      // "Infrastructure and Systems Management Services",
+      // "Robotics Process Automation",
+      // "System Integration",
     ],
     image: networkSolutionImage,
-    additionalParagraph: "",
+    additionalParagraph: "Empowering Digital Excellence with Proven Expertise",
     extraContent:
-      "The reason our clients choose to work with Taphubs is our proven track record in maximizing value and our reputation for driving digital excellence. Our experienced team will embed itself in your business to help you outshine competitors and boost your bottom line.",
+      "At TAPHUBS, our clients choose us because of our proven track record in maximizing value and driving digital transformation. With deep industry expertise, we help businesses outperform competitors and enhance profitability by integrating cutting-edge technologies and strategic solutions.",
 
     newHeading:
-      "We deliver success. Let us help you realize the potential of your business today.",
+      "",
     newParagraph:
-      " we pride ourselves on delivering world-class customer service, led by an international team of elite experts with deep knowledge of business processes across every sector. With decades of international experience, we've combined global insights with local expertise in the Saudi business landscape to create one of the most advanced tech teams in the world.",
+      "",
 
     additionalHeadings: [
       {
-        heading: "Blockchain Technology",
+        heading: "Our Core Solutions",
         paragraph:
-          "IOT & Smart Solutions, Big Data, BI & Analytics, Cognitive Analytics, AI, and Machine Learning",
-      },
+          "",
+          details: [
+                "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
+                "Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
+                "Content Management Portals – Efficiently manage and distribute digital content.",
+                "Infrastructure & Systems Management – Optimize IT resources and enhance performance.",
+                "Robotic Process Automation (RPA) – Automate repetitive tasks for increased efficiency.",
+                "System Integration – Seamlessly connect multiple platforms and applications.",
+                "Blockchain Technology – Secure, transparent, and decentralized solutions.",
+                "IoT & Smart Solutions – Transform operations with connected, data-driven intelligence.",
+                "Big Data, BI & Analytics – Gain actionable insights from vast data sources.",
+                "Cognitive Analytics, AI & Machine Learning – Leverage intelligent automation for innovation.",
+          ],       
+        },
       {
-        heading: "Cloud Enablement & Mobility Team",
+        heading: "Cloud Enablement & Mobility",
         paragraph:
-          "We know that realizing the potential of cloud technology is at the top of your agenda. We help clients grow more agile with leading cloud services. Our skilled consultants will help you transition to a new agile way of storing data with the best insights and technology. We are passionate about delivering a seamless end-user experience and achieving the best results for our clients.",
-      },
+          "We understand that harnessing cloud technology is a priority for modern businesses. Our Cloud Enablement & Mobility Team helps clients adopt scalable cloud solutions that enhance agility, security, and efficiency. Our experts ensure a seamless cloud transition, providing the best technology and insights for business growth.",
+          details: [
+
+          ],
+        },
       {
         heading: "Strategic Business Management",
         paragraph:
-          "Our Strategic Business Management team brings together our expertise in business consultancy and powerful IT solutions from world-leading partners. Our partnerships with top technology companies open the gateway to world-class expertise, insights, and infrastructure to maximize the value of your business.",
-      },
+          "Our Strategic Business Management Team combines business consultancy expertise with world-class IT solutions. Through strong partnerships with leading technology providers, we help businesses unlock new opportunities, optimize performance, and maximize value.",
+          details: [
+
+          ],
+        },
       {
         heading: "Business Consulting",
         paragraph:
-          "Strategic planning services (Vision, Mission, and Values development). Build Governance Offices (VRO, SMO, PfMO). Key Performance Indicators consultations and designing dashboards. Information Lifecycle Management.",
-      },
+          "",
+          details: [
+            "Strategic Planning – Define Vision, Mission, and Values.",
+            "Governance Office Development – Establish VRO, SMO, and PfMO for operational excellence.",
+            "Key Performance Indicators (KPI) & Dashboard Design – Improve decision-making with real-time insights.",
+            "Information Lifecycle Management – Optimize data governance and compliance.",
+
+          ],
+        },
       {
         heading: "Business Process Consulting",
         paragraph:
-          "Business process engineering, ITSM process engineering, Business Continuity routines.",
-      },
+          "",
+          details: [
+                "Business Process Engineering – Design and improve workflows for efficiency.",
+                "IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
+                "Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies.",
+          ],
+        },
       {
-        heading: "Compliance and Risk Management",
+        heading: "Compliance & Risk Management",
         paragraph:
-          "Risk Management Assessments, Services Roadmap development, ISO Consultations, and certifications.",
-      },
+          "",
+          details: [
+              "Risk Assessments – Identify, analyze, and mitigate business risks.",
+              "Service Roadmap Development – Plan for long-term success.",
+              "ISO Consultation & Certifications – Ensure compliance with industry standards.",
+          ],
+        },
       {
         heading: "Quality Assurance",
         paragraph:
-          "Managing the full test lifecycle (Functional/Non-Functional Testing), assessing Customer Experience for IT Services, building Roadmaps for Agile ITSM/DevOps environments transformation, End-to-End Quality Assurance Solutions Consulting and building.",
-      },
+          "",
+          details: [
+               "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
+               "Customer Experience Assessments – Optimize IT services for user satisfaction.",
+               "Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments.",
+          ],
+        },
       {
         heading: "Strategic Outsourcing",
         paragraph:
-          "IT professionals outsourcing, Business professionals outsourcing.",
-      },
+          "",
+          details: [
+             "IT professionals outsourcing, Business professionals outsourcing.",
+          ],
+        },
       {
         heading: "Managed Services",
-        paragraph: "IT Service Management, Plan, and Deliver.",
+        paragraph: "",
+        details: [
+               "IT Service Management, Plan, and Deliver.",
+        ],
       },
       {
         heading: "Talent Development & Education",
         paragraph:
-          "Professional Training, Tailored Training, and Tailored Development Programs to achieve specific business objectives.",
-      },
+          "",
+          details: [
+              "Professional Training – Equip teams with industry-leading expertise.",
+              "Tailored Training & Development – Customized programs to achieve specific business goals.",
+          ],
+        },
+
+        {
+          heading: "",
+          paragraph:
+            "At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era.",
+            details: [
+               
+            ],
+          },
     ],
   },
 
   security: {
-    title: "Cyber Security Solutions",
+    title: "Cybersecurity Resilience Solutions",
 
     details: [
-      "Firewalls",
-      "IPS",
-      "Mail Gateway",
-      "Web Filtering",
-      "Web Application Firewall",
-      "Wireless Security",
-      "Network Access Control",
+      // "Firewalls",
+      // "IPS",
+      // "Mail Gateway",
+      // "Web Filtering",
+      // "Web Application Firewall",
+      // "Wireless Security",
+      // "Network Access Control",
     ],
     image: aiIntegrationImage,
     additionalParagraph:
-      " we understand that cybersecurity is a critical priority for your business in today’s digital world.",
+      "Comprehensive Cybersecurity Solutions for Your Business",
     extraContent:
-      "The company has built a dedicated cybersecurity unit with top-tier technology experts across the Kingdom. We offer a comprehensive range of cybersecurity solutions designed to protect your business’s most valuable assets from emerging security threats and vulnerabilities. Our digital defense strategies combine unparalleled technical expertise with state-of-the-art security architecture to safeguard your business.",
+      "In today’s digital world, cybersecurity is a top priority for businesses of all sizes. At TAPHUBS, we have built a dedicated cybersecurity unit with top-tier technology experts from around the world. Our comprehensive security solutions protect your most valuable assets from emerging threats and vulnerabilities.",
 
     newHeading: "",
     newParagraph:
-      "Our vision is clear and effective: we aim to provide the highest level of security for your data while ensuring that your business operates seamlessly and efficiently. Our goal is to help you stay secure, safe, and successful in an ever-evolving digital landscape.",
+      "",
 
     additionalHeadings: [
       {
-        heading: "Security Intelligence",
+        heading: "Our Cybersecurity Solutions",
         paragraph:
-          "We provide robust security intelligence collection, analysis, and sharing through customer portals, data feeds, multi-level briefs, and dedicated security intelligence services.",
-      },
+          "",
+          details: [
+              "Firewalls – Protect your network from unauthorized access.",
+              "Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
+              "Mail Gateway – Safeguard emails from phishing, spam, and malware.",
+              "Web Filtering – Block harmful or inappropriate web content.",
+              "Web Application Firewall (WAF) – Defend web applications from cyber threats.",
+              
+          ],
+        },
 
       {
         heading: "Managed Security Services",
         paragraph:
           "Our comprehensive 24/7 security monitoring and log management offer businesses a 360-degree view of exposures, incidents, and threats, ensuring proactive defense and response.",
-      },
+          details: [
+
+          ],
+         },
 
       {
         heading: "Advanced Threat Protection",
         paragraph:
           "Advanced threat protection allows for an intelligent response to complex security threats across your organization, minimizing potential risks.",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Incident Response",
         paragraph:
           "We provide advanced incident response and forensic support, giving your business immediate access to critical expertise and resources to handle security incidents.",
-      },
+          details: [
+
+          ],
+         },
 
       {
         heading: "Building A Secure Infrastructure",
         paragraph:
           "Our primary goal is to fortify your business’s digital infrastructure against modern cybersecurity threats. With our world-class security solutions, we help protect your valuable assets and sensitive information.",
-      },
+          details: [
+
+          ],
+         },
 
       {
         heading: "ATPC: Managing Your Security 365 Days a Year",
         paragraph:
           "ATPC operates around the clock. Our cutting-edge Security Operations Center continually monitors and manages your security technologies, ensuring ongoing assessment and defense against security threats. We strive to maximize efficiency, reduce costs, and strengthen your cybersecurity posture.",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Our Managed Security Services Cover",
         paragraph:
           "Taphubs offers expert consultancy to address your dynamic security requirements. Our consultants embed directly within your business to provide an in-depth analysis of your organization’s security. They collaborate closely with you to keep your business secure, compliant, and recommend the most effective solutions tailored to your unique needs.",
-      },
+          details: [
+
+          ],
+        },
     ],
   },
 
@@ -431,50 +413,74 @@ export const contentData: Record<string, ContentData> = {
         heading: "Our Infrastructure Solutions",
         paragraph:
           "Data Centers Preparation, power, cooling and racks, Data Center Infrastructure Management (DCIM), Intelligent Data Center Enablement, Turnkey MEP works, Testing and certifying data centers (Data Center All Tier (Uptime), IT infrastructure availability and resilience (part of Business Continuity),Health check and data center gap analysis),  Maintenance and Managed services for data centers and command centers.",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Our Audiovisual Services:",
         paragraph:
           "E-learning solutions, Video walls, Auditoriums, Preparation of digital meeting rooms Display systems, Public address systems, Command and control centers preparation (including NOC and SOC)",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Integrated Security Systems including:",
         paragraph:
           "Perimeter Fence (HCIS Class 1, 2, 3, 4 & 5) and Crash Rated Anti- Vehicle Barrier, Physical Security Equipment (Road Blockers, Arm Barriers, Turnstiles, Bollards...)., Screening & Searching Equipment (Explosive Detectors, Baggage Scanner, Metal Detectors, Walk-through Detectors, UVIS, ANPR...), Intrusion Detection & Assessment System (IDAS) including Volumetric Sensors (Microwave) & Fence Mounted Fiber Sensors., Long Range Detection & Assessment Systems (LRDAS) including Long",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Range Thermal Cameras & Radars.",
         paragraph:
           "Fence Lighting System and Electrical Distribution System (UPS & Generators),Dedicated Security Network Infrastructure, Security Management System (SMS) to integrate/manage the complete systems as unified platform / PSIM,  Construction of Security Control Centers, Gate Houses, Search Facility & Support Buildings.",
-      },
+          details: [
+
+          ],
+         },
 
       {
         heading: "Our Communication Services",
         paragraph:
           "Structured Cabling Systems, Outside Plants (OSP), Telecommunication shelters, Indoor GSM solutions",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Our Power Management Systems",
         paragraph:
           "Energy Audit & Optimization by Using Self-Learning System, Backup power systems (generators, DC supply systems, UPS ... etc.), Green power solutions (Solar Systems), Grid power & Smart metering (HW & SW, part of smart campus), Uninterruptible Power Supply Systems, DC Supply systems, Home Energy Managements system.",
-      },
+          details: [
+
+          ],
+        },
 
       {
         heading: "Our Computing Solutions",
         paragraph:
           "We specialize in providing computing solutions for small-to-large enterprises to help them manage their workload. This includes everything from traditional tower/rack servers’ requirements to converged/hyper-converged solutions, SAP HANA, business analytics and virtualization workloads.",
-      },
+          details: [
+
+          ],
+         },
 
       {
         heading:
           "Business Process Outsourcing Managed Services & Strategic Outsourcing",
         paragraph:
           "We deliver intelligent network infrastructure that empowers our clients, regardless of size, to manage their IT investments effectively and support their business objectives. We deliver next generation e-business solutions anywhere in the networking life cycle—from network consulting and integration to total network outsourcing. Through our powerful partnerships, we can give our clients access to emerging technological advances in optical, wireless, IP convergence, security and intelligent networking.",
-      },
+          details: [
+
+          ],
+        },
     ],
   },
 };
