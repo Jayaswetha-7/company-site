@@ -15,10 +15,6 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-<<<<<<< HEAD
-        smoochsans: ["Smooch Sans", "serif"],
-=======
->>>>>>> 90b0184 (Changed NavSixe and readjusted)
       },
       animation: {
         marquee: "marquee 15s linear infinite",

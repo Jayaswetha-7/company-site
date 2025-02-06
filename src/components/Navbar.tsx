@@ -130,11 +130,7 @@ const Navbar = () => {
 
           {/* Marquee */}
 
-<<<<<<< HEAD
-          <div className="text-blue-600 italic font-smoochsans font-bold  px-2 py-1 text-center text-[2.2vh] m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
-=======
           <div className="text-blue-600  font-poppins font-bold  px-2 py-1 text-center text-[1.1  vw]   m-10 whitespace-break-spaces my-unformatted-div hidden md:block">
->>>>>>> 90b0184 (Changed NavSixe and readjusted)
             {/* prettier-ignore */}
             <Marquee speed={70}>
                 <br /><br />    Shaping the Future with Technology......Empowering Leadership with Technology......Leading Through Technology......
