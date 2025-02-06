@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
@@ -85,14 +85,17 @@ const Navbar = () => {
   let closeTimeout: NodeJS.Timeout;
 
   const handleMouseEnter = (menu: "about" | "services") => {
-    clearTimeout(closeTimeout); // Prevents accidental closing
+    if (closeTimeout) {
+      clearTimeout(closeTimeout); // Prevents accidental closing when re-entering
+      closeTimeout = null;
+    }
     setOpenSheet(menu);
   };
 
   const handleMouseLeave = () => {
     closeTimeout = setTimeout(() => {
       setOpenSheet(null);
-    }, 10000); // Adjust delay (300ms works well)
+    }, 300);
   };
   useEffect(() => {
     if (openSheet === "about") {
@@ -147,13 +150,8 @@ const Navbar = () => {
               onOpenChange={(isOpen) => setOpenSheet(isOpen ? "about" : null)}
             >
               <Link to={"/about"}>
-                {" "}
-                <div
-                  onMouseEnter={() => handleMouseEnter("about")}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  About
-                </div>
+               
+                <div onMouseEnter={() => handleMouseEnter("about")}>About</div>
               </Link>
 
               <SheetContent className="">
@@ -177,7 +175,7 @@ const Navbar = () => {
                   </div>
 
                   {/* Right Side */}
-                  <div className="w-full ">
+                  <div className="w-full " onMouseLeave={handleMouseLeave}>
                     {tabs.map(
                       (tab) =>
                         activeAboutTab === tab.name && (
@@ -247,15 +245,12 @@ const Navbar = () => {
               }
             >
               <Link to={"/services"}>
-                <div
-                  onMouseEnter={() => handleMouseEnter("services")}
-                  onMouseLeave={handleMouseLeave}
-                >
+                <div onMouseEnter={() => handleMouseEnter("services")}>
                   Services
                 </div>
               </Link>
 
-              <SheetContent className="">
+              <SheetContent className="" onMouseLeave={handleMouseLeave}>
                 <div className="wfull flex px-4">
                   <div className="max-w-[30vw] min-w-[20vw] pl-3 flex flex-col gap-3">
                     {servicedata.map((tab) => (
