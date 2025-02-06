@@ -201,11 +201,11 @@ const Navbar = () => {
                                         <p className="text-gray-600 xl:text-sm font-bold text-[60%]">
                                           {item.description}
                                         </p>
-                                        <div className="flex items-center gap-1 text-blue-600 ">
-                                          <span className=" text-[60%] xl:text-sm font-semibold flex-1">
+                                        <div className="flex items-center  text-blue-600 ">
+                                          <span className=" text-[0.6vw] xl:text-sm font-semibold flex-1">
                                             Explore Solutions
                                           </span>
-                                          <FaUpRightFromSquare className="w-3 h-3 flex-1" />
+                                          <FaUpRightFromSquare className="w-fit h-3 flex-1" />
                                         </div>
                                       </div>
                                     </Link>
