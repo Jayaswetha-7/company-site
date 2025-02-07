@@ -70,7 +70,7 @@ const DropMenuAbout = () => {
       </Link>
       {isOpen && (
         <div
-          className="w-screen bg-white  flex  top-[7vh] left-0 pt-6 fixed z-10 h-[30vh] items-center px-4"
+          className="w-screen bg-white  flex  top-[6vh] left-0 pt-6 fixed z-10 h-[30vh] items-center px-4"
           onMouseLeave={handleMouseLeave}
           onMouseEnter={handleMouseEnter}
         >
