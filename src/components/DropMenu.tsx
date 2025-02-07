@@ -62,7 +62,9 @@ const DropMenuAbout = () => {
     <div className="">
       <Link
         to="/about"
-        className=" text-black font-bold py-2 px-4 rounded"
+        className={` ${
+          location.pathname === "/about" ? "text-blue-500" : ""
+        } text-black font-bold py-1 mb-2 px-2 hover:text-blue-600`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

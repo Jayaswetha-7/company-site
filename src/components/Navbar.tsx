@@ -1,13 +1,13 @@
 import { useState,  } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import imageLogo from "../assets/LogoBanner.png";
 import DropMenuAbout from "./DropMenu";
 import DropmenuService from "./DropmenuService";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const location = useLocation();
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -34,7 +34,12 @@ const Navbar = () => {
 
           <div className="hidden md:flex space-x-8 font-semibold">
             {/* Home */}
-            <Link to={"/"}>
+            <Link
+              to={"/"}
+              className={` ${
+                location.pathname === "/" ? " text-blue-600 " : ""
+              } hover:text-blue-500`}
+            >
               <h1>Home</h1>
             </Link>
 
@@ -43,13 +48,25 @@ const Navbar = () => {
 
             {/* Services */}
             <DropmenuService />
-           
-            <Link to={"/contact"}>
+
+            <Link
+              to={"/contact"}
+              className={` ${
+                location.pathname === "/contact"
+                  ? "text-blue-600"
+                  : ""
+              } hover:text-blue-500`}
+            >
               <div>Contact</div>
             </Link>
 
             {/* Carrer Section */}
-            <Link to={"/career"}>
+            <Link
+              to={"/career"}
+              className={` ${
+                location.pathname === "/career" ? "text-blue-600" : ""
+              } hover:text-blue-500`}
+            >
               <div>Careers</div>
             </Link>
           </div>
