@@ -1,4 +1,4 @@
-import { useState,  } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -32,12 +32,14 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
+
+          {/* Menu Bar */}
           <div className="hidden md:flex space-x-8 font-semibold">
             {/* Home */}
             <Link
               to={"/"}
               className={` ${
-                location.pathname === "/" ? " text-blue-600 " : ""
+                location.pathname === "/" ? " text-blue-600 underline " : ""
               } hover:text-blue-500`}
             >
               <h1>Home</h1>
@@ -52,9 +54,7 @@ const Navbar = () => {
             <Link
               to={"/contact"}
               className={` ${
-                location.pathname === "/contact"
-                  ? "text-blue-600"
-                  : ""
+                location.pathname === "/contact" ? "text-blue-600 underline " : ""
               } hover:text-blue-500`}
             >
               <div>Contact</div>
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link
               to={"/career"}
               className={` ${
-                location.pathname === "/career" ? "text-blue-600" : ""
+                location.pathname === "/career" ? "text-blue-600 underline" : ""
               } hover:text-blue-500`}
             >
               <div>Careers</div>
@@ -126,6 +126,9 @@ const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
+
+
+
       </div>
     </motion.nav>
   );

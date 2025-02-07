@@ -59,7 +59,7 @@ const DropMenuAbout = () => {
         to="/about"
         className={` ${
           location.pathname === "/about"
-            ? "text-blue-500"
+            ? "text-blue-500 underline"
             : location.pathname === "/about/lineofbusiness"
             ? "text-blue-500"
             : ""
@@ -71,7 +71,7 @@ const DropMenuAbout = () => {
       </Link>
       {isOpen && (
         <div
-          className="w-screen bg-white  flex  top-[6vh] left-0 pt-6 fixed z-10 h-[30vh] items-center px-4"
+          className="w-screen bg-white flex  top-[6vh] left-0 pt-3 fixed z-10 h-[30vh] items-center px-4"
           onMouseLeave={handleMouseLeave}
           onMouseEnter={handleMouseEnter}
         >
@@ -80,7 +80,7 @@ const DropMenuAbout = () => {
             {tabs.map((tab) => (
               <button
                 key={tab.name}
-                onClick={() => setActiveAboutTab(tab.name)}
+                onMouseEnter={() => setActiveAboutTab(tab.name)}
                 className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
                           ${
                             activeAboutTab === tab.name

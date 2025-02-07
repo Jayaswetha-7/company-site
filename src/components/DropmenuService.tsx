@@ -46,7 +46,7 @@ const DropmenuService = () => {
       <Link
         to="/services"
         className={` ${
-          location.pathname === "/services" ? "text-blue-600" : ""
+          location.pathname === "/services" ? "text-blue-600 underline" : ""
         } text-black font-bold py-1 mb-2 px-2 hover:text-blue-500`}
         onMouseEnter={() => {
           setIsOpen(true);
@@ -66,7 +66,7 @@ const DropmenuService = () => {
             {servicedata.map((tab) => (
               <button
                 key={tab.title}
-                onClick={() => setActiveServiceTab(tab.title)}
+                onMouseEnter={() => setActiveServiceTab(tab.title)}
                 className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
               ${
                 activeServiceTab === tab.title
