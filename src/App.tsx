@@ -17,6 +17,7 @@ import { Analytics } from "@vercel/analytics/react";
 import MarqueeWrapper from "./components/MarqueeWrapper";
 
 import EventToast from "./components/EventToast";
+import Error404 from "./components/Pages/Error404";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -72,14 +73,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/career" element={<CarrerPage />} />
 
-          {/* Careers Route */}
-          {/* <Route path="/careers" element={<Careers />} /> */}
-
-          {/* Contact Route */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
-
-          {/* 404 Route (Optional) */}
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
+       
+          <Route path="*" element={<Error404/>} />
         </Routes>
       </div>
     </>
