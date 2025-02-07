@@ -38,26 +38,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
       <p className="text-gray-600 mb-6 leading-relaxed">{description}</p>
 
-      {/* <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="inline-flex items-center text-blue-600 font-semibold hover:text-purple-700 transition-colors"
-      >
-        Learn More
-        <svg
-          className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </motion.button> */}
+     
     </motion.div>
   );
 };

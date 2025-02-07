@@ -1,10 +1,12 @@
+
+
 interface ServiceCard2Props {
   image: string;
   title: string;
   desc: string;
 }
 
-function ServiceCard2({ image, title, desc }: ServiceCard2Props) {
+const  ServiceCard2 = ({ image, title, desc }: ServiceCard2Props) => {
   return (
     <div className="flex flex-col sm:flex-row w-full sm:w-[48%] min-w-[48%] sm:min-w-[40%] overflow-hidden transition-all transform duration-300 border rounded-lg border-black/20 gap-4">
       <div className="w-full sm:w-1/2 aspect-[4/3] bg-red-400 rounded-lg overflow-hidden">

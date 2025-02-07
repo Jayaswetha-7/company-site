@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import imageLogo from "../assets/LogoBanner.png";
-import DropMenuAbout from "./DropMenu";
+import DropMenuAbout from "./DropMenuAbout";
 import DropmenuService from "./DropmenuService";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
