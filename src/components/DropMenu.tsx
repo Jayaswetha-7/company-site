@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const tabs = [
   {
     name: "Overview",
@@ -42,28 +42,27 @@ const tabs = [
   },
 ];
 const DropMenuAbout = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [activeAboutTab, setActiveAboutTab] = useState("Overview");
 
-   
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
 
-   const handleMouseEnter = () => {
-    
-     setIsOpen(true);
-   };
-
-   const handleMouseLeave = () => {
-     
-       setIsOpen(false);
-     
-   };
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="">
       <Link
         to="/about"
         className={` ${
-          location.pathname === "/about" ? "text-blue-500" : ""
+          location.pathname === "/about"
+            ? "text-blue-500"
+            : location.pathname === "/about/lineofbusiness"
+            ? "text-blue-500"
+            : ""
         } text-black font-bold py-1 mb-2 px-2 hover:text-blue-600`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -155,6 +154,6 @@ const DropMenuAbout = () => {
       )}
     </div>
   );
-}
+};
 
-export default DropMenuAbout
+export default DropMenuAbout;

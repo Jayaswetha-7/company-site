@@ -54,11 +54,9 @@ function App() {
                 <Careers />
                 <Contact />
 
+                <EventToast />
                 <MarqueeWrapper />
-<EventToast/>
-                <MarqueeWrapper/>
                 <Footer />
-               
               </>
             }
           />
