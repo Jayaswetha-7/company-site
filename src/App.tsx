@@ -40,6 +40,7 @@ function App() {
   return (
     <>
       <Analytics />
+      <EventToast path={location.pathname} /> {/* ✅ Toast based on path */}
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}
@@ -54,7 +55,7 @@ function App() {
                 <Careers />
                 <Contact />
 
-                <EventToast />
+               
                 <MarqueeWrapper />
                 <Footer />
               </>

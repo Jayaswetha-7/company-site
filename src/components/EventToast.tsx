@@ -2,20 +2,19 @@ import { useEffect, useRef } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { IoIosClose } from "react-icons/io";
 
-export default function EventToast() {
-  const hasShown = useRef(false); // Track if the toast has already been shown
+export default function EventToast({ path }: { path: string }) {
+  const hasShown = useRef(false); // ✅ Prevents duplicate toasts
 
   useEffect(() => {
+    if (path !== "/" || hasShown.current) return; // ✅ Show only on Home
+    hasShown.current = true; // Mark as shown
+
     const formattedDate = new Date().toLocaleDateString("en-US", {
       month: "long",
       day: "numeric",
       year: "numeric",
     });
 
-    if (hasShown.current) return; // Prevent duplicate toasts
-    hasShown.current = true;
-
-    // Custom Toast for Today's Events
     const toastId = toast.custom(
       (t) => (
         <div
@@ -31,12 +30,16 @@ export default function EventToast() {
           transition-all duration-500 ease-in-out 
           w-[20vw] min-w-[18vw] min-h-[10vh] hidden md:block mb-5 me-5`}
         >
-          {/* Toast Header */}
           <div className="flex items-center justify-between mb-2">
             <h3 className="font-bold text-lg font-poppins text-cyan-700">
               🗓️ Events
             </h3>
-            <button onClick={() => toast.dismiss(toastId)}>
+            <button
+              onClick={() => {
+                toast.dismiss(toastId);
+                hasShown.current = false; // ✅ Reset for re-trigger if needed
+              }}
+            >
               <IoIosClose className="text-cyan-600 hover:text-red-500 text-2xl transition-transform hover:scale-125" />
             </button>
           </div>
@@ -45,23 +48,17 @@ export default function EventToast() {
             {formattedDate}
           </h4>
 
-          {/* Event List */}
           <ul className="flex flex-col gap-2 mb-5 text-gray-800 font-medium">
             <li>• International Women's Day</li>
           </ul>
         </div>
       ),
       {
-        duration: 3000, // ❗ Toast will for 3 seconds
+        duration: 3000, // Toast duration
         position: "bottom-right",
       }
     );
-  }, []); // Runs only once on mount
+  }, [path]); // ✅ Runs when path changes
 
-  return (
-    <div>
-      {/* Toaster Positioned at Bottom-Right */}
-      <Toaster position="bottom-right" />
-    </div>
-  );
+  return <Toaster position="bottom-right" />;
 }
