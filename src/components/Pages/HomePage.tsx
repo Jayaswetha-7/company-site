@@ -17,11 +17,10 @@ const HomePage = () => {
       <NewService />
       <Careers />
       <Contact />
-
       <MarqueeWrapper />
       <Footer />
     </>
   );
-}
+};
 
-export default HomePage
+export default HomePage;
