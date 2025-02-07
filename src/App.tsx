@@ -18,6 +18,7 @@ import MarqueeWrapper from "./components/MarqueeWrapper";
 
 import EventToast from "./components/EventToast";
 import Error404 from "./components/Pages/Error404";
+import HomePage from "./components/Pages/HomePage";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -41,40 +42,17 @@ function App() {
   return (
     <>
       <Analytics />
-      <EventToast path={location.pathname} /> {/* ✅ Toast based on path */}
+      {/* ✅ Toast based on path */}
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar />
-                <LandingCard />
-                <About />
-                <NewService />
-                <Careers />
-                <Contact />
-
-               
-                <MarqueeWrapper />
-                <Footer />
-              </>
-            }
-          />
-
-          {/* Service Route */}
+          <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicePage />} />
-
-          {/* About Route */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/about/lineofbusiness" element={<Lineofbusiness />} />
-
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/career" element={<CarrerPage />} />
-
-       
-          <Route path="*" element={<Error404/>} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </>
