@@ -56,7 +56,7 @@ const DropmenuService = () => {
       </Link>
       {isOpen && (
         <div
-          className={`fixed top-[7vh] pt-4 left-0 w-screen bg-white p-2 flex items-center px-4 transition-all  duration-500 ease-in-out transform 
+          className={`fixed top-[6vh] pt-6 left-0 w-screen bg-red-500 pb-10 p-2 flex items-center px-4 transition-all  duration-500 ease-in-out transform 
           `}
           onMouseLeave={handleMouseLeave}
           onMouseEnter={handleMouseEnter}

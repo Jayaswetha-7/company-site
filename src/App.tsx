@@ -52,7 +52,7 @@ function App() {
                 <NewService />
                 <Careers />
                 <Contact />
-                <DropMenu />
+
                 <MarqueeWrapper />
                 <Footer />
               </>
