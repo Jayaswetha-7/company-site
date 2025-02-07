@@ -16,6 +16,7 @@ import LandingCard from "./components/LandingCard";
 import { Analytics } from "@vercel/analytics/react";
 import MarqueeWrapper from "./components/MarqueeWrapper";
 import DropMenu from "./components/DropMenu";
+import EventToast from "./components/EventToast";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -54,7 +55,10 @@ function App() {
                 <Contact />
 
                 <MarqueeWrapper />
+<EventToast/>
+                <MarqueeWrapper/>
                 <Footer />
+               
               </>
             }
           />
