@@ -14,6 +14,7 @@ import Lineofbusiness from "./components/Pages/Lineofbusiness";
 import NewService from "./components/NewService";
 import LandingCard from "./components/LandingCard";
 import { Analytics } from "@vercel/analytics/react";
+import MarqueeWrapper from "./components/MarqueeWrapper";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -50,6 +51,8 @@ function App() {
                 <NewService />
                 <Careers />
                 <Contact />
+
+                <MarqueeWrapper/>
                 <Footer />
               </>
             }
