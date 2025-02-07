@@ -1,22 +1,12 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
-import About from "./components/About";
-import Careers from "./components/Careers";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { Routes, Route, useLocation } from "react-router-dom";
 import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
 import CarrerPage from "./components/Pages/CarrerPage";
 import Lineofbusiness from "./components/Pages/Lineofbusiness";
-import NewService from "./components/NewService";
-import LandingCard from "./components/LandingCard";
 import { Analytics } from "@vercel/analytics/react";
-import MarqueeWrapper from "./components/MarqueeWrapper";
-
-import EventToast from "./components/EventToast";
 import Error404 from "./components/Pages/Error404";
 import HomePage from "./components/Pages/HomePage";
 function App() {
@@ -42,7 +32,7 @@ function App() {
   return (
     <>
       <Analytics />
-      {/* ✅ Toast based on path */}
+     
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}
