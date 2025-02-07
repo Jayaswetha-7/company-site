@@ -25,7 +25,7 @@ export default function EventToast({ path }: { path: string }) {
           className={`relative ${
             t.visible ? "animate-slide-in" : "animate-slide-out"
           } text-black px-4 py-3 rounded-2xl 
-          border border-gray-500 transform 
+           transform 
           hover:rotate-x-2 hover:rotate-y-2 hover:scale-105 
           transition-all duration-500 ease-in-out 
           w-[20vw] min-w-[18vw] min-h-[10vh] hidden md:block mb-5 me-5`}
@@ -48,7 +48,7 @@ export default function EventToast({ path }: { path: string }) {
             {formattedDate}
           </h4>
 
-          <ul className="flex flex-col gap-2 mb-5 text-gray-800 font-medium">
+          <ul className="flex flex-col gap-2 mb-5 text-gray-800 text-sm font-medium">
             <li>• International Women's Day</li>
           </ul>
         </div>
