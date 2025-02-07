@@ -17,26 +17,26 @@ export default function EventToast() {
 
     // Custom Toast for Today's Events
     const toastId = toast.custom(
-      () => (
+      (t) => (
         <div
           style={{
             backgroundColor: "#f5f0f5",
             backgroundImage: "linear-gradient(0deg, #f5f0f5 0%, #a8e2ea 100%)",
           }}
-          className={`relative text-black px-4 py-3 rounded-2xl 
-            transform hover:rotate-x-2 hover:rotate-y-2 hover:scale-105 
-            transition-all duration-500 ease-in-out 
-            w-[20vw] min-w-[18vw] min-h-[10vh] hidden md:block mb-5 me-5`}
+          className={`relative ${
+            t.visible ? "animate-slide-in" : "animate-slide-out"
+          } text-black px-4 py-3 rounded-2xl 
+          border border-gray-500 transform 
+          hover:rotate-x-2 hover:rotate-y-2 hover:scale-105 
+          transition-all duration-500 ease-in-out 
+          w-[20vw] min-w-[18vw] min-h-[10vh] hidden md:block mb-5 me-5`}
         >
           {/* Toast Header */}
           <div className="flex items-center justify-between mb-2">
-            <h3 className="font-bold text-lg font-poppins text-blue-600">
+            <h3 className="font-bold text-lg font-poppins text-cyan-700">
               🗓️ Events
             </h3>
-            <button
-              onClick={() => toast.remove(toastId)} // Use remove() instead of dismiss()
-              className="focus:outline-none"
-            >
+            <button onClick={() => toast.dismiss(toastId)}>
               <IoIosClose className="text-cyan-600 hover:text-red-500 text-2xl transition-transform hover:scale-125" />
             </button>
           </div>
@@ -52,7 +52,7 @@ export default function EventToast() {
         </div>
       ),
       {
-        duration: Infinity, // Stays until manually closed
+        duration: 3000, // ❗ Toast will for 3 seconds
         position: "bottom-right",
       }
     );
