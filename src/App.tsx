@@ -9,6 +9,7 @@ import Lineofbusiness from "./components/Pages/Lineofbusiness";
 import { Analytics } from "@vercel/analytics/react";
 import Error404 from "./components/Pages/Error404";
 import HomePage from "./components/Pages/HomePage";
+import EventToast from "./components/EventToast";
 function App() {
   const location = useLocation();
   useEffect(() => {
@@ -32,7 +33,7 @@ function App() {
   return (
     <>
       <Analytics />
-     
+      <EventToast />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}

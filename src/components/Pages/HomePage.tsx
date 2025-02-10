@@ -6,11 +6,11 @@ import LandingCard from "../LandingCard";
 import MarqueeWrapper from "../MarqueeWrapper";
 import Navbar from "../Navbar";
 import NewService from "../NewService";
-import EventToast from "../EventToast";
+// import EventToast from "../EventToast";
 const HomePage = () => {
   return (
     <>
-      <EventToast path={location.pathname} />
+      
       <Navbar />
       <LandingCard />
       <About />
