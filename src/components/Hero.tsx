@@ -65,7 +65,7 @@ const Hero = () => {
           </motion.p>
           <motion.a
             href="#contact"
-            className="inline-flex items-center max-w-[300px] px-3 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center max-w-[300px] px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
