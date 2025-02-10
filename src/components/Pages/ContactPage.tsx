@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { ScrollArea } from "../ui/scroll-area";
 import Navbar from "../Navbar";
 import { db } from "../../firebaseconfig";
-import { addDoc, collection, doc, setDoc } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  doc,
+  serverTimestamp,
+  setDoc,
+} from "firebase/firestore";
 
 // TypeScript: Define prop types for the SectionWithOptions component
 interface SectionWithOptionsProps {
@@ -114,15 +120,12 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
   const handleSubmit = async () => {
     // Get the current timestamp in IST
-    const now = new Date();
-    const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC +5:30
-    const istTime = new Date(now.getTime() + istOffset);
 
     // Prepare data to send
     const dataToSend = {
       ...formData,
 
-      timestamp: istTime.toISOString(), // Store timestamp in ISO format
+      timestamp: serverTimestamp(), // Store timestamp in ISO format
     };
 
     console.log("Form Data as JSON:", JSON.stringify(dataToSend, null, 2));
