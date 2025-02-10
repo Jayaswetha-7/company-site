@@ -1,5 +1,6 @@
 import bgImage from "../assets/subheroimg3.jpg";
 import { Link } from "react-router-dom";
+import { MdOutlineArrowCircleRight } from "react-icons/md";
 function SubHero() {
   return (
     <section
@@ -16,10 +17,10 @@ function SubHero() {
         </h1>
         <Link
           to={"/service/lineofbusiness"}
-          className="inline-flex px-4 py-3 text-sm bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl items-center "
+          className="inline-flex px-3 py-2 text-sm bg-blue-700 text-white  font-semibold hover:bg-green-200 hover:text-black transition-all shadow-lg hover:shadow-xl group items-center rounded-sm duration-700 ease-in-out"
         >
           Explore More
-          {/* <ArrowRight className="ml-2 sm:h-5 sm:w-5 h-3 w-3" /> */}
+          <MdOutlineArrowCircleRight className=" mx-2 group-hover:animate-bounce  group-hover:text-black transition-all duration-1000  text-white ease-in-out" />
         </Link>
       </div>
     </section>

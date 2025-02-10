@@ -44,7 +44,7 @@ const DropmenuService = () => {
                 to={tab.link}
                 key={tab.link}
                 className={`p-3 text-left flex justify-between font-medium  text-black border-b border-black transition-all 
-                   hover:bg-gray-500/40
+                   hover:bg-gray-500/20
               `}
               >
                 {tab.name}
