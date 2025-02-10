@@ -1,4 +1,3 @@
-import { Contact } from "lucide-react";
 import About from "../About";
 import Careers from "../Careers";
 import Footer from "../Footer";
@@ -9,13 +8,12 @@ import NewService from "../NewService";
 const HomePage = () => {
   return (
     <>
-      
       <Navbar />
       <LandingCard />
       <About />
       <NewService />
       <Careers />
-      <Contact />
+      {/* <Contact/> */}
 
       <Footer />
     </>
