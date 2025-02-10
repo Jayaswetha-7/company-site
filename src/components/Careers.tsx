@@ -23,7 +23,8 @@ const Careers = () => {
           <h3 className="text-xl font-semibold mb-4">Open Positions</h3>
           <p className="text-gray-600">
             We're currently building our team. Check back soon for exciting
-            opportunities or send us your resume for future considerations.
+            opportunities or send your resume to
+            careers@taphubs.com for future considerations.
           </p>
         </motion.div>
       </div>
