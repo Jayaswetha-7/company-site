@@ -13,9 +13,10 @@ const Error404 = () => {
         className="w-[100vw] bg-white h-[100vh] flex items-center justify-center"
       >
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[6vw] mb-5 font-SmoochSans">
-            Page Not Found
+          <h1 className="font-sans">
+            <span className="text-[20vw]">404 !</span>
           </h1>
+          <h1 className="text-[3vw] mb-5 font-SmoochSans">oops...Page Not Found</h1>
           <Link to={"/"}>
             <button
               className="bg-gradient-to-r from-cyan-400 via-blue-600 to-cyan-400 
