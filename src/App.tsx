@@ -34,13 +34,14 @@ function App() {
     <>
       <Analytics />
       <EventToast />
+
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
         <Routes>
           {/* Home Route */}
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/about/lineofbusiness" element={<Lineofbusiness />} />
+          <Route path="/service/lineofbusiness" element={<Lineofbusiness />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/career" element={<CarrerPage />} />
           <Route path="*" element={<Error404 />} />

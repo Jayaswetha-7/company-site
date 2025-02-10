@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { contentData } from "../Pages/contentData";
 import Navbar from "../Navbar";
-import BreadcrumbWithCustomSeparator from "./BreadcrumbWithCustomSeparator";
+import BreadcrumbWithCustomSeparator from "../BreadcrumbWithCustomSeparator";
 import { useLocation } from "react-router-dom";
 const Lineofbusiness: React.FC = () => {
   const location = useLocation();
@@ -34,7 +34,7 @@ const Lineofbusiness: React.FC = () => {
       <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white overflow-hidden">
         <BreadcrumbWithCustomSeparator
           currentPage={contentData[selectedContent].title}
-         />
+        />
 
         <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[3%]">
           {/* Left Side Menu */}

@@ -3,8 +3,8 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import imageLogo from "../assets/LogoBanner.png";
-import DropMenuAbout from "./DropMenuAbout";
 import DropmenuService from "./DropmenuService";
+import { QuickLinksFooter } from "./Data/QuikLinks";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -32,7 +32,6 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
-
           {/* Menu Bar */}
           <div className="hidden md:flex space-x-8 font-semibold">
             {/* Home */}
@@ -46,7 +45,16 @@ const Navbar = () => {
             </Link>
 
             {/* About */}
-            <DropMenuAbout />
+            <Link
+              to={"/about"}
+              className={` ${
+                location.pathname === "/about"
+                  ? " text-blue-600 underline "
+                  : ""
+              } hover:text-blue-500`}
+            >
+              About
+            </Link>
 
             {/* Services */}
             <DropmenuService />
@@ -54,7 +62,9 @@ const Navbar = () => {
             <Link
               to={"/contact"}
               className={` ${
-                location.pathname === "/contact" ? "text-blue-600 underline " : ""
+                location.pathname === "/contact"
+                  ? "text-blue-600 underline "
+                  : ""
               } hover:text-blue-500`}
             >
               <div>Contact</div>
@@ -92,33 +102,20 @@ const Navbar = () => {
               className="md:hidden overflow-hidden"
             >
               <div className="flex flex-col space-y-4 pb-4">
-                {[
-                  "Home",
-                  "About",
-                  "Services",
-                  "Products",
-                  "Career",
-                  "Contact",
-                ].map((item) => (
+                {QuickLinksFooter.map((item) => (
                   <motion.div
-                    key={item}
+                    key={item.name}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setIsOpen(false)}
                     className="  text-center  border-b  w-[10vw] mx-auto   "
                   >
                     <Link
-                      to={
-                        item === "Home"
-                          ? "/"
-                          : item === "Products"
-                          ? "/about/lineofbusiness"
-                          : `/${item.toLowerCase()}`
-                      }
+                      to={item.link}
                       className="  text-center font-semibold font-serif 
                       "
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   </motion.div>
                 ))}
@@ -126,9 +123,6 @@ const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
-
-
       </div>
     </motion.nav>
   );

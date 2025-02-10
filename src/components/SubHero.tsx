@@ -16,7 +16,7 @@ function SubHero() {
           Your Business, <br /> Our Smartest Solutions
         </h1>
         <Link
-          to={"/about/lineofbusiness"}
+          to={"/service/lineofbusiness"}
           className="inline-flex px-3 py-2 text-sm bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl items-center "
         >
           Explore More
@@ -28,4 +28,3 @@ function SubHero() {
 }
 
 export default SubHero;
-

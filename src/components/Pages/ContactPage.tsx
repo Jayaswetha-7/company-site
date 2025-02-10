@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ScrollArea } from "../ui/scroll-area";
 import Navbar from "../Navbar";
+import { db } from "../../firebaseconfig";
+import { addDoc, collection, doc, setDoc } from "firebase/firestore";
 
 // TypeScript: Define prop types for the SectionWithOptions component
 interface SectionWithOptionsProps {
@@ -110,6 +112,29 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const handleSubmit = async () => {
+    // Get the current timestamp in IST
+    const now = new Date();
+    const istOffset = 5.5 * 60 * 60 * 1000; // IST is UTC +5:30
+    const istTime = new Date(now.getTime() + istOffset);
+
+    // Prepare data to send
+    const dataToSend = {
+      ...formData,
+
+      timestamp: istTime.toISOString(), // Store timestamp in ISO format
+    };
+
+    console.log("Form Data as JSON:", JSON.stringify(dataToSend, null, 2));
+
+    try {
+      await setDoc(doc(db, "contact", dataToSend.email), dataToSend);
+      console.log("Document written with to firesatore");
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+
   return (
     <div
       className={`flex flex-col lg:flex-row lg:mb-1 border-b-2 border-gray-800 pt-10 ${extraClasses}`}
@@ -194,6 +219,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <button
               type="submit"
+              onClick={handleSubmit}
               className="px-6 mb-10 py-6 border-2 border-gray-500 w-full text-white font-semibold rounded-full transition duration-300 hover:border-2 hover:border-white hover:text-white hover:bg-orange-500"
             >
               Send

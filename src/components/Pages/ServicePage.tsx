@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar";
-import BreadcrumbWithCustomSeparator from "./BreadcrumbWithCustomSeparator";
+import BreadcrumbWithCustomSeparator from "../BreadcrumbWithCustomSeparator";
 import webDevelopmentImage from "../../assets/web.jpg";
 import networkSolutionImage from "../../assets/network.jpg";
 import aiIntegrationImage from "../../assets/ai.jpg";
