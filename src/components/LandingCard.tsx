@@ -14,7 +14,7 @@ import CookieConsent from "./CookieConsent";
 function LandingCard() {
   // Initialize autoplay plugin with options
   const autoplayPlugin = Autoplay({
-    delay: 3000, // 3 seconds between slides
+    delay: 5000, // 3 seconds between slides
     stopOnInteraction: false, // Continue autoplay after user interaction
   });
 
