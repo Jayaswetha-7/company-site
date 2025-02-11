@@ -42,7 +42,6 @@ export const EventsData = [
   { date: "2025-03-14", name: "International Day of Action for Rivers" },
   { date: "2025-03-15", name: "World Consumer Rights Day" },
   { date: "2025-03-20", name: "International Day of Happiness" },
-  { date: "2025-03-20", name: "World Sparrow Day" },
   { date: "2025-03-21", name: "World Poetry Day" },
   { date: "2025-03-21", name: "World Down Syndrome Day" },
   { date: "2025-03-21", name: "International Day of Forests" },
