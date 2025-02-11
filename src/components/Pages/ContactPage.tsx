@@ -31,10 +31,10 @@ const ContactPage: React.FC = () => {
   const { t } = useTranslation();
   // Define options that are used multiple times
   const services = [
-    t("contact.services.webDevelopment"),
-    t("contact.services.appDevelopment"),
-    t("contact.services.apiIntegration"),
-    t("contact.services.figmaDesign"),
+    t("service.digital_transformation"),
+    t("service.intelligent_business_solutions"),
+    t("service.digital_connectivity_infrastructure"),
+    t("service.cybersecurity_resilience_solutions"),
     t("contact.services.other"),
     
   ];

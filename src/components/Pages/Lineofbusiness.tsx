@@ -3,7 +3,9 @@ import { contentData } from "../Pages/contentData";
 import Navbar from "../Navbar";
 import BreadcrumbWithCustomSeparator from "../BreadcrumbWithCustomSeparator";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const Lineofbusiness: React.FC = () => {
+  const {t} =useTranslation();
   const location = useLocation();
   const sectionHash = location.hash.replace(
     "#",
@@ -40,7 +42,7 @@ const Lineofbusiness: React.FC = () => {
           {/* Left Side Menu */}
           <div className="w-full lg:w-1/4 p-4 text-black flex flex-col items-center lg:items-start justify-center lg:justify-start mt-10 lg:mt-0">
             <h3 className="text-xl font-bold mb-4 text-center lg:text-left">
-              Line of Business
+              {t("Line of Business")}
             </h3>
             {/* left side menu */}
             <div className="space-y-4 w-full flex flex-col items-center lg:items-start">
@@ -53,7 +55,7 @@ const Lineofbusiness: React.FC = () => {
                       : "hover:bg-gray-200 hover:text-black"
                   }`}
                 >
-                  {section.title}
+                 {t(section.title)}
                 </div>
               ))}
             </div>
@@ -62,7 +64,7 @@ const Lineofbusiness: React.FC = () => {
           {/* Right Side Content */}
           <div className="w-full lg:w-3/5 p-10 overflow-auto h-[50%] mb-10">
             <h2 className="text-3xl font-bold mb-4 text-black">
-              {contentData[selectedContent].title}
+            {t(contentData[selectedContent].title)}
             </h2>
 
             {/* Display the image based on selected content */}
@@ -76,17 +78,17 @@ const Lineofbusiness: React.FC = () => {
 
             {/* Additional Paragraphs */}
             <p className="mt-6 text-lg mb-5 text-black">
-              {contentData[selectedContent].additionalParagraph}
+            {t(contentData[selectedContent].additionalParagraph)}
             </p>
 
             <p className="mt-6 text-lg mb-5 text-black">
-              {contentData[selectedContent].extraContent}
+            {t(contentData[selectedContent].extraContent)} 
             </p>
 
             <ul className="list-disc pl-6 mt-7 text-black">
               {contentData[selectedContent].details.map((item, index) => (
                 <li key={index} className="mb-2">
-                  {item}
+                  {t(item)} 
                 </li>
               ))}
             </ul>
@@ -96,10 +98,10 @@ const Lineofbusiness: React.FC = () => {
               (section, index) => (
                 <div key={index}>
                   <h4 className="mt-9 text-lg mb-3 text-black font-bold">
-                    {section.heading}
+                  {t(section.heading)} 
                   </h4>
                   <p className="mt-1 text-lg mb-3 text-black">
-                    {section.paragraph}
+                  {t(section.paragraph)} 
                   </p>
 
                   {/* Check if details exist and render as bullet points */}
@@ -111,7 +113,7 @@ const Lineofbusiness: React.FC = () => {
                           key={detailIndex}
                           className="text-lg mb-2 text-black"
                         >
-                          {detail}
+                             {t(detail)}
                         </li>
                       ))}
                     </ul>

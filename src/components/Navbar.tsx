@@ -6,7 +6,9 @@ import imageLogo from "../assets/LogoBanner.png";
 import DropmenuService from "./DropmenuService";
 import { QuickLinksFooter } from "./Data/QuikLinks";
 import LanguageSwitcher from "./LanguageSwitch";
+import { useTranslation } from "react-i18next"
 const Navbar = () => {
+  const {t} = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   return (
@@ -42,7 +44,7 @@ const Navbar = () => {
                 location.pathname === "/" ? " text-blue-600 underline " : ""
               } hover:text-blue-500`}
             >
-              <h1>Home</h1>
+              <h1>{t("Home")}</h1>
             </Link>
 
             {/* About */}
@@ -54,7 +56,7 @@ const Navbar = () => {
                   : ""
               } hover:text-blue-500`}
             >
-              About
+              {t("About")}
             </Link>
 
             {/* Services */}
@@ -68,7 +70,7 @@ const Navbar = () => {
                   : ""
               } hover:text-blue-500`}
             >
-              <div>Contact</div>
+              <div>{t("Contact")}</div>
             </Link>
 
             {/* Carrer Section */}
@@ -78,7 +80,7 @@ const Navbar = () => {
                 location.pathname === "/career" ? "text-blue-600 underline" : ""
               } hover:text-blue-500`}
             >
-              <div>Careers</div>
+              <div>{t("Careers")}</div>
             </Link>
             <div>
               <LanguageSwitcher />

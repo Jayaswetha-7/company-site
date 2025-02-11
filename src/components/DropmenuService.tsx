@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ServiceMenuLinks } from "./Data/QuikLinks";
+import { useTranslation } from "react-i18next";
 
 const DropmenuService = () => {
+  const {t}=useTranslation();
   const location = useLocation();
   console.log(location.pathname);
 
@@ -29,7 +31,7 @@ const DropmenuService = () => {
         }}
         onMouseLeave={handleMouseLeave}
       >
-        Services
+        {t("Services")}
       </Link>
       {isOpen && (
         <div
@@ -47,7 +49,7 @@ const DropmenuService = () => {
                    hover:bg-gray-500/20
               `}
               >
-                {tab.name}
+                {t(tab.name)}
               </Link>
             ))}
           </div>

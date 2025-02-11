@@ -3,31 +3,32 @@ export const QuickLinksFooter = [
   { name: "About", link: "/about#overview" },
   { name: "Services", link: "/service/lineofbusiness" },
   { name: "Contact", link: "/contact" },
-  { name: "Career", link: "/career" },
+  { name: "Careers", link: "/career" },
 ];
 
 export const QuickLinksServices = [
-  { name: "Web Development", link: "/services#development" },
-  { name: "Network & Security", link: "/services#networking" },
+  { name: "servicess.development.title", link: "/services#development" },
+  { name: "servicess.networking.title", link: "/services#networking" },
   {
-    name: "AI Integration",
+    name: "servicess.ArtificialIntelligence.title",
     link: "/services#ArtificialIntelligence",
   },
-  { name: "Cyber Security", link: "/services#CyberSecurity" },
+  { name: "servicess.CyberSecurity.title", link: "/services#CyberSecurity" },
 ];
 
 export const ServiceMenuLinks = [
-  { name: "Digital Transformation", link: "/service/lineofbusiness#services" },
+  { name: "service.digital_transformation",//"Digital Transformation", 
+    link: "/service/lineofbusiness#services" },
   {
-    name: "Intelligent Business Solutions",
+    name: "service.intelligent_business_solutions",//"Intelligent Business Solutions",
     link: "/service/lineofbusiness#solutions",
   },
   {
-    name: "Cybersecurity Resilience Solutions",
+    name: "service.cybersecurity_resilience_solutions", //"Cybersecurity Resilience Solutions",
     link: "/service/lineofbusiness#security",
   },
   {
-    name: "Digital Connectivity & Infrastructure",
+    name: "service.digital_connectivity_infrastructure",//"Digital Connectivity & Infrastructure",
     link: "/service/lineofbusiness#network",
   },
 ];
