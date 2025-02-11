@@ -5,6 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import imageLogo from "../assets/LogoBanner.png";
 import DropmenuService from "./DropmenuService";
 import { QuickLinksFooter } from "./Data/QuikLinks";
+import LanguageSwitcher from "./LanguageSwitch";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -13,7 +14,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={
-        "fixed w-full z-50 transition-all duration-300 bg-white text-black  shadow-lg"
+        "fixed w-full z-50 transition-all duration-300 bg-white text-black  shadow-lg "
       }
     >
       <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +34,7 @@ const Navbar = () => {
           </motion.div>
 
           {/* Menu Bar */}
-          <div className="hidden md:flex space-x-8 font-semibold">
+          <div className="hidden md:flex space-x-8 justify-center items-center font-semibold">
             {/* Home */}
             <Link
               to={"/"}
@@ -79,17 +80,27 @@ const Navbar = () => {
             >
               <div>Careers</div>
             </Link>
+            <div>
+              <LanguageSwitcher />
+            </div>
           </div>
 
           {/* Mobile Nav Closing and Opening Button */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </motion.button>
+          <div className="md:hidden flex items-center justify-center ">
+            <LanguageSwitcher  />{" "}
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden text-gray-700"
+            >
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </motion.button>
+          </div>
         </div>
 
         {/* Mobile Nav bar Section */}
