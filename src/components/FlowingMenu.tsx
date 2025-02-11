@@ -1,6 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface MenuItemProps {
   link: string;
@@ -25,6 +26,7 @@ const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
 };
 
 const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
+  const{t}=useTranslation();
   const itemRef = React.useRef<HTMLDivElement>(null);
   const marqueeRef = React.useRef<HTMLDivElement>(null);
   const marqueeInnerRef = React.useRef<HTMLDivElement>(null);
@@ -82,7 +84,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
     return Array.from({ length: 4 }).map((_, idx) => (
       <React.Fragment key={idx}>
         <span className="text-[#060606] uppercase font-normal text-[2vh] leading-[1.2] p-[1vh_1vw_0]">
-          {text}
+          {t(text)}
         </span>
         <div
           className="w-[200px] h-[7vh] my-[2em] mx-[2vw] p-[1em_0] rounded-[50px] bg-cover bg-center"
@@ -90,7 +92,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
         />
       </React.Fragment>
     ));
-  }, [text, image]);
+  }, [text, image,t]);
 
   return (
     <div
@@ -103,7 +105,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {text}
+        {t(text)}
       </Link>
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-white translate-y-[101%]"

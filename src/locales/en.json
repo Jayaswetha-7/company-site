@@ -1,4 +1,116 @@
 {
-    "About Us": "fhdjsfh",
-    "about_us":"As a forward-thinking technology company, we're committed to delivering innovative solutions that drive digital transformation. Our team of experts brings together years of experience in varioustech domains."
+
+    "Home":"Home",
+
+    "connecting":"Connecting innovation with possibility. We create seamless digital,experiences that transform businesses and empower growth.",
+    "Start_Your_Journey":"Start Your Journey",
+     "multiline_text": " Why <br /> Choose us ?",
+     "wcu": {
+        "expertise": {
+          "title": "Expertise",
+          "description": "Our team of highly skilled professionals brings extensive experience and deep industry knowledge to deliver cutting-edge IT solutions tailored to your unique business needs."
+        },
+        "technology": {
+          "title": "Technology",
+          "description": "We stay ahead of industry trends, leveraging the latest advancements in technology to provide you with innovative, future-proof solutions that drive success."
+        },
+        "solutions": {
+          "title": "Solutions",
+          "description": "Our client-centric approach ensures that we develop customized solutions tailored to your business objectives, enhancing efficiency, scalability, and long-term growth."
+        },
+        "results": {
+          "title": "Results",
+          "description": "With a proven track record of success, we have helped businesses across industries achieve their goals through strategic, high-impact IT solutions."
+        }
+      },
+      "sub_hero_text": "Your Business, <br /> Our Smartest Solutions",
+      "Explore More": "Explore More",
+
+      "Our_Services": "Our Services",
+        
+
+      "service": {
+    "digital_transformation": "Digital Transformation",
+    "intelligent_business_solutions": "Intelligent Business Solutions",
+    "digital_connectivity_infrastructure": "Digital Connectivity & Infrastructure",
+    "cybersecurity_resilience_solutions": "Cybersecurity Resilience Solutions"
+  },
+
+   "About Us": "About Us",
+    "about_us":"As a forward-thinking technology company, we're committed to delivering innovative solutions that drive digital transformation. Our team of experts brings together years of experience in varioustech domains.",
+    "staying": "We believe in staying ahead of the curve, continuously learningand adapting to new technologies to provide our clients with the best possible solutions for their unique challenges.",
+    "Need_IT_Solutions_?":"Need IT Solutions?",
+
+
+    "Join_Our_Team":"Join Our Team",
+    "always":"We're always looking for talented individuals who are passionate about technology and innovation. Join us in shaping the future of digital solutions.",
+    "open":"Open Positions",
+    "building":"We're currently building our team. Check back soon for exciting opportunities or send us your resume for future considerations." ,
+
+    "Who_we_are": "Who We Are",
+    "About_us": "About Us",
+    "forward_thinking": "Taphubs is a forward-thinking IT solutions provider dedicated to helping businesses navigate the digital landscape. With a focus on innovation,we offer cutting-edge services in app development, web solutions, cloud services, and cybersecurity. Our expert team ensures your digital infrastructure is secure, efficient, and scalable, allowing you to focus on growth. At Taphubs, we are committed to delivering tailored solutions that drive success, streamline operations, and empower businesses to thrive in an increasingly connected world.",
+    "We believe that":"We believe that",
+      "Technology":"technology",
+      "CAN":"can",
+      "change":"CHANGE",
+      "the world":"the world",
+      "we_are_commited":"That's why we're committed to delivering innovative IT solutions to businesses of all sizes. Our team of experienced professionals is dedicated to helping you achieve your goals and thrive in a rapidly evolving digital landscape.",
+
+    "Let":"Let's",
+    "start":"start now.",
+    "Get_in_Touch":"Get in Touch",
+
+    "your":"Your browser does not support the video tag.",
+    "Wanttojoin":"Want to join our team?If you have a passion & want to work for a rapidly growing entrepreneurial company, send your resume to",
+
+    "Current_Openings": "Current Openings",
+    "POSITION": "Position",
+    "LOCATION": "Location",
+    "POSTING_DATE": "Posting Date",
+    "sorry":"We're not hiring at the moment, but check back soon for opportunities!",
+
+    "contact": {
+      "howCanWeHelp": "How Can We Help?",
+      "subtitle": "You can book multiple services",
+      "projectTitle": "Tell us about your project",
+      "contactUs": "Contact Us",
+      "emailLabel": "Email:",
+      "addressLabel": "Our Address:",
+      "address": "Taphubs Global, Karyavattam Jn, Trivandrum 685504",
+      "services": {
+        "webDevelopment": "Web Development",
+        "appDevelopment": "App Development",
+        "apiIntegration": "API Integration",
+        "figmaDesign": "Figma Design",
+        "other": "Other"
+      },
+      "projectTypes": {
+        "scratch": "Developing from Scratch",
+        "improve": "Improve Existing Development",
+        "innovate": "Innovate New Solutions",
+        "other": "Other"
+      },
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "message": "Message",
+        "send": "Send"
+      },
+      "info": {
+        "readyToStart": "Ready to start something new?",
+        "readyToStartDescription": "Have a unique project in mind? Feel free to reach out!",
+        "needDevelopment": "Need Development?",
+        "needDevelopmentDescription": "Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
+      }
+    }
+  
+
+
+
+
+
+
+
 }

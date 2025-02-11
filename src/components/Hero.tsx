@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 
 import SplitText from "./BlurText";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="home"
@@ -59,9 +61,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-          >
-            Connecting innovation with possibility. We create seamless digital
-            experiences that transform businesses and empower growth.
+          >{t("connecting")}
+            {/* Connecting innovation with possibility. We create seamless digital
+            experiences that transform businesses and empower growth. */}
           </motion.p>
           <motion.a
             href="#contact"
@@ -69,7 +71,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start Your Journey
+             {t("Start_Your_Journey")}
             <ArrowRight className="w-4 h-4 mx-3 text-center" />
           </motion.a>
         </motion.div>

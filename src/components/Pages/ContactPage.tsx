@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ScrollArea } from "../ui/scroll-area";
 import Navbar from "../Navbar";
 import { db } from "../../firebaseconfig";
+import { useTranslation } from "react-i18next";
 import {
   addDoc,
   collection,
@@ -27,20 +28,23 @@ interface ContactInfoCardProps {
 }
 
 const ContactPage: React.FC = () => {
+  const { t } = useTranslation();
   // Define options that are used multiple times
   const services = [
-    "Web Development",
-    "App Development",
-    "API Integration",
-    "Figma Design",
-    "Other",
+    t("contact.services.webDevelopment"),
+    t("contact.services.appDevelopment"),
+    t("contact.services.apiIntegration"),
+    t("contact.services.figmaDesign"),
+    t("contact.services.other"),
+    
   ];
 
   const projectTypes = [
-    "Developing from Scratch",
-    "Improve Existing Development",
-    "Innovate New Solutions",
-    "Other",
+    t("contact.projectTypes.scratch"),//"Developing from Scratch",
+    t("contact.projectTypes.improve"),//"Improve Existing Development",
+    t("contact.projectTypes.innovate"),//"Innovate New Solutions",
+    t("contact.projectTypes.other"),//"Other",
+   
   ];
 
   return (
@@ -51,18 +55,18 @@ const ContactPage: React.FC = () => {
         <ScrollArea className="w-[92%] sm:w-[96%]  lg:w-[66%] h-[77vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-4 lg:mr-25 mb-10 lg:mb-0 mt-0">
           <div className="w-full text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl">
             <SectionWithOptions
-              title="How Can We Help?"
-              subtitle="You can book multiple services"
+              title={t("contact.howCanWeHelp")}//"How Can We Help?"
+              subtitle={t("contact.subtitle")}//"You can book multiple services"
               options={services}
               extraClasses="pb-10"
             />
             <SectionWithOptions
-              title="Tell us about your project"
+              title={t("contact.projectTitle")}//"Tell us about your project"
               options={projectTypes}
               extraClasses="pb-10"
             />
             <SectionWithOptions
-              title="Contact Us"
+              title={t("contact.contactUs")}//"Contact Us"
               extraClasses="bg-opacity-50 pb-10"
             />
           </div>
@@ -70,13 +74,13 @@ const ContactPage: React.FC = () => {
 
         <div className="lg:w-[33%] flex flex-col xl:space-y-10 lg:space-y-4 sm:space-y-6 px-4 space-y-10">
           <ContactInfoCard
-            title="Ready to start something new?"
-            description="Have a unique project in mind? Feel free to reach out!"
+            title={t("contact.info.readyToStart")}//"Ready to start something new?"
+            description={t("contact.info.readyToStartDescription")}//"Have a unique project in mind? Feel free to reach out!"
             email="contact@taphubs.org"
           />
           <ContactInfoCard
-            title="Need Development?"
-            description="Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
+            title={t("contact.info.needDevelopment")}//"Need Development?"
+            description={t("contact.info.needDevelopmentDescription")}//"Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
             email="contact@taphubs.org"
             showCredentials={true}
           />
@@ -93,6 +97,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
   options,
   extraClasses = "",
 }) => {
+  const { t } = useTranslation();
   // State to track the selected option
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [formData, setFormData] = useState({
@@ -144,22 +149,22 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
     >
       <div className="mb-4 lg:mb-0 lg:w-1/2">
         <h1 className="text-4xl lg:text-5xl font-bold text-white text-left">
-          {title}
+        {t(title)}
         </h1>
         {subtitle && (
           <p className="text-left text-sm lg:text-base xl:text-lg">
-            {subtitle}
+              {t(subtitle)}
           </p>
         )}
       </div>
 
       {/* Conditionally render the form for the last section */}
-      {title === "Contact Us" ? (
+      {t(title) === t("contact.contactUs") ? (
         <div className="lg:w-1/2 flex flex-col justify-start space-y-4">
           <div className="space-y-8">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-white font-semibold">
-                Name
+              {t("contact.form.name")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -175,7 +180,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="email" className="text-white font-semibold">
-                Email
+              {t("contact.form.email")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -191,7 +196,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="company" className="text-white font-semibold">
-                Company
+              {t("contact.form.company")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -207,7 +212,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="message" className="text-white font-semibold">
-                Message
+              {t("contact.form.message")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white space-y-6">
                 <textarea
@@ -225,7 +230,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
               onClick={handleSubmit}
               className="px-6 mb-10 py-6 border-2 border-gray-500 w-full text-white font-semibold rounded-full transition duration-300 hover:border-2 hover:border-white hover:text-white hover:bg-orange-500"
             >
-              Send
+              {t("contact.form.send")}
             </button>
           </div>
         </div>
@@ -241,7 +246,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
                   : "border-gray-400 hover:border-orange-500 hover:border-2 hover:text-white"
               }`}
             >
-              {option}
+              {t(option)}
             </button>
           ))}
         </div>
@@ -254,62 +259,67 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   title,
   description,
-}) => (
-  <div className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
-    {/* Conditionally render the content for "Need Development?" section */}
-    {title === "Need Development?" && (
-      <div className="flex items-center  xl:mb-6 lg:mb-2 mb-6">
-        <h1 className=" font-semibold text-white  text-4xl  xl:text-4xl lg:text-2xl ">
-          {title}{" "}
-        </h1>
-      </div>
-    )}
-
-    {/* Conditionally render the content for "Ready to start something new?" section */}
-    {title === "Ready to start something new?" && (
-      <div className="flex items-center space-x-4  mb-6 xl:mb-6 lg:mb-2">
-        <h1 className=" font-semibold text-white  xl:text-4xl lg:text-2xl text-4xl">
-          {title}
-        </h1>
-      </div>
-    )}
-
-    {/* Render just the title for other sections */}
-    {title !== "Need Development?" &&
-      title !== "Ready to start something new?" && (
-        <h1 className="text-4xl font-semibold text-white mb-4 text-left">
-          {title}
-        </h1>
+}) => {
+  const { t } = useTranslation();
+  return (
+    <div className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
+      {/* Conditionally render the content for "Need Development?" section */}
+      {title === "contact.info.needDevelopment?" && (
+        <div className="flex items-center  xl:mb-6 lg:mb-2 mb-6">
+          <h1 className=" font-semibold text-white  text-4xl  xl:text-4xl lg:text-2xl ">
+            {t(title)}{" "}
+          </h1>
+        </div>
       )}
 
-    <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left mb-10 lg:text-[71%] xl:text-lg text-lg">
-      {description}
-    </p>
+      {/* Conditionally render the content for "Ready to start something new?" section */}
+      {title === "contact.info.readyToStart" && (
+        <div className="flex items-center space-x-4  mb-6 xl:mb-6 lg:mb-2">
+          <h1 className=" font-semibold text-white  xl:text-4xl lg:text-2xl text-4xl">
+            {t(title)}
+          </h1>
+        </div>
+      )}
 
-    <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2 mb-6"></div>
+      {/* Render just the title for other sections */}
+      {title !== "contact.info.needDevelopment?" &&
+        title !== "contact.info.readyToStart" && (
+          <h1 className="text-4xl font-semibold text-white mb-4 text-left">
+            {t(title)}
+          </h1>
+        )}
 
-    {/* Email Section */}
-    {title === "Ready to start something new?" ? (
-      <div className="mb-4">
-        <p className="text-gray-500 xl:font-semibold lg:font-sans  font-semibold mb-2">
-          Email:
-        </p>
-        <a
-          href="mailto:contact@taphubs.org"
-          className="text-gray-500 hover:underline lg:text-[95%] xl:text-lg text-lg"
-        >
-          contact@taphubs.org
-        </a>
-      </div>
-    ) : title === "Need Development?" ? (
-      <div className="mb-4">
-        <p className="text-gray-500 font-semibold mb-2">Our Address:</p>
-        <p className="text-gray-400 lg:text-[71%] xl:text-lg text-lg">
-          Taphubs Global ,Karyavattam jn,Trivandrum 685504
-        </p>
-      </div>
-    ) : null}
-  </div>
-);
+      <p className="text-gray-500 xl:mb-10 lg:mb-1 text-left mb-10 lg:text-[71%] xl:text-lg text-lg">
+        {t(description)}
+      </p>
+
+      <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2 mb-6"></div>
+
+      {/* Email Section */}
+      {title === "contact.info.readyToStart" ? (
+        <div className="mb-4">
+          <p className="text-gray-500 xl:font-semibold lg:font-sans  font-semibold mb-2">
+            {t("contact.emailLabel")}
+          </p>
+          <a
+            href="mailto:contact@taphubs.org"
+            className="text-gray-500 hover:underline lg:text-[95%] xl:text-lg text-lg"
+          >
+            contact@taphubs.org
+          </a>
+        </div>
+      ) : title === "contact.info.needDevelopment" ? (
+        <div className="mb-4">
+          <p className="text-gray-500 font-semibold mb-2">
+            {t("contact.addressLabel")}
+          </p>
+          <p className="text-gray-400 lg:text-[71%] xl:text-lg text-lg">
+            {t("contact.address")}
+          </p>
+        </div>
+      ) : null}
+    </div>
+  );
+};
 
 export default ContactPage;

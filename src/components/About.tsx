@@ -24,9 +24,11 @@ const About = () => {
               tech domains. */}
             </p>
             <p className="text-gray-600">
-              We believe in staying ahead of the curve, continuously learning
+            {t("staying")}
+            
+              {/* We believe in staying ahead of the curve, continuously learning
               and adapting to new technologies to provide our clients with the
-              best possible solutions for their unique challenges.
+              best possible solutions for their unique challenges. */}
             </p>
           </motion.div>
           <motion.div className="relative" {...fadeIn}>

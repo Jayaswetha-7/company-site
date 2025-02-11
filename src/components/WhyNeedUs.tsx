@@ -1,3 +1,4 @@
+import { useTranslation,Trans } from "react-i18next";
 import { motion } from "framer-motion";
 const fadeIn = {
   initial: { opacity: 0, y: 150 },
@@ -8,6 +9,7 @@ const fadeIn = {
 import Wcucomp from "./Wcucomp";
 import { wcuData } from "./Data/WhyChooseUsData";
 const WhyNeedUs = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="service"
@@ -21,7 +23,7 @@ const WhyNeedUs = () => {
         >
           {/* why choose us */}
           <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[5vh] sm:text-[7vh] my-6">
-            Why <br /> Choose us ?
+          <Trans i18nKey="multiline_text"> Why <br /> Choose us ?</Trans>
           </motion.h1>
           {/* div */}
           <motion.div className="flex gap-4 mt-2 justify-around items-center  sm:flex-nowrap  flex-wrap  ">
@@ -32,8 +34,8 @@ const WhyNeedUs = () => {
               >
                 <Wcucomp
                   image={item.image}
-                  header={item.title}
-                  desc={item.description}
+                  header={t(item.title)}
+                  desc={t(item.description)}
                 />
               </motion.div>
             ))}
