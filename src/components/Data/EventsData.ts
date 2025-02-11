@@ -5,7 +5,6 @@ export const EventsData = [
   { date: "2025-01-06", name: "World War Orphans Day" },
 
   { date: "2025-01-15", name: "Army Day" },
-  { date: "2025-01-20", name: "Penguin Awareness Day" },
   { date: "2025-01-26", name: "International Customs Day" },
   { date: "2025-01-27", name: "International Holocaust Day" },
   { date: "2025-01-28", name: "Data Protection Day" },
