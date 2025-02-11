@@ -1,5 +1,5 @@
 
-
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -9,17 +9,19 @@ const fadeIn = {
 };
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div {...fadeIn}>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">About Us</h2>
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">{t("About Us")}</h2>
             <p className="text-gray-600 mb-4">
-              As a forward-thinking technology company, we're committed to
+              {t("about_us")}
+              {/* As a forward-thinking technology company, we're committed to
               delivering innovative solutions that drive digital transformation.
               Our team of experts brings together years of experience in various
-              tech domains.
+              tech domains. */}
             </p>
             <p className="text-gray-600">
               We believe in staying ahead of the curve, continuously learning
