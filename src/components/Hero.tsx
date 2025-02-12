@@ -44,7 +44,7 @@ const Hero = () => {
           >
             <SplitText
               text={t("Taphubs")} //"Taphubs"
-              className="sm:text-[10vh] font-Arabic text-[5vh] font-semibold text-center "
+              className="sm:text-[10vh] text-[5vh] font-semibold text-center "
               delay={150}
               animationFrom={{
                 opacity: 0,
