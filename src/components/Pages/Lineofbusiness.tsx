@@ -35,7 +35,7 @@ const Lineofbusiness: React.FC = () => {
       <Navbar />
       <div className="min-h-screen w-full mx-auto flex flex-col items-center bg-white overflow-hidden">
         <BreadcrumbWithCustomSeparator
-          currentPage={contentData[selectedContent].title}
+          currentPage={t(contentData[selectedContent].title)}
         />
 
         <div className="flex flex-col container lg:flex-row w-full max-w-screen-xl mt-[3%]">
@@ -98,12 +98,13 @@ const Lineofbusiness: React.FC = () => {
               (section, index) => (
                 <div key={index}>
                   <h4 className="mt-9 text-lg mb-3 text-black font-bold">
-                  {t(section.heading)} 
+                  {t(section.heading)}
+                  
                   </h4>
                   <p className="mt-1 text-lg mb-3 text-black">
                   {t(section.paragraph)} 
                   </p>
-
+                   
                   {/* Check if details exist and render as bullet points */}
                   {section.details && section.details.length > 0 && (
                     <ul className="list-disc pl-9">

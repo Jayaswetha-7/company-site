@@ -3,6 +3,7 @@ import webDevelopmentImage from "../../assets/LOBibm.jpg";
 import networkSolutionImage from "../../assets/LOBbts.jpg";
 import aiIntegrationImage from "../../assets/LOBCyber.jpg";
 import cybersecurityImage from "../../assets/LOBNetwork.jpg";
+//import { useTranslation } from "react-i18next";
 
 interface Heading {
   heading: string;
@@ -21,6 +22,8 @@ interface ContentData {
   newParagraph?: string;
   additionalHeadings: Heading[];
 }
+
+//const { t } = useTranslation();
 
 export const contentData: Record<string, ContentData> = {
   services: {
@@ -52,7 +55,7 @@ export const contentData: Record<string, ContentData> = {
           "services.additionalHeadings.ai.paragraph",//"Modern AI-powered solutions help businesses streamline operations, automate decision-making, and gain real-time insights into their supply chain, customer engagement, and enterprise processes. Key AI-driven areas include:",
        details: [
           "services.additionalHeadings.ai.details.aiCustomerEngagement",// "AI-Powered Customer Engagement",
-           " services.additionalHeadings.ai.details.aiSupplyChain",// "AI-Based Supply Chain Optimization",
+           "services.additionalHeadings.ai.details.aiSupplyChain",// "AI-Based Supply Chain Optimization",
            "services.additionalHeadings.ai.details.cognitiveIoT",// "Cognitive IoT for Smart Industries",
            "services.additionalHeadings.ai.details.predictiveAnalytics", //"Predictive Analytics for Business Intelligence",
            "services.additionalHeadings.ai.details.aiOrderManagement",//"AI-Enhanced Order Management & Fulfillment",
@@ -185,11 +188,20 @@ export const contentData: Record<string, ContentData> = {
 
     additionalHeadings: [
       {
-        heading: "solutions.additionalHeadings.heading1",//"Our Core Solutions",
+        heading: "solutions.additionalHeadings.our.heading",//"Our Core Solutions",
         paragraph:
           "",
           details: [
-            "solutions.additionalHeadings.details1",
+            "solutions.additionalHeadings.our.details.enterprice",
+            "solutions.additionalHeadings.our.details.customer",
+            "solutions.additionalHeadings.our.details.content",
+            "solutions.additionalHeadings.our.details.infra",
+            "solutions.additionalHeadings.our.details.robo",
+            "solutions.additionalHeadings.our.details.sys",
+            "solutions.additionalHeadings.our.details.block",
+            "solutions.additionalHeadings.our.details.iot",
+            "solutions.additionalHeadings.our.details.big",
+            "solutions.additionalHeadings.our.details.analytics",
                 // "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
                 // "Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
                 // "Content Management Portals – Efficiently manage and distribute digital content.",
@@ -203,29 +215,32 @@ export const contentData: Record<string, ContentData> = {
           ],       
         },
         {
-          heading:  "solutions.additionalHeadings.heading2",////"Cloud Enablement & Mobility",
-          paragraph: "solutions.additionalHeadings.paragraph2",
+          heading:  "solutions.additionalHeadings.cloud.heading",////"Cloud Enablement & Mobility",
+          paragraph: "solutions.additionalHeadings.cloud.paragraph",
             //"We understand that harnessing cloud technology is a priority for modern businesses. Our Cloud Enablement & Mobility Team helps clients adopt scalable cloud solutions that enhance agility, security, and efficiency. Our experts ensure a seamless cloud transition, providing the best technology and insights for business growth.",
-            details: [     "solutions.additionalHeadings.details2",
+            details: [     
   
             ],
           },
 
      
       {
-        heading:"solutions.additionalHeadings.heading3",// "Strategic Business Management",
-        paragraph:"solutions.additionalHeadings.paragraph3",
+        heading:"solutions.additionalHeadings.strategy.heading",// "Strategic Business Management",
+        paragraph:"solutions.additionalHeadings.strategy.paragraph",
           //"Our Strategic Business Management Team combines business consultancy expertise with world-class IT solutions. Through strong partnerships with leading technology providers, we help businesses unlock new opportunities, optimize performance, and maximize value.",
           details: [
 
           ],
         },
         {
-          heading: "solutions.additionalHeadings.heading4",//"Business Consulting",
+          heading: "solutions.additionalHeadings.business.heading",//"Business Consulting",
           paragraph:
             "",
             details: [
-              "solutions.additionalHeadings.details4",
+              "solutions.additionalHeadings.business.details.st",
+              "solutions.additionalHeadings.business.details.gov",
+              "solutions.additionalHeadings.business.details.ky",
+              "solutions.additionalHeadings.business.details.info",
               
   
             ],
@@ -243,69 +258,80 @@ export const contentData: Record<string, ContentData> = {
       //     ],
       //   },
       {
-        heading: "solutions.additionalHeadings.heading5",//"Business Process Consulting",
+        heading: "solutions.additionalHeadings.consult.heading",//"Business Process Consulting",
         paragraph:
           "",
           details: [
-            "solutions.additionalHeadings.details5",
+            "solutions.additionalHeadings.consult.details.bs",
+            "solutions.additionalHeadings.consult.details.it",
+            "solutions.additionalHeadings.consult.details.continue",
+          
+            
                 // "Business Process Engineering – Design and improve workflows for efficiency.",
                 // "IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
                 // "Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies.",
           ],
         },
         {
-          heading: "solutions.additionalHeadings.heading6", //"Compliance & Risk Management",
+          heading: "solutions.additionalHeadings.compliance.heading", //"Compliance & Risk Management",
           paragraph:
             "",
             details: [
-              "solutions.additionalHeadings.details6",
+              "solutions.additionalHeadings.compliance.details.rk",
+              "solutions.additionalHeadings.compliance.details.ser",
+              "solutions.additionalHeadings.compliance.details.iso",
                 // "Risk Assessments – Identify, analyze, and mitigate business risks.",
                 // "Service Roadmap Development – Plan for long-term success.",
                 // "ISO Consultation & Certifications – Ensure compliance with industry standards.",
             ],
           },
           {
-            heading: "solutions.additionalHeadings.heading7",//"Quality Assurance",
+            heading: "solutions.additionalHeadings.quality.heading",//"Quality Assurance",
             paragraph:
               "",
               details: [
-                "solutions.additionalHeadings.details7",
+                "solutions.additionalHeadings.quality.details.end",
+
+                "solutions.additionalHeadings.quality.details.customer",
+
+                "solutions.additionalHeadings.quality.details.devops",
                   //  "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
                   //  "Customer Experience Assessments – Optimize IT services for user satisfaction.",
                   //  "Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments.",
               ],
             },
             {
-              heading:  "solutions.additionalHeadings.heading8", //"Strategic Outsourcing",
+              heading:  "solutions.additionalHeadings.outsourcing.heading", //"Strategic Outsourcing",
               paragraph:
                 "",
                 details: [
-                  "solutions.additionalHeadings.details8",
+                  "solutions.additionalHeadings.outsourcing.details.det",
                     //  "IT professionals outsourcing, Business professionals outsourcing.",
                   //  "IT professionals outsourcing, Business professionals outsourcing.",
                 ],
               },
               {
-                heading:"solutions.additionalHeadings.heading9",// "Managed Services",
+                heading:"solutions.additionalHeadings.manage.heading",// "Managed Services",
                 paragraph: "",
                 details: [
-                  "solutions.additionalHeadings.details9",
+                  "solutions.additionalHeadings.manage.details.plan",
                        //"IT Service Management, Plan, and Deliver.",
                 ],
               },
               {
-                heading: "solutions.additionalHeadings.heading10",//"Talent Development & Education",
+                heading: "solutions.additionalHeadings.edu.heading",//"Talent Development & Education",
                 paragraph:
                   "",
                   details: [
-                    "solutions.additionalHeadings.details10",
+                    "solutions.additionalHeadings.edu.details.prof",
+                    "solutions.additionalHeadings.edu.details.tailored",
                       // "Professional Training – Equip teams with industry-leading expertise.",
                       // "Tailored Training & Development – Customized programs to achieve specific business goals.",
                   ],
                 },
                 {
                   heading: "",
-                  paragraph:"solutions.additionalHeadings.paragraph11",
+                  paragraph:"solutions.additionalHeadings.parag.paragraph",
                     // "At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era.",
                     details: [
                        
@@ -349,7 +375,13 @@ export const contentData: Record<string, ContentData> = {
         paragraph:
           "",
           details: [
-              "security.headings.solutions.details",
+              "security.headings.solutions.details.fir",
+              "security.headings.solutions.details.int",
+              "security.headings.solutions.details.mail",
+              "security.headings.solutions.details.web",
+              "security.headings.solutions.details.waf",
+              "security.headings.solutions.details.wire",
+              "security.headings.solutions.details.net",
               // "Firewalls – Protect your network from unauthorized access.",
               // "Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
               // "Mail Gateway – Safeguard emails from phishing, spam, and malware.",
@@ -363,7 +395,10 @@ export const contentData: Record<string, ContentData> = {
           heading: "security.headings.intelligence.title",//"Security Intelligence",
           paragraph:
             "security.headings.intelligence.paragraph",//"We provide real-time security intelligence through:",
-            details: ["security.headings.intelligence.details",
+            details: ["security.headings.intelligence.details.cust",
+              "security.headings.intelligence.details.data",
+              "security.headings.intelligence.details.level",
+          
                 //  "Customer portals for live threat updates.",
                 //  "Data feeds for proactive risk managemen",
                 //  "Multi-level security briefs and dedicated intelligence services.",
@@ -419,7 +454,9 @@ export const contentData: Record<string, ContentData> = {
                     {
                       heading: "security.headings.consulting.title",//"Tailored Security Consulting",
                       paragraph: "security.headings.consulting.paragraph",//"We provide expert consultancy to help businesses adapt to evolving security challenges. Our consultants work directly with your team to:",
-                      details: ["security.headings.consulting.details",
+                      details: ["security.headings.consulting.details.conduct",
+                        "security.headings.consulting.details.ensure",
+                        "security.headings.consulting.details.rec",
                         // "Conduct in-depth security assessments.",
                         // "Ensure compliance with industry standards.",
                         // "Recommend customized security solutions tailored to your needs."
@@ -472,7 +509,19 @@ export const contentData: Record<string, ContentData> = {
         paragraph:
           "",
           details: [
-                "network.headings.details.list",
+                "network.headings.details.list1",
+                "network.headings.details.list2",
+                "network.headings.details.list3",
+                "network.headings.details.list4",
+                "network.headings.details.list5",
+                "network.headings.details.list6",
+                "network.headings.details.list7",
+                "network.headings.details.list8",
+                "network.headings.details.list9",
+                "network.headings.details.list10",
+                "network.headings.details.list11",
+                "network.headings.details.list12",
+                "network.headings.details.list13",
                 // "The software-defined wide-area network ",
                 // "Collaboration Solutions",
                 // "Switching and Routing",

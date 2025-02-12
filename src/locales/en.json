@@ -31,6 +31,8 @@
         }
       },
       "sub_hero_text": "Your Business, <br /> Our Smartest Solutions",
+      "Your Business":"Your Business,",
+      "Our_Smartest_Solutions":"Our Smartest Solutions",
       "Explore More": "Explore More",
 
       "Our_Services": "Our Services",
@@ -284,81 +286,83 @@
     "extraContent": "At TAPHUBS, our clients choose us because of our proven track record in maximizing value and driving digital transformation.",
     "newHeading": "",
     "newParagraph": "",
-    "additionalHeadings": [
-      {
-        "heading1": "Our Core Solutions",
-        "paragraph1": "",
-        "details1": [
-          "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
-          "Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
-          "Content Management Portals – Efficiently manage and distribute digital content.",
-          "Infrastructure & Systems Management – Optimize IT resources and enhance performance.",
-          "Robotic Process Automation (RPA) – Automate repetitive tasks for increased efficiency.",
-          "System Integration – Seamlessly connect multiple platforms and applications.",
-          "Blockchain Technology – Secure, transparent, and decentralized solutions.",
-          "IoT & Smart Solutions – Transform operations with connected, data-driven intelligence.",
-          "Big Data, BI & Analytics – Gain actionable insights from vast data sources.",
-          "Cognitive Analytics, AI & Machine Learning – Leverage intelligent automation for innovation."
-        ]
+    "additionalHeadings": {
+     "our": {
+        "heading": "Our Core Solutions",
+        "paragraph": "",
+        "details": {
+         "enterprice": "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
+          "customer":"Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
+          "content":"Content Management Portals – Efficiently manage and distribute digital content.",
+          "infra":"Infrastructure & Systems Management – Optimize IT resources and enhance performance.",
+          "robo":"Robotic Process Automation (RPA) – Automate repetitive tasks for increased efficiency.",
+          "sys":"System Integration – Seamlessly connect multiple platforms and applications.",
+          "block":"Blockchain Technology – Secure, transparent, and decentralized solutions.",
+          "iot":"IoT & Smart Solutions – Transform operations with connected, data-driven intelligence.",
+          "big":"Big Data, BI & Analytics – Gain actionable insights from vast data sources.",
+          "analytics":"Cognitive Analytics, AI & Machine Learning – Leverage intelligent automation for innovation."
+        }
       },
-      {
-        "heading2": "Cloud Enablement & Mobility",
-        "paragraph2": "We understand that harnessing cloud technology is a priority for modern businesses. Our Cloud Enablement & Mobility Team helps clients adopt scalable cloud solutions that enhance agility, security, and efficiency. Our experts ensure a seamless cloud transition, providing the best technology and insights for business growth.",
-        "details2": []
+        
+      
+     "cloud": {
+        "heading": "Cloud Enablement & Mobility",
+        "paragraph": "We understand that harnessing cloud technology is a priority for modern businesses. Our Cloud Enablement & Mobility Team helps clients adopt scalable cloud solutions that enhance agility, security, and efficiency. Our experts ensure a seamless cloud transition, providing the best technology and insights for business growth.",
+        "details": {"space":""}
       },
-      {
-        "heading3": "Strategic Business Management",
-        "paragraph3": "Our Strategic Business Management Team combines business consultancy expertise with world-class IT solutions. Through strong partnerships with leading technology providers, we help businesses unlock new opportunities, optimize performance, and maximize value.",
-        "details3": [ 
-        ]
+      "strategy":{
+        "heading": "Strategic Business Management",
+        "paragraph": "Our Strategic Business Management Team combines business consultancy expertise with world-class IT solutions. Through strong partnerships with leading technology providers, we help businesses unlock new opportunities, optimize performance, and maximize value.",
+        "details": {"space":""}
       },
-      {
-        "heading4": "Business Consulting",
+      "business":{
+        "heading": "Business Consulting",
        
-        "details4": [ "Strategic Planning – Define Vision, Mission, and Values.",
-        "Governance Office Development – Establish VRO, SMO, and PfMO for operational excellence.",
-        "Key Performance Indicators (KPI) & Dashboard Design – Improve decision-making with real-time insights.",
-        "Information Lifecycle Management – Optimize data governance and compliance."]
+        "details": { "st":"Strategic Planning – Define Vision, Mission, and Values.",
+        "gov":"Governance Office Development – Establish VRO, SMO, and PfMO for operational excellence.",
+        "ky":"Key Performance Indicators (KPI) & Dashboard Design – Improve decision-making with real-time insights.",
+        "info":"Information Lifecycle Management – Optimize data governance and compliance."
+        }
       },
-      {
-        "heading5": "Business Process Consulting",
-        "paragraph5": "Our IT Consulting Team provides expert guidance on technology strategy, implementation, and optimization. We help businesses align IT with their goals, streamline operations, and enhance performance.",
-        "details5": [ "Business Process Engineering – Design and improve workflows for efficiency.",
-                "IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
-                "Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies."]
+     "consult": {
+        "heading": "Business Process Consulting",
+        "paragraph": "Our IT Consulting Team provides expert guidance on technology strategy, implementation, and optimization. We help businesses align IT with their goals, streamline operations, and enhance performance.",
+        "details": {"bs": "Business Process Engineering – Design and improve workflows for efficiency.",
+                "it":"IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
+                "continue":"Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies."}
       },
-      {
-        "heading6":"Compliance & Risk Management",
+     "compliance": {
+        "heading":"Compliance & Risk Management",
      
-        "details6": [ "Risk Assessments – Identify, analyze, and mitigate business risks.",
-              "Service Roadmap Development – Plan for long-term success.",
-              "ISO Consultation & Certifications – Ensure compliance with industry standards."]
+        "details": { "rk":"Risk Assessments – Identify, analyze, and mitigate business risks.",
+              "ser":"Service Roadmap Development – Plan for long-term success.",
+              "iso":"ISO Consultation & Certifications – Ensure compliance with industry standards."}
       },
-      {
-        "heading7":"Quality Assurance",
-        "details7": [ "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
-               "Customer Experience Assessments – Optimize IT services for user satisfaction.",
-               "Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments."]
+     "quality": {
+        "heading":"Quality Assurance",
+        "details": {"end": "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
+               "customer":"Customer Experience Assessments – Optimize IT services for user satisfaction.",
+               "devops":"Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments."}
       },
-      {
-        "heading8":"Strategic Outsourcing",
-        "details8":["IT professionals outsourcing, Business professionals outsourcing."]
+      "outsourcing":{
+        "heading":"Strategic Outsourcing",
+        "details":{"det":"IT professionals outsourcing, Business professionals outsourcing."}
       },
-      {
-        "heading9":"Managed Services",
+      "manage":  {
+        "heading":"Managed Services",
               
-        "details9":["IT Service Management, Plan, and Deliver."]
+        "details":{"plan":"IT Service Management, Plan, and Deliver."}
       },
-      {
-        "heading10":"Talent Development & Education",
-        "details10":["Professional Training – Equip teams with industry-leading expertise.",
-              "Tailored Training & Development – Customized programs to achieve specific business goals."]
+      "edu":{
+        "heading":"Talent Development & Education",
+        "details":{"prof":"Professional Training – Equip teams with industry-leading expertise.",
+              "tailored":"Tailored Training & Development – Customized programs to achieve specific business goals."}
       },
-      {
-        "paragraph11":"At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era."
+     "parag": {
+        "paragraph":"At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era."
       }
       
-    ]
+    }
   },
   "security": {
     "title": "Cybersecurity Resilience Solutions",
@@ -369,24 +373,24 @@
       "solutions": {
         "title": "Our Cybersecurity Solutions",
         "paragraph": "",
-        "details": [
-          "Firewalls – Protect your network from unauthorized access.",
-          "Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
-          "Mail Gateway – Safeguard emails from phishing, spam, and malware.",
-          "Web Filtering – Block harmful or inappropriate web content.",
-          "Web Application Firewall (WAF) – Defend web applications from cyber threats.",
-          "Wireless Security – Ensure secure and encrypted wireless communication.",
-          "Network Access Control (NAC) – Restrict access to authorized users only."
-        ]
+        "details": {
+         "fir": "Firewalls – Protect your network from unauthorized access.",
+          "int":"Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
+          "mail":"Mail Gateway – Safeguard emails from phishing, spam, and malware.",
+          "web":"Web Filtering – Block harmful or inappropriate web content.",
+          "waf":"Web Application Firewall (WAF) – Defend web applications from cyber threats.",
+          "wire":"Wireless Security – Ensure secure and encrypted wireless communication.",
+          "net":"Network Access Control (NAC) – Restrict access to authorized users only."
+        }
       },
       "intelligence": {
         "title": "Security Intelligence",
         "paragraph": "We provide real-time security intelligence through:",
-        "details": [
-          "Customer portals for live threat updates.",
-          "Data feeds for proactive risk management.",
-          "Multi-level security briefs and dedicated intelligence services."
-        ]
+        "details": {
+          "cust":"Customer portals for live threat updates.",
+          "data":"Data feeds for proactive risk management.",
+         "level": "Multi-level security briefs and dedicated intelligence services."
+        }
       },
       "managedServices": {
         "title": "Managed Security Services",
@@ -411,11 +415,11 @@
       "consulting": {
         "title": "Tailored Security Consulting",
         "paragraph": "We provide expert consultancy to help businesses adapt to evolving security challenges. Our consultants work directly with your team to:",
-        "details": [
-          "Conduct in-depth security assessments.",
-          "Ensure compliance with industry standards.",
-          "Recommend customized security solutions tailored to your needs."
-        ]
+        "details": {
+         "conduct":"Conduct in-depth security assessments.",
+          "ensure":"Ensure compliance with industry standards.",
+          "rec":"Recommend customized security solutions tailored to your needs."
+        }
       }
     },
 
@@ -424,7 +428,7 @@
 
 
   "network": {
-    "title": " Digital Connectivity & Infrastructure",
+    "title": "Digital Connectivity & Infrastructure",
     "additionalParagraph": "Building a Strong Foundation for Your Business",
     "extraContent": "How can you operate a successful business without a solid foundation? Our Infrastructure & Networking Technology team develops end-to-end solutions to build a robust framework for our clients’ businesses. This encompasses everything from architecture design right through to project implementation and managed services.",
 
@@ -433,21 +437,21 @@
         "paragraph": "We begin by examining your business environment, challenges, and infrastructure needs. Our solutions focus on operational efficiency, return on investment, and security resilience."
       },
       "details": {
-        "list": [
+        "list1": 
           "The software-defined wide-area network",
-          "Collaboration Solutions",
-          "Switching and Routing",
-          "Networking Strategy & Optimization Services",
-          "Network Integration & Deployment Services",
-          "Network Managed Services",
-          "High Speed Network",
-          "Internet of Things",
-          "Transmission & Optical Network solutions",
-          "Converged Communications Services",
-          "Video Conference, Digital Signage, & IPTV",
-          "Mobility & Wireless Solutions",
-          "Network Health Check and Audit Study"
-        ]
+          "list2":"Collaboration Solutions",
+          "list3":"Switching and Routing",
+          "list4":"Networking Strategy & Optimization Services",
+          "list5":"Network Integration & Deployment Services",
+          "list6":"Network Managed Services",
+          "list7":"High Speed Network",
+          "list8":"Internet of Things",
+          "list9":"Transmission & Optical Network solutions",
+          "list10":"Converged Communications Services",
+          "list11":"Video Conference, Digital Signage, & IPTV",
+          "list12":"Mobility & Wireless Solutions",
+          "list13":"Network Health Check and Audit Study"
+        
       },
       "infrastructure": {
         "title": "Our Infrastructure Solutions",

@@ -7,6 +7,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface BreadcrumbWithCustomSeparatorProps {
   currentPage: string;
@@ -15,6 +16,7 @@ interface BreadcrumbWithCustomSeparatorProps {
 const BreadcrumbWithCustomSeparator: React.FC<
   BreadcrumbWithCustomSeparatorProps
 > = ({ currentPage }) => {
+  const {t}=useTranslation();
   const location = useLocation();
   const path = location.pathname.split("/").filter(Boolean);
 
@@ -23,7 +25,7 @@ const BreadcrumbWithCustomSeparator: React.FC<
     <>
       <BreadcrumbItem>
         <BreadcrumbLink>
-          <Link to={"/"}>Home</Link>
+          <Link to={"/"}>{t("Home")}</Link>
         </BreadcrumbLink>
       </BreadcrumbItem>
       <BreadcrumbSeparator>/</BreadcrumbSeparator>
@@ -37,7 +39,7 @@ const BreadcrumbWithCustomSeparator: React.FC<
         {breadcrumbPath}
         <BreadcrumbItem>
           <BreadcrumbLink>
-            <Link to={"/services"}>Service</Link>
+            <Link to={"/services"}>{t("Services")}</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator>/</BreadcrumbSeparator>
@@ -58,7 +60,7 @@ const BreadcrumbWithCustomSeparator: React.FC<
         {breadcrumbPath}
         <BreadcrumbItem>
           <BreadcrumbLink>
-            <Link to={"/about"}>About</Link>
+            <Link to={"/about"}>{t("About")}</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator>/</BreadcrumbSeparator>
