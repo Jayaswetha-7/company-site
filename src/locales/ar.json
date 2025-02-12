@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "Taphubs":"تاب هوب",
+=======
+    "Taphubs":"بوه بات",
+>>>>>>> 7ee925a (Update Arabic translation for Taphubs and add missing language change functionality in LanguageSwitcher)
     "Home":"المنزل",
     "About":"نبذة عن",
     "Contact":"اتصل بنا",
