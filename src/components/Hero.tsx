@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SplitText from "./BlurText";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -42,7 +43,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <SplitText
-              text={t("Taphubs")}//"Taphubs"
+              text={t("Taphubs")} //"Taphubs"
               className="sm:text-[10vh] text-[5vh] font-semibold text-center"
               delay={150}
               animationFrom={{
@@ -61,19 +62,22 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-          >{t("connecting")}
+          >
+            {t("connecting")}
             {/* Connecting innovation with possibility. We create seamless digital
             experiences that transform businesses and empower growth. */}
           </motion.p>
-          <motion.a
-            href="#contact"
-            className="inline-flex items-center max-w-[300px] px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-             {t("Start_Your_Journey")}
-            <ArrowRight className="w-4 h-4 mx-3 text-center" />
-          </motion.a>
+          <Link to="/contact">
+            <motion.p
+              className="inline-flex items-center max-w-[300px] px-4 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full font-semibold hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {t("Start_Your_Journey")}
+
+              <ArrowRight className="w-4 h-4 mx-3 text-center" />
+            </motion.p>
+          </Link>
         </motion.div>
       </div>
 
