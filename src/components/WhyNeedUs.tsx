@@ -23,7 +23,7 @@ const WhyNeedUs = () => {
         >
           {/* why choose us */}
           <motion.h1 className="  font-serif text-white hover:text-blue-300  transition-all duration-500 font-medium sm:text-left text-[5vh] sm:text-[7vh] my-6">
-          <Trans i18nKey="multiline_text"> Why <br /> Choose us ?</Trans>
+           {t("Why")} <br /> {t("Chooseus")} 
           </motion.h1>
           {/* div */}
           <motion.div className="flex gap-4 mt-2 justify-around items-center  sm:flex-nowrap  flex-wrap  ">

@@ -11,7 +11,9 @@
 
     "connecting":"Connecting innovation with possibility. We create seamless digital,experiences that transform businesses and empower growth.",
     "Start_Your_Journey":"Start Your Journey",
-     "multiline_text": " Why <br /> Choose us ?",
+     
+     "Why":"Why",
+     "Chooseus":"Choose us ?",
      "wcu": {
         "expertise": {
           "title": "Expertise",
@@ -30,7 +32,7 @@
           "description": "With a proven track record of success, we have helped businesses across industries achieve their goals through strategic, high-impact IT solutions."
         }
       },
-      "sub_hero_text": "Your Business, <br /> Our Smartest Solutions",
+      
       "Your Business":"Your Business,",
       "Our_Smartest_Solutions":"Our Smartest Solutions",
       "Explore More": "Explore More",
