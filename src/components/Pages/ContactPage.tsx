@@ -3,13 +3,7 @@ import { ScrollArea } from "../ui/scroll-area";
 import Navbar from "../Navbar";
 import { db } from "../../firebaseconfig";
 import { useTranslation } from "react-i18next";
-import {
-  addDoc,
-  collection,
-  doc,
-  serverTimestamp,
-  setDoc,
-} from "firebase/firestore";
+import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 
 // TypeScript: Define prop types for the SectionWithOptions component
 interface SectionWithOptionsProps {
@@ -36,15 +30,13 @@ const ContactPage: React.FC = () => {
     t("service.digital_connectivity_infrastructure"),
     t("service.cybersecurity_resilience_solutions"),
     t("contact.services.other"),
-    
   ];
 
   const projectTypes = [
-    t("contact.projectTypes.scratch"),//"Developing from Scratch",
-    t("contact.projectTypes.improve"),//"Improve Existing Development",
-    t("contact.projectTypes.innovate"),//"Innovate New Solutions",
-    t("contact.projectTypes.other"),//"Other",
-   
+    t("contact.projectTypes.scratch"), //"Developing from Scratch",
+    t("contact.projectTypes.improve"), //"Improve Existing Development",
+    t("contact.projectTypes.innovate"), //"Innovate New Solutions",
+    t("contact.projectTypes.other"), //"Other",
   ];
 
   return (
@@ -55,18 +47,18 @@ const ContactPage: React.FC = () => {
         <ScrollArea className="w-[92%] sm:w-[96%]  lg:w-[66%] h-[77vh] mx-auto shadow-lg rounded-3xl bg-gray-900 ml-4 lg:mr-25 mb-10 lg:mb-0 mt-0">
           <div className="w-full text-white mx-auto p-4 bg-gray-900 shadow-lg rounded-3xl">
             <SectionWithOptions
-              title={t("contact.howCanWeHelp")}//"How Can We Help?"
-              subtitle={t("contact.subtitle")}//"You can book multiple services"
+              title={t("contact.howCanWeHelp")} //"How Can We Help?"
+              subtitle={t("contact.subtitle")} //"You can book multiple services"
               options={services}
               extraClasses="pb-10"
             />
             <SectionWithOptions
-              title={t("contact.projectTitle")}//"Tell us about your project"
+              title={t("contact.projectTitle")} //"Tell us about your project"
               options={projectTypes}
               extraClasses="pb-10"
             />
             <SectionWithOptions
-              title={t("contact.contactUs")}//"Contact Us"
+              title={t("contact.contactUs")} //"Contact Us"
               extraClasses="bg-opacity-50 pb-10"
             />
           </div>
@@ -74,13 +66,13 @@ const ContactPage: React.FC = () => {
 
         <div className="lg:w-[33%] flex flex-col xl:space-y-10 lg:space-y-4 sm:space-y-6 px-4 space-y-10">
           <ContactInfoCard
-            title={t("contact.info.readyToStart")}//"Ready to start something new?"
-            description={t("contact.info.readyToStartDescription")}//"Have a unique project in mind? Feel free to reach out!"
+            title={t("contact.info.readyToStart")} //"Ready to start something new?"
+            description={t("contact.info.readyToStartDescription")} //"Have a unique project in mind? Feel free to reach out!"
             email="contact@taphubs.org"
           />
           <ContactInfoCard
-            title={t("contact.info.needDevelopment")}//"Need Development?"
-            description={t("contact.info.needDevelopmentDescription")}//"Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
+            title={t("contact.info.needDevelopment")} //"Need Development?"
+            description={t("contact.info.needDevelopmentDescription")} //"Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
             email="contact@taphubs.org"
             showCredentials={true}
           />
@@ -123,10 +115,8 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async () => {
-    // Get the current timestamp in IST
-
-    // Prepare data to send
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     const dataToSend = {
       ...formData,
 
@@ -137,9 +127,15 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
     try {
       await setDoc(doc(db, "contact", dataToSend.email), dataToSend);
-      console.log("Document written with to firesatore");
     } catch (e) {
       console.error("Error adding document: ", e);
+    } finally {
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        message: "",
+      });
     }
   };
 
@@ -149,11 +145,11 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
     >
       <div className="mb-4 lg:mb-0 lg:w-1/2">
         <h1 className="text-4xl lg:text-5xl font-bold text-white text-left">
-        {t(title)}
+          {t(title)}
         </h1>
         {subtitle && (
           <p className="text-left text-sm lg:text-base xl:text-lg">
-              {t(subtitle)}
+            {t(subtitle)}
           </p>
         )}
       </div>
@@ -164,7 +160,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
           <div className="space-y-8">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-white font-semibold">
-              {t("contact.form.name")}
+                {t("contact.form.name")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -180,7 +176,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="email" className="text-white font-semibold">
-              {t("contact.form.email")}
+                {t("contact.form.email")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -196,7 +192,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="company" className="text-white font-semibold">
-              {t("contact.form.company")}
+                {t("contact.form.company")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white">
                 <input
@@ -212,7 +208,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
 
             <div className="flex flex-col">
               <label htmlFor="message" className="text-white font-semibold">
-              {t("contact.form.message")}
+                {t("contact.form.message")}
               </label>
               <div className="border-b-2 border-gray-700 py-1 hover:border-white space-y-6">
                 <textarea
