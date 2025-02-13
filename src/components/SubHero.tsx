@@ -1,7 +1,7 @@
-import bgImage from "../assets/subheroimg3.jpg";
+import bgImage from "../assets/subheroimg3.webp";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
-import { useTranslation,Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 function SubHero() {
   const { t } = useTranslation(); 
   return (
