@@ -1,190 +1,180 @@
 {
-    "Taphubs":"Taphubs",
-    "Home":"Home",
-    "About":"About",
-    "Contact":"Contact",
-    "Careers":"Careersfdsfsfsfs",
-    "Services":"Services",
+  "Taphubs": "Taphubs",
+  "Home": "Home",
+  "About": "About",
+  "Contact": "Contact",
+  "Careers": "Careers",
+  "Services": "Services",
 
-    "Line of Business":"Line of Business",
-    
+  "Line of Business": "Line of Business",
 
-    "connecting":"Connecting innovation with possibility. We create seamless digital,experiences that transform businesses and empower growth.",
-    "Start_Your_Journey":"Start Your Journey",
-     
-     "Why":"Why",
-     "Chooseus":"Choose us ?",
-     "wcu": {
-        "expertise": {
-          "title": "Expertise",
-          "description": "Our team of highly skilled professionals brings extensive experience and deep industry knowledge to deliver cutting-edge IT solutions tailored to your unique business needs."
-        },
-        "technology": {
-          "title": "Technology",
-          "description": "We stay ahead of industry trends, leveraging the latest advancements in technology to provide you with innovative, future-proof solutions that drive success."
-        },
-        "solutions": {
-          "title": "Solutions",
-          "description": "Our client-centric approach ensures that we develop customized solutions tailored to your business objectives, enhancing efficiency, scalability, and long-term growth."
-        },
-        "results": {
-          "title": "Results",
-          "description": "With a proven track record of success, we have helped businesses across industries achieve their goals through strategic, high-impact IT solutions."
-        }
-      },
-      
-      "Your Business":"Your Business,",
-      "Our_Smartest_Solutions":"Our Smartest Solutions",
-      "Explore More": "Explore More",
+  "connecting": "Connecting innovation with possibility. We create seamless digital,experiences that transform businesses and empower growth.",
+  "Start_Your_Journey": "Start Your Journey",
 
-      "Our_Services": "Our Services",
-        
+  "Why": "Why",
+  "Chooseus": "Choose us ?",
+  "wcu": {
+    "expertise": {
+      "title": "Expertise",
+      "description": "Our team of highly skilled professionals brings extensive experience and deep industry knowledge to deliver cutting-edge IT solutions tailored to your unique business needs."
+    },
+    "technology": {
+      "title": "Technology",
+      "description": "We stay ahead of industry trends, leveraging the latest advancements in technology to provide you with innovative, future-proof solutions that drive success."
+    },
+    "solutions": {
+      "title": "Solutions",
+      "description": "Our client-centric approach ensures that we develop customized solutions tailored to your business objectives, enhancing efficiency, scalability, and long-term growth."
+    },
+    "results": {
+      "title": "Results",
+      "description": "With a proven track record of success, we have helped businesses across industries achieve their goals through strategic, high-impact IT solutions."
+    }
+  },
 
-      "service": {
+  "Your Business": "Your Business,",
+  "Our_Smartest_Solutions": "Our Smartest Solutions",
+  "Explore More": "Explore More",
+
+  "Our_Services": "Our Services",
+
+  "service": {
     "digital_transformation": "Digital Transformation",
     "intelligent_business_solutions": "Intelligent Business Solutions",
     "digital_connectivity_infrastructure": "Digital Connectivity & Infrastructure",
     "cybersecurity_resilience_solutions": "Cybersecurity Resilience Solutions"
   },
 
-   "About Us": "About Us",
-    "about_us":"As a forward-thinking technology company, we're committed to delivering innovative solutions that drive digital transformation. Our team of experts brings together years of experience in varioustech domains.",
-    "staying": "We believe in staying ahead of the curve, continuously learningand adapting to new technologies to provide our clients with the best possible solutions for their unique challenges.",
-    "Need_IT_Solutions_?":"Need IT Solutions?",
+  "About Us": "About Us",
+  "about_us": "As a forward-thinking technology company, we're committed to delivering innovative solutions that drive digital transformation. Our team of experts brings together years of experience in varioustech domains.",
+  "staying": "We believe in staying ahead of the curve, continuously learningand adapting to new technologies to provide our clients with the best possible solutions for their unique challenges.",
+  "Need_IT_Solutions_?": "Need IT Solutions?",
 
+  "Join_Our_Team": "Join Our Team",
+  "always": "We're always looking for talented individuals who are passionate about technology and innovation. Join us in shaping the future of digital solutions.",
+  "open": "Open Positions",
+  "building": "We're currently building our team. Check back soon for exciting opportunities or send us your resume for future considerations.",
 
-    "Join_Our_Team":"Join Our Team",
-    "always":"We're always looking for talented individuals who are passionate about technology and innovation. Join us in shaping the future of digital solutions.",
-    "open":"Open Positions",
-    "building":"We're currently building our team. Check back soon for exciting opportunities or send us your resume for future considerations." ,
+  "Who_we_are": "Who We Are",
+  "About_us": "About Us",
+  "forward_thinking": "Taphubs is a forward-thinking IT solutions provider dedicated to helping businesses navigate the digital landscape. With a focus on innovation,we offer cutting-edge services in app development, web solutions, cloud services, and cybersecurity. Our expert team ensures your digital infrastructure is secure, efficient, and scalable, allowing you to focus on growth. At Taphubs, we are committed to delivering tailored solutions that drive success, streamline operations, and empower businesses to thrive in an increasingly connected world.",
+  "We believe that": "We believe that",
+  "Technology": "technology",
+  "CAN": "can",
+  "change": "CHANGE",
+  "the world": "the world",
+  "we_are_commited": "That's why we're committed to delivering innovative IT solutions to businesses of all sizes. Our team of experienced professionals is dedicated to helping you achieve your goals and thrive in a rapidly evolving digital landscape.",
 
-    "Who_we_are": "Who We Are",
-    "About_us": "About Us",
-    "forward_thinking": "Taphubs is a forward-thinking IT solutions provider dedicated to helping businesses navigate the digital landscape. With a focus on innovation,we offer cutting-edge services in app development, web solutions, cloud services, and cybersecurity. Our expert team ensures your digital infrastructure is secure, efficient, and scalable, allowing you to focus on growth. At Taphubs, we are committed to delivering tailored solutions that drive success, streamline operations, and empower businesses to thrive in an increasingly connected world.",
-    "We believe that":"We believe that",
-      "Technology":"technology",
-      "CAN":"can",
-      "change":"CHANGE",
-      "the world":"the world",
-      "we_are_commited":"That's why we're committed to delivering innovative IT solutions to businesses of all sizes. Our team of experienced professionals is dedicated to helping you achieve your goals and thrive in a rapidly evolving digital landscape.",
+  "Let": "Let's",
+  "start": "start now.",
+  "Get_in_Touch": "Get in Touch",
 
-    "Let":"Let's",
-    "start":"start now.",
-    "Get_in_Touch":"Get in Touch",
+  "your": "Your browser does not support the video tag.",
+  "Wanttojoin": "Want to join our team?If you have a passion & want to work for a rapidly growing entrepreneurial company, send your resume to",
 
-    "your":"Your browser does not support the video tag.",
-    "Wanttojoin":"Want to join our team?If you have a passion & want to work for a rapidly growing entrepreneurial company, send your resume to",
+  "Current_Openings": "Current Openings",
+  "POSITION": "Position",
+  "LOCATION": "Location",
+  "POSTING_DATE": "Posting Date",
+  "sorry": "We're not hiring at the moment, but check back soon for opportunities!",
 
-    "Current_Openings": "Current Openings",
-    "POSITION": "Position",
-    "LOCATION": "Location",
-    "POSTING_DATE": "Posting Date",
-    "sorry":"We're not hiring at the moment, but check back soon for opportunities!",
-
-    "contact": {
-      "howCanWeHelp": "How Can We Help?",
-      "subtitle": "You can book multiple services",
-      "projectTitle": "Tell us about your project",
-      "contactUs": "Contact Us",
-      "emailLabel": "Email:",
-      "addressLabel": "Our Address:",
-      "address": "Taphubs Global, Karyavattam Jn, Trivandrum 685504",
-      "services": {
-        "webDevelopment": "Web Development",
-        "appDevelopment": "App Development",
-        "apiIntegration": "API Integration",
-        "figmaDesign": "Figma Design",
-        "other": "Other"
-      },
-      "projectTypes": {
-        "scratch": "Developing from Scratch",
-        "improve": "Improve Existing Development",
-        "innovate": "Innovate New Solutions",
-        "other": "Other"
-      },
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "company": "Company",
-        "message": "Message",
-        "send": "Send"
-      },
-      "info": {
-        "readyToStart": "Ready to start something new?",
-        "readyToStartDescription": "Have a unique project in mind? Feel free to reach out!",
-        "needDevelopment": "Need Development?",
-        "needDevelopmentDescription": "Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
-      }
+  "contact": {
+    "howCanWeHelp": "How Can We Help?",
+    "subtitle": "You can book multiple services",
+    "projectTitle": "Tell us about your project",
+    "contactUs": "Contact Us",
+    "emailLabel": "Email:",
+    "addressLabel": "Our Address:",
+    "address": "Taphubs Global, Karyavattam Jn, Trivandrum 685504",
+    "services": {
+      "webDevelopment": "Web Development",
+      "appDevelopment": "App Development",
+      "apiIntegration": "API Integration",
+      "figmaDesign": "Figma Design",
+      "other": "Other"
     },
-
-
-    "servicesTitle": "Our Services",
-    "servicess": {
-      "development": {
-        "title": "Web Development",
-        "description": "",
-        "details": [
-          "Custom Web Development (Responsive, Dynamic, and Scalable)",
-          "E-commerce Solutions (Online Store Setup & Management)",
-          "Content Management Systems (WordPress, Joomla, etc.)",
-          "Web Application Development (Custom Web Apps)",
-          "Website Maintenance & Support Services",
-          "UI/UX Design and Prototyping",
-          "Mobile-Friendly Design and Development",
-          "Website Hosting and Server Management Services"
-        ],
-        "additionalParagraph": "At Taphubs, we create custom web solutions tailored to your business needs, optimizing performance and reducing downtime. Whether building from scratch or improving an existing site, we ensure a solution that fits your requirements."
-      },
-      "networking": {
-        "title": "Networking & Security",
-        "description": "",
-        "details": [
-          "Cloud Services (IaaS, PaaS, SaaS)",
-          "Security Solutions",
-          "Business Continuity and Recovery Services",
-          "Infrastructure and Systems Management Services",
-          "Hardware Support Services",
-          "Intel-based Server Sales",
-          "Clients, Printers and Kiosk Sales",
-          "Retail Store Solution Sales"
-        ],
-        "additionalParagraph": "Our promise of network solutions means more than just a typical building of our customers network infrastructure; we are giving them the peace of mind through our guarantee to provide of business continuity, security and data durability. Remaining constantly connected has become an inevitable fact of our lives and businesses are no different. As businesses around world continue to move and to grow we acknowledge and provide customers with that very ability seamlessly through our integrated solutions."
-      },
-      "ArtificialIntelligence": {
-        "title": "AI Integration",
-        "description": "We integrate advanced AI solutions to streamline your processes and enhance decision-making. Our custom AI applications help your business stay innovative and efficient, driving growth and improving user experiences.",
-        "details": [
-          "Cloud computing (IaaS, PaaS, SaaS)",
-          "Seamless AI and cloud integration",
-          "Scalable infrastructure for AI solutions",
-          "Business continuity with AI-driven cloud systems"
-        ],
-        "additionalParagraph": "Our AI integration services help businesses leverage cutting-edge technologies to improve processes and decision-making. By seamlessly integrating AI with cloud platforms (IaaS, PaaS, SaaS), we provide scalable infrastructure that supports growth and ensures business continuity. From automation to data insights, our solutions are designed to drive efficiency and foster innovation."
-      },
-      "CyberSecurity": {
-        "title": "Cyber Security",
-        "description": "Our cybersecurity solutions protect your business from digital threats with advanced data protection and risk management. We offer proactive monitoring and tailored security measures to ensure your systems remain secure. Stay safe, compliant, and resilient in the digital world.",
-        "details": [
-          "System and infrastructure protection",
-          "Cross-platform security compatibility",
-          "Threat detection and performance optimization",
-          "Custom security integration solutions",
-          "Proactive monitoring and threat response",
-          "Compliance with industry standards and regulations"
-        ],
-        "additionalParagraph": "We offer comprehensive cybersecurity services to safeguard your business from evolving threats. Our solutions include system protection, cross-platform security, and proactive threat monitoring. With custom integrations and performance optimization, we ensure your business stays secure, compliant, and resilient against digital risks. Trust us to provide the expertise needed to protect your sensitive data and ensure business continuity."
-      }
+    "projectTypes": {
+      "scratch": "Developing from Scratch",
+      "improve": "Improve Existing Development",
+      "innovate": "Innovate New Solutions",
+      "other": "Other"
     },
-    
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message",
+      "send": "Send"
+    },
+    "info": {
+      "readyToStart": "Ready to start something new?",
+      "readyToStartDescription": "Have a unique project in mind? Feel free to reach out!",
+      "needDevelopment": "Need Development?",
+      "needDevelopmentDescription": "Got a creative idea or need assistance? Don’t hesitate to get in touch with us!"
+    }
+  },
 
-
-
-
-
+  "servicesTitle": "Our Services",
+  "servicess": {
+    "development": {
+      "title": "Web Development",
+      "description": "",
+      "details": [
+        "Custom Web Development (Responsive, Dynamic, and Scalable)",
+        "E-commerce Solutions (Online Store Setup & Management)",
+        "Content Management Systems (WordPress, Joomla, etc.)",
+        "Web Application Development (Custom Web Apps)",
+        "Website Maintenance & Support Services",
+        "UI/UX Design and Prototyping",
+        "Mobile-Friendly Design and Development",
+        "Website Hosting and Server Management Services"
+      ],
+      "additionalParagraph": "At Taphubs, we create custom web solutions tailored to your business needs, optimizing performance and reducing downtime. Whether building from scratch or improving an existing site, we ensure a solution that fits your requirements."
+    },
+    "networking": {
+      "title": "Networking & Security",
+      "description": "",
+      "details": [
+        "Cloud Services (IaaS, PaaS, SaaS)",
+        "Security Solutions",
+        "Business Continuity and Recovery Services",
+        "Infrastructure and Systems Management Services",
+        "Hardware Support Services",
+        "Intel-based Server Sales",
+        "Clients, Printers and Kiosk Sales",
+        "Retail Store Solution Sales"
+      ],
+      "additionalParagraph": "Our promise of network solutions means more than just a typical building of our customers network infrastructure; we are giving them the peace of mind through our guarantee to provide of business continuity, security and data durability. Remaining constantly connected has become an inevitable fact of our lives and businesses are no different. As businesses around world continue to move and to grow we acknowledge and provide customers with that very ability seamlessly through our integrated solutions."
+    },
+    "ArtificialIntelligence": {
+      "title": "AI Integration",
+      "description": "We integrate advanced AI solutions to streamline your processes and enhance decision-making. Our custom AI applications help your business stay innovative and efficient, driving growth and improving user experiences.",
+      "details": [
+        "Cloud computing (IaaS, PaaS, SaaS)",
+        "Seamless AI and cloud integration",
+        "Scalable infrastructure for AI solutions",
+        "Business continuity with AI-driven cloud systems"
+      ],
+      "additionalParagraph": "Our AI integration services help businesses leverage cutting-edge technologies to improve processes and decision-making. By seamlessly integrating AI with cloud platforms (IaaS, PaaS, SaaS), we provide scalable infrastructure that supports growth and ensures business continuity. From automation to data insights, our solutions are designed to drive efficiency and foster innovation."
+    },
+    "CyberSecurity": {
+      "title": "Cyber Security",
+      "description": "Our cybersecurity solutions protect your business from digital threats with advanced data protection and risk management. We offer proactive monitoring and tailored security measures to ensure your systems remain secure. Stay safe, compliant, and resilient in the digital world.",
+      "details": [
+        "System and infrastructure protection",
+        "Cross-platform security compatibility",
+        "Threat detection and performance optimization",
+        "Custom security integration solutions",
+        "Proactive monitoring and threat response",
+        "Compliance with industry standards and regulations"
+      ],
+      "additionalParagraph": "We offer comprehensive cybersecurity services to safeguard your business from evolving threats. Our solutions include system protection, cross-platform security, and proactive threat monitoring. With custom integrations and performance optimization, we ensure your business stays secure, compliant, and resilient against digital risks. Trust us to provide the expertise needed to protect your sensitive data and ensure business continuity."
+    }
+  },
 
   "services": {
     "title": "Digital Transformation",
-    
+
     "additionalParagraph": "Taphubs specialize in creating tailored web solutions to optimize performance, reduce downtime, and improve user experience. Whether you're building a new platform or enhancing an existing one, our team ensures a solution that meets your business needs.",
     "extraContent": "",
     "additionalHeadings": {
@@ -201,13 +191,12 @@
       },
       "cloud": {
         "heading": "Cloud & Digital Infrastructure Solutions",
-        "paragraph":"We offer secure and scalable cloud solutions that help businesses transition smoothly to the cloud, optimize costs, and enhance agility. Our services include:",
+        "paragraph": "We offer secure and scalable cloud solutions that help businesses transition smoothly to the cloud, optimize costs, and enhance agility. Our services include:",
         "details": {
           "Multi": "Multi-Cloud & Hybrid Cloud Services",
           "Cloud": "Cloud Automation & DevOps",
           "CloudBased": "Cloud-Based Disaster Recovery & Data Protection",
           "UIDesign": "UI/UX Design & Digital Experience Platforms"
-          
         }
       },
       "enterprice": {
@@ -217,7 +206,6 @@
           "Enterprice": "Enterprise Cloud Computing for AI & Data Analytics",
           "Performance": "Performance-Optimized Computing for Large Workloads",
           "High": "High-Speed Servers & Scalable Enterprise Infrastructure"
-         
         }
       },
       "datastorage": {
@@ -238,7 +226,6 @@
           "CloudSecurity": "Cloud Security & Data Encryption",
           "Threat": "Threat Intelligence & Incident Response",
           "Security": "Security for IoT & Connected Devices"
-          
         }
       },
       "smartindustry": {
@@ -248,7 +235,6 @@
           "Industrial": "Industrial IoT & Smart Manufacturing",
           "AIDriven": "AI-Driven Asset & Facility Management",
           "Predictive": "Predictive Maintenance & Smart Monitoring"
-          
         }
       },
       "blockchain": {
@@ -267,7 +253,6 @@
           "ERP": "Enterprise Resource Planning (ERP) & Business Process Automation",
           "ITSM": "Intelligent IT Service Management (ITSM) & IT Optimization",
           "Agile": "Agile DevOps & Continuous Integration Solutions"
-          
         }
       },
       "talent": {
@@ -289,81 +274,90 @@
     "newHeading": "",
     "newParagraph": "",
     "additionalHeadings": {
-     "our": {
+      "our": {
         "heading": "Our Core Solutions",
         "paragraph": "",
         "details": {
-         "enterprice": "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
-          "customer":"Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
-          "content":"Content Management Portals – Efficiently manage and distribute digital content.",
-          "infra":"Infrastructure & Systems Management – Optimize IT resources and enhance performance.",
-          "robo":"Robotic Process Automation (RPA) – Automate repetitive tasks for increased efficiency.",
-          "sys":"System Integration – Seamlessly connect multiple platforms and applications.",
-          "block":"Blockchain Technology – Secure, transparent, and decentralized solutions.",
-          "iot":"IoT & Smart Solutions – Transform operations with connected, data-driven intelligence.",
-          "big":"Big Data, BI & Analytics – Gain actionable insights from vast data sources.",
-          "analytics":"Cognitive Analytics, AI & Machine Learning – Leverage intelligent automation for innovation."
+          "enterprice": "Enterprise Resource Planning (ERP) – Streamline operations with integrated business processes.",
+          "customer": "Customer Relationship Management (CRM) – Strengthen customer engagement and retention.",
+          "content": "Content Management Portals – Efficiently manage and distribute digital content.",
+          "infra": "Infrastructure & Systems Management – Optimize IT resources and enhance performance.",
+          "robo": "Robotic Process Automation (RPA) – Automate repetitive tasks for increased efficiency.",
+          "sys": "System Integration – Seamlessly connect multiple platforms and applications.",
+          "block": "Blockchain Technology – Secure, transparent, and decentralized solutions.",
+          "iot": "IoT & Smart Solutions – Transform operations with connected, data-driven intelligence.",
+          "big": "Big Data, BI & Analytics – Gain actionable insights from vast data sources.",
+          "analytics": "Cognitive Analytics, AI & Machine Learning – Leverage intelligent automation for innovation."
         }
       },
-        
-      
-     "cloud": {
+
+      "cloud": {
         "heading": "Cloud Enablement & Mobility",
         "paragraph": "We understand that harnessing cloud technology is a priority for modern businesses. Our Cloud Enablement & Mobility Team helps clients adopt scalable cloud solutions that enhance agility, security, and efficiency. Our experts ensure a seamless cloud transition, providing the best technology and insights for business growth.",
-        "details": {"space":""}
+        "details": { "space": "" }
       },
-      "strategy":{
+      "strategy": {
         "heading": "Strategic Business Management",
         "paragraph": "Our Strategic Business Management Team combines business consultancy expertise with world-class IT solutions. Through strong partnerships with leading technology providers, we help businesses unlock new opportunities, optimize performance, and maximize value.",
-        "details": {"space":""}
+        "details": { "space": "" }
       },
-      "business":{
+      "business": {
         "heading": "Business Consulting",
-       
-        "details": { "st":"Strategic Planning – Define Vision, Mission, and Values.",
-        "gov":"Governance Office Development – Establish VRO, SMO, and PfMO for operational excellence.",
-        "ky":"Key Performance Indicators (KPI) & Dashboard Design – Improve decision-making with real-time insights.",
-        "info":"Information Lifecycle Management – Optimize data governance and compliance."
+
+        "details": {
+          "st": "Strategic Planning – Define Vision, Mission, and Values.",
+          "gov": "Governance Office Development – Establish VRO, SMO, and PfMO for operational excellence.",
+          "ky": "Key Performance Indicators (KPI) & Dashboard Design – Improve decision-making with real-time insights.",
+          "info": "Information Lifecycle Management – Optimize data governance and compliance."
         }
       },
-     "consult": {
+      "consult": {
         "heading": "Business Process Consulting",
         "paragraph": "Our IT Consulting Team provides expert guidance on technology strategy, implementation, and optimization. We help businesses align IT with their goals, streamline operations, and enhance performance.",
-        "details": {"bs": "Business Process Engineering – Design and improve workflows for efficiency.",
-                "it":"IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
-                "continue":"Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies."}
+        "details": {
+          "bs": "Business Process Engineering – Design and improve workflows for efficiency.",
+          "it": "IT Service Management (ITSM) Process Engineering – Align IT operations with business goals.",
+          "continue": "Business Continuity Planning – Develop robust risk mitigation and disaster recovery strategies."
+        }
       },
-     "compliance": {
-        "heading":"Compliance & Risk Management",
-     
-        "details": { "rk":"Risk Assessments – Identify, analyze, and mitigate business risks.",
-              "ser":"Service Roadmap Development – Plan for long-term success.",
-              "iso":"ISO Consultation & Certifications – Ensure compliance with industry standards."}
+      "compliance": {
+        "heading": "Compliance & Risk Management",
+
+        "details": {
+          "rk": "Risk Assessments – Identify, analyze, and mitigate business risks.",
+          "ser": "Service Roadmap Development – Plan for long-term success.",
+          "iso": "ISO Consultation & Certifications – Ensure compliance with industry standards."
+        }
       },
-     "quality": {
-        "heading":"Quality Assurance",
-        "details": {"end": "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
-               "customer":"Customer Experience Assessments – Optimize IT services for user satisfaction.",
-               "devops":"Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments."}
+      "quality": {
+        "heading": "Quality Assurance",
+        "details": {
+          "end": "End-to-End Testing Solutions – Functional and Non-Functional Testing.",
+          "customer": "Customer Experience Assessments – Optimize IT services for user satisfaction.",
+          "devops": "Agile ITSM & DevOps Transformation – Build roadmaps for quality-driven IT environments."
+        }
       },
-      "outsourcing":{
-        "heading":"Strategic Outsourcing",
-        "details":{"det":"IT professionals outsourcing, Business professionals outsourcing."}
+      "outsourcing": {
+        "heading": "Strategic Outsourcing",
+        "details": {
+          "det": "IT professionals outsourcing, Business professionals outsourcing."
+        }
       },
-      "manage":  {
-        "heading":"Managed Services",
-              
-        "details":{"plan":"IT Service Management, Plan, and Deliver."}
+      "manage": {
+        "heading": "Managed Services",
+
+        "details": { "plan": "IT Service Management, Plan, and Deliver." }
       },
-      "edu":{
-        "heading":"Talent Development & Education",
-        "details":{"prof":"Professional Training – Equip teams with industry-leading expertise.",
-              "tailored":"Tailored Training & Development – Customized programs to achieve specific business goals."}
+      "edu": {
+        "heading": "Talent Development & Education",
+        "details": {
+          "prof": "Professional Training – Equip teams with industry-leading expertise.",
+          "tailored": "Tailored Training & Development – Customized programs to achieve specific business goals."
+        }
       },
-     "parag": {
-        "paragraph":"At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era."
+      "parag": {
+        "paragraph": "At TAPHUBS,, we provide innovative solutions, strategic insights, and expert guidance to help businesses transform, scale, and succeed in the digital era."
       }
-      
     }
   },
   "security": {
@@ -376,22 +370,22 @@
         "title": "Our Cybersecurity Solutions",
         "paragraph": "",
         "details": {
-         "fir": "Firewalls – Protect your network from unauthorized access.",
-          "int":"Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
-          "mail":"Mail Gateway – Safeguard emails from phishing, spam, and malware.",
-          "web":"Web Filtering – Block harmful or inappropriate web content.",
-          "waf":"Web Application Firewall (WAF) – Defend web applications from cyber threats.",
-          "wire":"Wireless Security – Ensure secure and encrypted wireless communication.",
-          "net":"Network Access Control (NAC) – Restrict access to authorized users only."
+          "fir": "Firewalls – Protect your network from unauthorized access.",
+          "int": "Intrusion Prevention Systems (IPS) – Detect and prevent security breaches.",
+          "mail": "Mail Gateway – Safeguard emails from phishing, spam, and malware.",
+          "web": "Web Filtering – Block harmful or inappropriate web content.",
+          "waf": "Web Application Firewall (WAF) – Defend web applications from cyber threats.",
+          "wire": "Wireless Security – Ensure secure and encrypted wireless communication.",
+          "net": "Network Access Control (NAC) – Restrict access to authorized users only."
         }
       },
       "intelligence": {
         "title": "Security Intelligence",
         "paragraph": "We provide real-time security intelligence through:",
         "details": {
-          "cust":"Customer portals for live threat updates.",
-          "data":"Data feeds for proactive risk management.",
-         "level": "Multi-level security briefs and dedicated intelligence services."
+          "cust": "Customer portals for live threat updates.",
+          "data": "Data feeds for proactive risk management.",
+          "level": "Multi-level security briefs and dedicated intelligence services."
         }
       },
       "managedServices": {
@@ -418,16 +412,15 @@
         "title": "Tailored Security Consulting",
         "paragraph": "We provide expert consultancy to help businesses adapt to evolving security challenges. Our consultants work directly with your team to:",
         "details": {
-         "conduct":"Conduct in-depth security assessments.",
-          "ensure":"Ensure compliance with industry standards.",
-          "rec":"Recommend customized security solutions tailored to your needs."
+          "conduct": "Conduct in-depth security assessments.",
+          "ensure": "Ensure compliance with industry standards.",
+          "rec": "Recommend customized security solutions tailored to your needs."
         }
       }
     },
 
     "finalParagraph": "At TAPHUBS, we don’t just protect your business—we empower it with the best cybersecurity strategies for long-term success."
   },
-
 
   "network": {
     "title": "Digital Connectivity & Infrastructure",
@@ -439,21 +432,19 @@
         "paragraph": "We begin by examining your business environment, challenges, and infrastructure needs. Our solutions focus on operational efficiency, return on investment, and security resilience."
       },
       "details": {
-        "list1": 
-          "The software-defined wide-area network",
-          "list2":"Collaboration Solutions",
-          "list3":"Switching and Routing",
-          "list4":"Networking Strategy & Optimization Services",
-          "list5":"Network Integration & Deployment Services",
-          "list6":"Network Managed Services",
-          "list7":"High Speed Network",
-          "list8":"Internet of Things",
-          "list9":"Transmission & Optical Network solutions",
-          "list10":"Converged Communications Services",
-          "list11":"Video Conference, Digital Signage, & IPTV",
-          "list12":"Mobility & Wireless Solutions",
-          "list13":"Network Health Check and Audit Study"
-        
+        "list1": "The software-defined wide-area network",
+        "list2": "Collaboration Solutions",
+        "list3": "Switching and Routing",
+        "list4": "Networking Strategy & Optimization Services",
+        "list5": "Network Integration & Deployment Services",
+        "list6": "Network Managed Services",
+        "list7": "High Speed Network",
+        "list8": "Internet of Things",
+        "list9": "Transmission & Optical Network solutions",
+        "list10": "Converged Communications Services",
+        "list11": "Video Conference, Digital Signage, & IPTV",
+        "list12": "Mobility & Wireless Solutions",
+        "list13": "Network Health Check and Audit Study"
       },
       "infrastructure": {
         "title": "Our Infrastructure Solutions",
@@ -490,19 +481,8 @@
     }
   },
 
-  "empowering":"Empowering businesses with innovative technology solutions for a digital future.",
-  "Quick Links":"Quick Links",
-  
+  "empowering": "Empowering businesses with innovative technology solutions for a digital future.",
+  "Quick Links": "Quick Links",
 
-   
-  "Taphubs. All rights reserved.":"Taphubs. All rights reserved."
-
-
-
-
-
-
-
-
-
+  "Taphubs. All rights reserved.": "Taphubs. All rights reserved."
 }
