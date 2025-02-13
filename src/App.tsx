@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
 import { Routes, Route, useLocation } from "react-router-dom";
-import ServicePage from "./components/Pages/ServicePage";
+// import ServicePage from "./components/Pages/ServicePage";
 import AboutPage from "./components/Pages/AboutPage";
 import ContactPage from "./components/Pages/ContactPage";
 import CarrerPage from "./components/Pages/CarrerPage";
@@ -39,7 +39,7 @@ function App() {
         <Routes>
           {/* Home Route */}
           <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<ServicePage />} />
+          {/* <Route path="/services" element={<ServicePage />} /> */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service/lineofbusiness" element={<Lineofbusiness />} />
           <Route path="/contact" element={<ContactPage />} />
