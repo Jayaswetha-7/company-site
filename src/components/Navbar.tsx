@@ -36,15 +36,15 @@ const Navbar = () => {
           </motion.div>
 
           {/* Menu Bar */}
-          <div className="hidden md:flex space-x-8 justify-center items-center font-semibold">
+          <div className="hidden md:flex space-x-8 justify-center items-center font-semibold  ">
             {/* Home */}
             <Link
               to={"/"}
               className={` ${
                 location.pathname === "/" ? " text-blue-600 underline " : ""
-              } hover:text-blue-500`}
+              } hover:text-blue-500 mx-4`}
             >
-              <h1>{t("Home")}</h1>
+              <h1>{t("Home")} </h1>
             </Link>
 
             {/* About */}
@@ -52,7 +52,7 @@ const Navbar = () => {
               to={"/about"}
               className={` ${
                 location.pathname === "/about"
-                  ? " text-blue-600 underline "
+                  ? " text-blue-600 underline"
                   : ""
               } hover:text-blue-500`}
             >

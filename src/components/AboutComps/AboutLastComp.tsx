@@ -10,7 +10,7 @@ const AboutLastComp = () => {
           <div className="text-white flex flex-col items-center sm:text-5xl text-2xl ">
             <h1 className="font-bold">{t("Need_IT_Solutions_?")}</h1>
             <h1 className="sm:mt-5 mt-2">
-              <span className="font-bold">{t("Let")}</span>
+              {/* <span className="font-bold">{t("Let")}</span> */}
               <span className="font-style: italic font-extralight text-gray-400">
               {t("start")} {" "}
                 
