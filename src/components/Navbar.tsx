@@ -128,7 +128,7 @@ const Navbar = () => {
                       className="  text-center font-semibold font-serif 
                       "
                     >
-                      {item.name}
+                      {t(item.name)}
                     </Link>
                   </motion.div>
                 ))}

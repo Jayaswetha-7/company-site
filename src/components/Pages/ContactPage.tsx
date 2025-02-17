@@ -292,7 +292,8 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
       <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2 mb-6"></div>
 
       {/* Email Section */}
-      {title === "contact.info.readyToStart" ? (
+      
+      {title === "Ready to start something new?" ? (
         <div className="mb-4">
           <p className="text-gray-500 xl:font-semibold lg:font-sans  font-semibold mb-2">
             {t("contact.emailLabel")}
@@ -304,7 +305,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
             contact@taphubs.org
           </a>
         </div>
-      ) : title === "contact.info.needDevelopment" ? (
+      ) : title === "Need Development?" ? (
         <div className="mb-4">
           <p className="text-gray-500 font-semibold mb-2">
             {t("contact.addressLabel")}
