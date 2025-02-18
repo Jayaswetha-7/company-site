@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   return (
-    <motion.nav
+    <motion.nav dir="ltr"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={

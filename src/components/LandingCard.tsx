@@ -21,7 +21,7 @@ function LandingCard() {
   return (
     <>
       <CookieConsent></CookieConsent>
-      <Carousel
+      <Carousel dir="ltr"
         plugins={[autoplayPlugin]}
         opts={{ loop: true }} // Enable infinite loop
         className="min-h-screen max-h-screen min-w-screen   content-center flex items-center justify-center overflow-hidden

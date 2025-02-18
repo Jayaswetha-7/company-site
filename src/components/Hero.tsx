@@ -43,7 +43,7 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <SplitText
-              text= {t("Taphubs")}
+              text= "Taphubs"
               className="sm:text-[10vh] text-[5vh] font-semibold text-center "
               delay={150}
               animationFrom={{
