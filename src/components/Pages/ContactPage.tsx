@@ -40,8 +40,8 @@ const ContactPage: React.FC = () => {
   ];
 
   return (
-   <div dir="ltr">
-     <div>
+   
+     <div dir="ltr">
       <Navbar />
       <div className="flex flex-col lg:flex-row py-32 justify-between bg-white min-h-screen sm:max-h-screen ">
         {/* Left Section - Contact Form */}
@@ -80,7 +80,7 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
     </div>
-   </div>
+   
   );
 };
 
@@ -142,8 +142,8 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
   };
 
   return (
-<div dir="ltr">
-<div
+
+<div dir="ltr"
       className={`flex flex-col lg:flex-row lg:mb-1 border-b-2 border-gray-800 pt-10 ${extraClasses}`}
     >
       <div className="mb-4 lg:mb-0 lg:w-1/2">
@@ -251,7 +251,7 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
         </div>
       )}
     </div>
-</div>
+
   );
 };
 
@@ -262,8 +262,8 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
 }) => {
   const { t } = useTranslation();
   return (
-   <div dir="ltr">
-     <div className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
+   
+     <div dir="ltr" className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
       {/* Conditionally render the content for "Need Development?" section */}
       {title === "contact.info.needDevelopment?" && (
         <div className="flex items-center  xl:mb-6 lg:mb-2 mb-6">
@@ -321,7 +321,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
         </div>
       ) : null}
     </div>
-   </div>
+   
   );
 };
 
