@@ -31,9 +31,7 @@ export const EventsData = [
   { date: "2025-03-15", name: "World Consumer Rights Day" },
   { date: "2025-03-20", name: "International Day of Happiness" },
   { date: "2025-03-21", name: "World Poetry Day" },
-  { date: "2025-03-21", name: "World Down Syndrome Day" },
-  { date: "2025-03-21", name: "International Day of Forests" },
-  { date: "2025-03-22", name: "World Water Day" },
+
   { date: "2025-03-23", name: "World Meteorological Day" },
   { date: "2025-03-24", name: "World Tuberculosis Day" },
   { date: "2025-03-26", name: "Purple Day for Epilepsy Awareness" },
