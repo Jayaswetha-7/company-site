@@ -40,8 +40,7 @@ const ContactPage: React.FC = () => {
   ];
 
   return (
-   
-     <div dir="ltr">
+    <div dir="ltr">
       <Navbar />
       <div className="flex flex-col lg:flex-row py-32 justify-between bg-white min-h-screen sm:max-h-screen ">
         {/* Left Section - Contact Form */}
@@ -80,7 +79,6 @@ const ContactPage: React.FC = () => {
         </div>
       </div>
     </div>
-   
   );
 };
 
@@ -142,8 +140,8 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
   };
 
   return (
-
-<div dir="ltr"
+    <div
+      dir="ltr"
       className={`flex flex-col lg:flex-row lg:mb-1 border-b-2 border-gray-800 pt-10 ${extraClasses}`}
     >
       <div className="mb-4 lg:mb-0 lg:w-1/2">
@@ -234,7 +232,10 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
           </div>
         </div>
       ) : (
-        <div className="lg:w-[50%] flex flex-col justify-start space-y-4">
+        <div
+          className="lg:w-[50%] flex flex-col justify-start space-y-4"
+          dir="ltr"
+        >
           {options?.map((option) => (
             <button
               key={option}
@@ -251,7 +252,6 @@ const SectionWithOptions: React.FC<SectionWithOptionsProps> = ({
         </div>
       )}
     </div>
-
   );
 };
 
@@ -262,8 +262,10 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
 }) => {
   const { t } = useTranslation();
   return (
-   
-     <div dir="ltr" className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5">
+    <div
+      dir="ltr"
+      className=" bg-gray-900 rounded-3xl max-w-5xl mx-0  lg:h-[65%] xl:h-[95%] p-10 xl:p-10 lg:p-5"
+    >
       {/* Conditionally render the content for "Need Development?" section */}
       {title === "contact.info.needDevelopment?" && (
         <div className="flex items-center  xl:mb-6 lg:mb-2 mb-6">
@@ -297,10 +299,10 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
       <div className="border-b-2 border-gray-500 xl:mb-6 lg:mb-2 mb-6"></div>
 
       {/* Email Section */}
-      
-      
+
       {/* {title=="Ready to start something new?" ?  ( */}
-        {title === "Ready to start something new?" || title === "هل أنت مستعد لبدء شيء جديد؟" ?(
+      {title === "Ready to start something new?" ||
+      title === "هل أنت مستعد لبدء شيء جديد؟" ? (
         <div className="mb-4">
           <p className="text-gray-500 xl:font-semibold lg:font-sans  font-semibold mb-2">
             {t("contact.emailLabel")}
@@ -312,8 +314,7 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
             contact@taphubs.org
           </a>
         </div>
-      ) : 
-       title === "Need Development?" || title ==="هل تحتاج إلى تطوير؟" ? (
+      ) : title === "Need Development?" || title === "هل تحتاج إلى تطوير؟" ? (
         <div className="mb-4">
           <p className="text-gray-500 font-semibold mb-2">
             {t("contact.addressLabel")}
@@ -324,7 +325,6 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
         </div>
       ) : null}
     </div>
-   
   );
 };
 
